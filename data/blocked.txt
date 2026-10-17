@@ -1,0 +1,5 @@
+# One entry per line: a station id, exact name, or stream URL to hide.
+# Use this for takedown requests or stations that are always broken.
+# Not real Pakistani radio (17 Oct review)
+shopen anime radio
+পাকিস্তান
