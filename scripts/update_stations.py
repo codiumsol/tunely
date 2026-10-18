@@ -191,6 +191,7 @@ def collect(queries, blocked):
     results = []
     failed = []
     for q in queries:
+        time.sleep(0.3)  # be gentle with the free directory
         try:
             results.append(fetch_json(q))
             QUERY_COUNTS[q.split("?")[0]] = len(results[-1])
@@ -199,10 +200,10 @@ def collect(queries, blocked):
             failed.append(q)
     # The directory is sometimes busy: wait, then try the failed ones again,
     # slower and one mirror at a time.
-    for attempt in (1, 2):
+    for attempt in (1, 2, 3):
         if not failed:
             break
-        time.sleep(20 * attempt)
+        time.sleep(30 * attempt)
         again = []
         for q in failed:
             try:
@@ -482,7 +483,18 @@ def main():
             {"version": 2, "date": today,
              "countries": {cc: len(lst) for cc, lst in sorted(per.items())}},
             separators=(",", ":")), encoding="utf-8")
-        base = [st for cc in COUNTRIES for st in per.get(cc, [])[:BASE_MAX]]
+        # The base list never loses a station it had (app versions without
+        # per-country files may have it saved); new ones up to BASE_MAX.
+        prev_base = set()
+        if OUT.exists():
+            try:
+                prev_base = {st["id"] for st in json.loads(
+                    OUT.read_text(encoding="utf-8")).get("stations", [])}
+            except ValueError:
+                pass
+        base = [st for cc in COUNTRIES
+                for i, st in enumerate(per.get(cc, []))
+                if i < BASE_MAX or st["id"] in prev_base]
         print(f"Wrote {len(per)} country files ({len(working)} stations), "
               f"base list {len(base)}")
     else:

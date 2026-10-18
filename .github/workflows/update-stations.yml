@@ -35,8 +35,9 @@ jobs:
           # 18 Oct 2026). To go back to the old Pakistan-first rules for a
           # night, set this to ''.
           EQUAL: '1'
-          # Per-country files data/c/*.json + data/index.json (trial first).
-          SHARDS: ${{ inputs.trial && '1' || '' }}
+          # Per-country files data/c/*.json + data/index.json (trial OK
+          # 19 Oct 2026: 7,633 stations, files <= 44 KB). '' = off.
+          SHARDS: '1'
         run: python3 scripts/update_stations.py
 
       - name: Save if anything changed
