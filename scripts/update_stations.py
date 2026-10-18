@@ -74,7 +74,7 @@ COUNTRIES = [
     "ZW", "ZM", "AO", "MZ", "SD", "RW",
 ]
 PER_COUNTRY_FETCH = 120  # candidates asked from Radio Browser per country
-PER_COUNTRY_MAX = 60     # working stations kept per country (same for all)
+PER_COUNTRY_MAX = 50     # working stations kept per country (same for all; 50 keeps the list ~1.4 MB)
 RETRY_PER_COUNTRY = 20   # failed streams tried again, slower, per country
 TEST_WORKERS = 128
 # Junk entries in the open directory: a bare generic word as the name, or a
@@ -97,12 +97,12 @@ DROP_TAGS = {"pakistan", "pakistani", "urdu", "fm", "radio", "online", "live",
              "internet radio", "webradio", "stereo", "music", "pk", "am", "local"}
 
 
-def fetch_json(path):
+def fetch_json(path, timeout=30):
     last = None
     for base in MIRRORS:
         try:
             req = urllib.request.Request(base + path, headers={"User-Agent": USER_AGENT})
-            with urllib.request.urlopen(req, timeout=30) as r:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
                 return json.load(r)
         except Exception as e:  # try the next mirror
             last = e
@@ -180,14 +180,33 @@ QUERY_COUNTS = {}
 def collect(queries, blocked):
     """Downloads, cleans and de-duplicates the stations of some queries."""
     stations = {}
+    results = []
+    failed = []
     for q in queries:
         try:
-            rows = fetch_json(q)
+            results.append(fetch_json(q))
+            QUERY_COUNTS[q.split("?")[0]] = len(results[-1])
         except RuntimeError as e:
-            print(f"  skipped {q.split('?')[0]}: {e}", file=sys.stderr)
-            QUERY_COUNTS[q.split("?")[0]] = "failed"
-            continue
-        QUERY_COUNTS[q.split("?")[0]] = len(rows)
+            print(f"  failed {q.split('?')[0]}: {e}", file=sys.stderr)
+            failed.append(q)
+    # The directory is sometimes busy: wait, then try the failed ones again,
+    # slower and one mirror at a time.
+    for attempt in (1, 2):
+        if not failed:
+            break
+        time.sleep(20 * attempt)
+        again = []
+        for q in failed:
+            try:
+                results.append(fetch_json(q, timeout=90))
+                QUERY_COUNTS[q.split("?")[0]] = len(results[-1])
+            except RuntimeError:
+                again.append(q)
+        failed = again
+    for q in failed:
+        QUERY_COUNTS[q.split("?")[0]] = "failed"
+        print(f"  skipped {q.split('?')[0]} (directory not reachable)", file=sys.stderr)
+    for rows in results:
         for raw in rows:
             st = from_radio_browser(raw)
             if not st["id"] or not st["name"] or not st["url"]:
@@ -296,6 +315,17 @@ def main():
     by_cc = {}
     for st in directory:
         by_cc.setdefault(st["country"], []).append(st)
+    # A country the directory didn't answer for tonight: test last night's
+    # stations of that country again instead (never drop a whole country
+    # because of a busy directory).
+    fallback = [cc for cc in COUNTRIES
+                if QUERY_COUNTS.get(f"/json/stations/bycountrycodeexact/{cc}") == "failed"]
+    known = {st["id"] for st in directory}
+    for i, st in enumerate(previous_list):
+        if st.get("country") in fallback and st["id"] not in known and not is_blocked(st):
+            by_cc.setdefault(st["country"], []).append(
+                dict(st, _score=-i, _codec=""))  # keeps last night's order
+            known.add(st["id"])
     for cc, lst in by_cc.items():
         lst.sort(key=lambda st: (0 if st.get("_extra") else 1, -st["_score"]))
     ids = {st["id"] for st in directory}
@@ -324,14 +354,24 @@ def main():
         ok[st["id"]] = good
     recovered = sum(1 for st in retry if ok[st["id"]])
 
-    # 3. Keep up to PER_COUNTRY_MAX working stations per country.
+    # 3. Keep up to PER_COUNTRY_MAX working stations per country. Stability
+    #    first: a station we already listed that still plays is never dropped
+    #    just for the cap (listeners may have it saved); new stations fill
+    #    the free places. Hand-picked extras always stay.
+    listed = {st["id"] for st in previous_list} | set(missing)
     working, failed_sample = [], {}
     for cc in COUNTRIES:
-        kept = 0
-        for st in by_cc.get(cc, []):
-            if ok[st["id"]] and kept < PER_COUNTRY_MAX:
+        lst = by_cc.get(cc, [])
+        keep = {st["id"] for st in lst
+                if ok[st["id"]] and (st.get("_extra") or st["id"] in listed)}
+        for st in lst:
+            if len(keep) >= PER_COUNTRY_MAX:
+                break
+            if ok[st["id"]]:
+                keep.add(st["id"])
+        for st in lst:
+            if st["id"] in keep:
                 working.append(st)
-                kept += 1
             elif not ok[st["id"]]:
                 failed_sample.setdefault(cc, []).append(st["name"])
 
@@ -373,6 +413,7 @@ def main():
         "countries": len(counts),
         "second_try": len(retry),
         "second_try_saved": recovered,
+        "directory_failed_used_last_night": fallback,
         "per_country": dict(sorted(counts.items(), key=lambda x: -x[1])),
         "off_air_watch": len(new_missing),
         "came_back_tonight": back,
