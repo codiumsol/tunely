@@ -11,7 +11,9 @@ Builds data/stations.json for Tunely Radio.
    A station that was in the list but fails tonight goes on a watch list
    (data/missing.json) and is tested again every night for 30 days, even if
    the directory stops offering it; when it plays again it is back in the
-   list (and back in listeners' favourites).
+   list (and back in listeners' favourites). The app removes a favourite
+   that stays off air for 10 days.
+5. New stations in the directory are picked up every night (by popularity).
 5. Writes data/stations.json. The app downloads it from
    https://raw.githubusercontent.com/codiumsol/tunely/main/data/stations.json
    (the app's own build copies it in as the offline fallback).
@@ -314,12 +316,14 @@ def main():
                f"&order=clickcount&reverse=true&limit={PER_COUNTRY_FETCH}"
                for cc in COUNTRIES]
     world = [s for s in collect(queries, blocked) if s["id"] not in seen]
-    # Stations we listed before come first, so they keep their place.
-    listed_before = {s["id"] for s in previous_list} | set(missing)
+    # Off-air stations on the watch list are tested again and, if they play,
+    # get their place back first. Everything else (including NEW stations
+    # that appeared in the directory) competes by popularity, so new
+    # channels are found every night.
     world_ids = {s["id"] for s in world}
-    world += [w for w in watch if w["country"] != "PK"
-              and w["id"] not in world_ids and w["id"] not in seen]
-    world.sort(key=lambda s: 0 if s["id"] in listed_before else 1)
+    watched = [w for w in watch if w["country"] != "PK"
+               and w["id"] not in world_ids and w["id"] not in seen]
+    world = watched + world
     print(f"World: {len(world)} candidates from {len(COUNTRIES)} countries, testing ...")
     per_country = {}
     for s in test_all(world):
@@ -349,6 +353,9 @@ def main():
     cutoff = time.strftime("%Y-%m-%d", time.gmtime(time.time() - MISSING_DAYS * 86400))
     new_missing = {k: v for k, v in new_missing.items() if v["since"] >= cutoff}
     back = len([sid for sid in missing if sid in working_now])
+    listed_before = {st["id"] for st in previous_list} | set(missing)
+    new_tonight = [st["name"] for st in working if st["id"] not in listed_before]
+    print(f"New stations tonight: {len(new_tonight)}")
     print(f"Watch list: {len(new_missing)} stations off air, {back} came back tonight")
 
 
@@ -364,6 +371,8 @@ def main():
         "per_country": dict(sorted(counts.items(), key=lambda x: -x[1])),
         "off_air_watch": len(new_missing),
         "came_back_tonight": back,
+        "new_tonight": len(new_tonight) if previous_list else 0,
+        "new_tonight_sample": new_tonight[:100] if previous_list else [],
     }, ensure_ascii=False, indent=1), encoding="utf-8")
 
     previous = 0
