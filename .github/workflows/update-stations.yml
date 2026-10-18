@@ -38,6 +38,9 @@ jobs:
           # Per-country files data/c/*.json + data/index.json (trial OK
           # 19 Oct 2026: 7,633 stations, files <= 44 KB). '' = off.
           SHARDS: '1'
+          # Every country the directory knows with 10+ stations, not only the
+          # core list (19 Oct 2026). '' = only the core list.
+          ALL_COUNTRIES: '1'
         run: python3 scripts/update_stations.py
 
       - name: Save if anything changed

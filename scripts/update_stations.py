@@ -78,13 +78,17 @@ PER_COUNTRY_MAX = 50     # working stations kept per country (same for all; 50 k
 # Per-country files (SHARDS=1): the app loads a country's full file only for
 # the countries the listener uses; stations.json stays the small base list
 # (BASE_MAX per country) for everything else.
-SHARD_FETCH = 200
-SHARD_MAX = 100
+SHARD_FETCH = 400
+SHARD_MAX = 200
 BASE_MAX = 50
 SHARD_DIR = DATA / "c"
 INDEX = DATA / "index.json"
 RETRY_PER_COUNTRY = 20   # failed streams tried again, slower, per country
 TEST_WORKERS = 128
+# ALL_COUNTRIES=1: besides COUNTRIES, every country the directory knows with at
+# least MIN_DIRECTORY_STATIONS stations (all countries equal), plus every
+# country we listed before (never dropped because the directory was busy).
+MIN_DIRECTORY_STATIONS = 10
 # Junk entries in the open directory: a bare generic word as the name, or a
 # shop / test stream. (Specific bad stations go into data/blocked.txt.)
 GENERIC_NAMES = {"fm", "am", "radio", "live", "stream", "online", "test", "music",
@@ -275,6 +279,25 @@ def merge_extras(home, blocked):
     return out
 
 
+def all_countries():
+    countries = list(COUNTRIES)
+    try:
+        for c in fetch_json("/json/countries", timeout=60):
+            cc = (c.get("iso_3166_1") or "").upper()
+            if (len(cc) == 2 and cc.isalpha() and cc not in countries
+                    and int(c.get("stationcount") or 0) >= MIN_DIRECTORY_STATIONS):
+                countries.append(cc)
+    except Exception as e:
+        print(f"  country list unavailable tonight: {e}", file=sys.stderr)
+    if SHARD_DIR.exists():
+        for p in sorted(SHARD_DIR.glob("*.json")):
+            cc = p.stem.upper()
+            if len(cc) == 2 and cc not in countries:
+                countries.append(cc)
+    print(f"{len(countries)} countries ({len(countries) - len(COUNTRIES)} beyond the core list)")
+    return countries
+
+
 def test_streams(candidates, timeout=10, workers=TEST_WORKERS):
     """True/False per candidate: does the stream really play?"""
     with ThreadPoolExecutor(max_workers=workers) as pool:
@@ -300,6 +323,7 @@ def main():
     missing_file = TRIAL_DIR / "missing.json" if trial else MISSING
 
     started = time.time()
+    countries = all_countries() if os.environ.get("ALL_COUNTRIES") else list(COUNTRIES)
     today = time.strftime("%Y-%m-%d", time.gmtime())
 
     # Stations listed last night + the watch list: all are tested again.
@@ -335,7 +359,7 @@ def main():
     #    the watch list, then the directory by popularity (new stations
     #    included, so new channels are found every night).
     queries = [f"/json/stations/bycountrycodeexact/{cc}?order=clickcount"
-               f"&reverse=true&limit={fetch}" for cc in COUNTRIES]
+               f"&reverse=true&limit={fetch}" for cc in countries]
     directory = merge_extras(collect(queries, blocked), blocked)
     by_cc = {}
     for st in directory:
@@ -343,7 +367,7 @@ def main():
     # A country the directory didn't answer for tonight: test last night's
     # stations of that country again instead (never drop a whole country
     # because of a busy directory).
-    fallback = [cc for cc in COUNTRIES
+    fallback = [cc for cc in countries
                 if QUERY_COUNTS.get(f"/json/stations/bycountrycodeexact/{cc}") == "failed"]
     known = {st["id"] for st in directory}
     for i, st in enumerate(previous_list):
@@ -356,20 +380,20 @@ def main():
     ids = {st["id"] for st in directory}
     for m in missing.values():
         st = m["station"]
-        if st["id"] in ids or is_blocked(st) or st.get("country") not in COUNTRIES:
+        if st["id"] in ids or is_blocked(st) or st.get("country") not in countries:
             continue
         lst = by_cc.setdefault(st["country"], [])
         n_extra = sum(1 for x in lst if x.get("_extra"))
         lst.insert(n_extra, dict(st, _score=-1, _codec=""))
         ids.add(st["id"])
 
-    candidates = [st for cc in COUNTRIES for st in by_cc.get(cc, [])]
-    print(f"{len(candidates)} candidates from {len(COUNTRIES)} countries, testing ...")
+    candidates = [st for cc in countries for st in by_cc.get(cc, [])]
+    print(f"{len(candidates)} candidates from {len(countries)} countries, testing ...")
     ok = dict(zip((st["id"] for st in candidates), test_streams(candidates)))
 
     # 2. Second, slower try for countries that are not full yet.
     retry = []
-    for cc in COUNTRIES:
+    for cc in countries:
         lst = by_cc.get(cc, [])
         if sum(ok[st["id"]] for st in lst) >= cap:
             continue
@@ -385,7 +409,7 @@ def main():
     #    the free places. Hand-picked extras always stay.
     listed = {st["id"] for st in previous_list} | set(missing)
     working, failed_sample = [], {}
-    for cc in COUNTRIES:
+    for cc in countries:
         lst = by_cc.get(cc, [])
         keep = {st["id"] for st in lst
                 if ok[st["id"]] and (st.get("_extra") or st["id"] in listed)}
@@ -492,7 +516,7 @@ def main():
                     OUT.read_text(encoding="utf-8")).get("stations", [])}
             except ValueError:
                 pass
-        base = [st for cc in COUNTRIES
+        base = [st for cc in countries
                 for i, st in enumerate(per.get(cc, []))
                 if i < BASE_MAX or st["id"] in prev_base]
         print(f"Wrote {len(per)} country files ({len(working)} stations), "
