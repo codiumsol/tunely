@@ -392,7 +392,12 @@ def main():
         s.pop("_score", None)
         s.pop("_codec", None)
 
-    body = json.dumps({"version": 2, "count": len(working), "stations": working},
+    # off_air: saved stations the app may still show, with the date they
+    # went off air (the app removes them from favourites after 10 days, and
+    # at once when a station isn't here at all = gone for 30+ days).
+    off_air = {k: v["since"] for k, v in new_missing.items()}
+    body = json.dumps({"version": 2, "count": len(working), "stations": working,
+                       "off_air": off_air},
                       ensure_ascii=False, separators=(",", ":"))
     DATA.mkdir(exist_ok=True)
     OUT.write_text(body, encoding="utf-8")
