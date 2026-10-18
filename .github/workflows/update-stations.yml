@@ -31,6 +31,10 @@ jobs:
       - name: Build and test station list
         env:
           TRIAL: ${{ inputs.trial && '1' || '' }}
+          # Equal rules for every country (checked with two trial runs on
+          # 18 Oct 2026). To go back to the old Pakistan-first rules for a
+          # night, set this to ''.
+          EQUAL: '1'
         run: python3 scripts/update_stations.py
 
       - name: Save if anything changed
