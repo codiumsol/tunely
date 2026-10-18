@@ -8,6 +8,10 @@ Builds data/stations.json for Tunely Radio.
 2. Adds anything listed in data/extra_stations.json (your own additions).
 3. Removes anything listed in data/blocked.txt (takedown requests, bad stations).
 4. Actually connects to every stream and drops the ones that don't play.
+   A station that was in the list but fails tonight goes on a watch list
+   (data/missing.json) and is tested again every night for 30 days, even if
+   the directory stops offering it; when it plays again it is back in the
+   list (and back in listeners' favourites).
 5. Writes data/stations.json. The app downloads it from
    https://raw.githubusercontent.com/codiumsol/tunely/main/data/stations.json
    (the app's own build copies it in as the offline fallback).
@@ -83,6 +87,8 @@ GENERIC_NAMES = {"fm", "am", "radio", "live", "stream", "online", "test", "music
 JUNK_WORDS = re.compile(r"\b(pizza|restaurant|cafe|caf\u00e9|hotel|mall|shop|store|"
                         r"test ?stream|demo|sample)\b", re.I)
 REPORT = DATA / "report.json"
+MISSING = DATA / "missing.json"
+MISSING_DAYS = 30
 OK_CODECS = {"MP3", "AAC", "AAC+", "OGG", "OPUS", ""}
 AUDIO_TYPES = ("audio/", "application/ogg", "application/octet-stream",
                "application/vnd.apple.mpegurl", "application/x-mpegurl",
@@ -265,9 +271,31 @@ def main():
                 blocked.add(line.lower())
 
     started = time.time()
+    today = time.strftime("%Y-%m-%d", time.gmtime())
+
+    # Stations listed last night + the watch list: all are tested again.
+    previous_list = []
+    if OUT.exists():
+        try:
+            previous_list = json.loads(OUT.read_text(encoding="utf-8")).get("stations", [])
+        except ValueError:
+            pass
+    missing = {}
+    if MISSING.exists():
+        try:
+            missing = json.loads(MISSING.read_text(encoding="utf-8"))
+        except ValueError:
+            missing = {}
+    def is_blocked(st):
+        return bool({st.get("id", "").lower(), st.get("name", "").lower(),
+                     st.get("url", "").lower()} & blocked)
+    watch = [dict(m["station"], _score=-1, _codec="") for m in missing.values()
+             if not is_blocked(m["station"])]
 
     # 1. Pakistan + Urdu (plus your own picks from data/extra_stations.json)
     home = merge_extras(collect(HOME_QUERIES, blocked), blocked)
+    home_ids = {s["id"] for s in home}
+    home += [w for w in watch if w["country"] == "PK" and w["id"] not in home_ids]
     print(f"Pakistan/Urdu: {len(home)} candidates, testing ...")
     tested = test_all(home, second_chance=True)
     # Every working Pakistani station is kept; the cap only trims the rest
@@ -286,6 +314,12 @@ def main():
                f"&order=clickcount&reverse=true&limit={PER_COUNTRY_FETCH}"
                for cc in COUNTRIES]
     world = [s for s in collect(queries, blocked) if s["id"] not in seen]
+    # Stations we listed before come first, so they keep their place.
+    listed_before = {s["id"] for s in previous_list} | set(missing)
+    world_ids = {s["id"] for s in world}
+    world += [w for w in watch if w["country"] != "PK"
+              and w["id"] not in world_ids and w["id"] not in seen]
+    world.sort(key=lambda s: 0 if s["id"] in listed_before else 1)
     print(f"World: {len(world)} candidates from {len(COUNTRIES)} countries, testing ...")
     per_country = {}
     for s in test_all(world):
@@ -301,6 +335,23 @@ def main():
           f"{time.time() - started:.0f} s")
     print("Per country: " + ", ".join(f"{k} {v}" for k, v in
                                       sorted(counts.items(), key=lambda x: -x[1])))
+    # Watch list: listed before (or already watched) but not playing tonight.
+    working_now = {s["id"] for s in working}
+    new_missing = {}
+    for st in previous_list:
+        if st["id"] not in working_now and not is_blocked(st):
+            since = missing.get(st["id"], {}).get("since", today)
+            new_missing[st["id"]] = {"since": since, "station": st}
+    for sid, m in missing.items():
+        if sid in working_now or sid in new_missing or is_blocked(m["station"]):
+            continue
+        new_missing[sid] = m
+    cutoff = time.strftime("%Y-%m-%d", time.gmtime(time.time() - MISSING_DAYS * 86400))
+    new_missing = {k: v for k, v in new_missing.items() if v["since"] >= cutoff}
+    back = len([sid for sid in missing if sid in working_now])
+    print(f"Watch list: {len(new_missing)} stations off air, {back} came back tonight")
+
+
     # Small report for the developers: what was offered, what worked.
     REPORT.write_text(json.dumps({
         "date": time.strftime("%Y-%m-%d %H:%M UTC", time.gmtime()),
@@ -311,6 +362,8 @@ def main():
                          if "bycountrycodeexact" not in k or k.endswith("/PK")},
         "home_failed_sample": home_failed[:200],
         "per_country": dict(sorted(counts.items(), key=lambda x: -x[1])),
+        "off_air_watch": len(new_missing),
+        "came_back_tonight": back,
     }, ensure_ascii=False, indent=1), encoding="utf-8")
 
     previous = 0
@@ -334,6 +387,8 @@ def main():
                       ensure_ascii=False, separators=(",", ":"))
     DATA.mkdir(exist_ok=True)
     OUT.write_text(body, encoding="utf-8")
+    MISSING.write_text(json.dumps(new_missing, ensure_ascii=False, indent=0,
+                                  sort_keys=True), encoding="utf-8")
     if BUNDLED.parent.exists():  # only inside the app repo
         BUNDLED.write_text(body, encoding="utf-8")
     print(f"Wrote {OUT} ({len(body.encode()) // 1024} KB)")
