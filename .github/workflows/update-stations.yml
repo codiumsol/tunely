@@ -35,6 +35,8 @@ jobs:
           # 18 Oct 2026). To go back to the old Pakistan-first rules for a
           # night, set this to ''.
           EQUAL: '1'
+          # Per-country files data/c/*.json + data/index.json (trial first).
+          SHARDS: ${{ inputs.trial && '1' || '' }}
         run: python3 scripts/update_stations.py
 
       - name: Save if anything changed
@@ -45,6 +47,7 @@ jobs:
             git add data/trial
           else
             git add data/stations.json data/report.json data/missing.json
+            [ -d data/c ] && git add -A data/c data/index.json
           fi
           if git diff --cached --quiet; then
             echo "No changes today."

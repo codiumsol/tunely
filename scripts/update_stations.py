@@ -75,6 +75,14 @@ COUNTRIES = [
 ]
 PER_COUNTRY_FETCH = 120  # candidates asked from Radio Browser per country
 PER_COUNTRY_MAX = 50     # working stations kept per country (same for all; 50 keeps the list ~1.4 MB)
+# Per-country files (SHARDS=1): the app loads a country's full file only for
+# the countries the listener uses; stations.json stays the small base list
+# (BASE_MAX per country) for everything else.
+SHARD_FETCH = 200
+SHARD_MAX = 100
+BASE_MAX = 50
+SHARD_DIR = DATA / "c"
+INDEX = DATA / "index.json"
 RETRY_PER_COUNTRY = 20   # failed streams tried again, slower, per country
 TEST_WORKERS = 128
 # Junk entries in the open directory: a bare generic word as the name, or a
@@ -281,6 +289,11 @@ def main():
                 blocked.add(line.lower())
 
     trial = bool(os.environ.get("TRIAL"))
+    shards = bool(os.environ.get("SHARDS"))
+    cap = SHARD_MAX if shards else PER_COUNTRY_MAX
+    fetch = SHARD_FETCH if shards else PER_COUNTRY_FETCH
+    shard_dir = TRIAL_DIR / "c" if trial else SHARD_DIR
+    index_file = TRIAL_DIR / "index.json" if trial else INDEX
     out_file = TRIAL_DIR / "stations.json" if trial else OUT
     report_file = TRIAL_DIR / "report.json" if trial else REPORT
     missing_file = TRIAL_DIR / "missing.json" if trial else MISSING
@@ -295,6 +308,17 @@ def main():
             previous_list = json.loads(OUT.read_text(encoding="utf-8")).get("stations", [])
         except ValueError:
             pass
+    # With per-country files, last night's full lists are the reference.
+    if SHARD_DIR.exists():
+        full = []
+        for p in sorted(SHARD_DIR.glob("*.json")):
+            try:
+                full += json.loads(p.read_text(encoding="utf-8")).get("stations", [])
+            except ValueError:
+                pass
+        if full:
+            seen_ids = {st["id"] for st in full}
+            previous_list = full + [st for st in previous_list if st["id"] not in seen_ids]
     missing = {}
     if MISSING.exists():
         try:
@@ -310,7 +334,7 @@ def main():
     #    the watch list, then the directory by popularity (new stations
     #    included, so new channels are found every night).
     queries = [f"/json/stations/bycountrycodeexact/{cc}?order=clickcount"
-               f"&reverse=true&limit={PER_COUNTRY_FETCH}" for cc in COUNTRIES]
+               f"&reverse=true&limit={fetch}" for cc in COUNTRIES]
     directory = merge_extras(collect(queries, blocked), blocked)
     by_cc = {}
     for st in directory:
@@ -346,7 +370,7 @@ def main():
     retry = []
     for cc in COUNTRIES:
         lst = by_cc.get(cc, [])
-        if sum(ok[st["id"]] for st in lst) >= PER_COUNTRY_MAX:
+        if sum(ok[st["id"]] for st in lst) >= cap:
             continue
         retry += [st for st in lst if not ok[st["id"]]][:RETRY_PER_COUNTRY]
     print(f"Second try for {len(retry)} slow streams ...")
@@ -365,7 +389,7 @@ def main():
         keep = {st["id"] for st in lst
                 if ok[st["id"]] and (st.get("_extra") or st["id"] in listed)}
         for st in lst:
-            if len(keep) >= PER_COUNTRY_MAX:
+            if len(keep) >= cap:
                 break
             if ok[st["id"]]:
                 keep.add(st["id"])
@@ -415,6 +439,7 @@ def main():
         "second_try_saved": recovered,
         "directory_failed_used_last_night": fallback,
         "per_country": dict(sorted(counts.items(), key=lambda x: -x[1])),
+        "shards": shards,
         "off_air_watch": len(new_missing),
         "came_back_tonight": back,
         "new_tonight": len(new_tonight) if previous_list else 0,
@@ -439,7 +464,30 @@ def main():
     # went off air (the app removes them from favourites after 10 days, and
     # at once when a station isn't here at all = gone for 30+ days).
     off_air = {k: v["since"] for k, v in new_missing.items()}
-    body = json.dumps({"version": 2, "count": len(working), "stations": working,
+    if shards:
+        # Per-country files (full lists) + a tiny index; the base list keeps
+        # the first BASE_MAX stations of every country.
+        shard_dir.mkdir(parents=True, exist_ok=True)
+        per = {}
+        for st in working:
+            per.setdefault(st["country"], []).append(st)
+        for cc, lst in per.items():
+            (shard_dir / f"{cc.lower()}.json").write_text(json.dumps(
+                {"version": 2, "country": cc, "count": len(lst), "stations": lst},
+                ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        for p in shard_dir.glob("*.json"):  # countries with nothing left
+            if p.stem.upper() not in per:
+                p.unlink()
+        index_file.write_text(json.dumps(
+            {"version": 2, "date": today,
+             "countries": {cc: len(lst) for cc, lst in sorted(per.items())}},
+            separators=(",", ":")), encoding="utf-8")
+        base = [st for cc in COUNTRIES for st in per.get(cc, [])[:BASE_MAX]]
+        print(f"Wrote {len(per)} country files ({len(working)} stations), "
+              f"base list {len(base)}")
+    else:
+        base = working
+    body = json.dumps({"version": 2, "count": len(base), "stations": base,
                        "off_air": off_air},
                       ensure_ascii=False, separators=(",", ":"))
     out_file.parent.mkdir(parents=True, exist_ok=True)
