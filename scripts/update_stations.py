@@ -89,6 +89,10 @@ TEST_WORKERS = 128
 # least MIN_DIRECTORY_STATIONS stations (all countries equal), plus every
 # country we listed before (never dropped because the directory was busy).
 MIN_DIRECTORY_STATIONS = 10
+# Not real listening countries in the directory (Antarctica; "US minor
+# islands" = mislabelled US stations) and North Korea (state media under
+# sanctions; Asim decides, 19 Oct). Never listed.
+NEVER_COUNTRIES = {"AQ", "UM", "KP"}
 # Junk entries in the open directory: a bare generic word as the name, or a
 # shop / test stream. (Specific bad stations go into data/blocked.txt.)
 GENERIC_NAMES = {"fm", "am", "radio", "live", "stream", "online", "test", "music",
@@ -285,6 +289,7 @@ def all_countries():
         for c in fetch_json("/json/countries", timeout=60):
             cc = (c.get("iso_3166_1") or "").upper()
             if (len(cc) == 2 and cc.isalpha() and cc not in countries
+                    and cc not in NEVER_COUNTRIES
                     and int(c.get("stationcount") or 0) >= MIN_DIRECTORY_STATIONS):
                 countries.append(cc)
     except Exception as e:
@@ -292,7 +297,7 @@ def all_countries():
     if SHARD_DIR.exists():
         for p in sorted(SHARD_DIR.glob("*.json")):
             cc = p.stem.upper()
-            if len(cc) == 2 and cc not in countries:
+            if len(cc) == 2 and cc not in countries and cc not in NEVER_COUNTRIES:
                 countries.append(cc)
     print(f"{len(countries)} countries ({len(countries) - len(COUNTRIES)} beyond the core list)")
     return countries
