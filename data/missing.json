@@ -1,49 +1,51 @@
 {
-"0162a574-ea7c-4b22-97fd-e30c012992f5": {
-"since": "2026-10-18",
+"00526b4f-47a3-432d-baca-f914c1273f0b": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 64,
+"city": "mad",
+"country": "ES",
+"homepage": "https://cope.es/",
+"id": "00526b4f-47a3-432d-baca-f914c1273f0b",
+"language": "spanish",
+"logo": "https://static.mytuner.mobi/media/tvos_radios/871/cope-madrid.51d780e3.png",
+"name": "Cope Madrid FM",
+"tags": [],
+"url": "https://net1-cope-rrcast.flumotion.com/cope/net1-low.mp3"
+}
+},
+"00a662f8-d63f-4228-948a-11a2adf8903b": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 195,
+"city": "",
+"country": "PL",
+"homepage": "https://www.polskieradio.pl/10,Czworka",
+"id": "00a662f8-d63f-4228-948a-11a2adf8903b",
+"language": "",
+"logo": "",
+"name": "Polskie Radio Czwórka",
+"tags": [],
+"url": "https://stream14.polskieradio.pl/pr4/pr4.sdp/playlist.m3u8"
+}
+},
+"01ca5438-74ce-42e8-892e-a71b85b3f3af": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
 "city": "",
-"country": "PE",
-"homepage": "https://radiochocolateperu.com/",
-"id": "0162a574-ea7c-4b22-97fd-e30c012992f5",
-"language": "",
-"logo": "https://radiochocolateperu.com/img/core-img/logofp.png",
-"name": "Radio Chocolate Rock & Pop",
-"tags": [],
-"url": "https://stream.zeno.fm/g2w7ukzh64zuv"
-}
-},
-"042d3140-227c-4fac-9387-4903b692d5f2": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 64,
-"city": "",
-"country": "FR",
-"homepage": "https://www.rtl.fr/",
-"id": "042d3140-227c-4fac-9387-4903b692d5f2",
-"language": "",
-"logo": "https://duckduckgo.com/i/035a5e15d396c67a.png",
-"name": "RTL",
+"country": "RS",
+"homepage": "https://tdiradio.com/",
+"id": "01ca5438-74ce-42e8-892e-a71b85b3f3af",
+"language": "serbian",
+"logo": "https://tdiradio.com/wp-content/uploads/2022/05/TDI-crna-Logo-png-e1647953245156.png",
+"name": "TDI BEZ REKLAMA",
 "tags": [
-"généraliste"
+"hits",
+"oldies",
+"pop rock"
 ],
-"url": "https://live.m6radio.quortex.io/webM89Hc99XApzgfhXNX8ASN5/grouprtl/national/short/audio-64000/index.m3u8"
-}
-},
-"051ee815-6240-4410-8d3c-18ce449b8a93": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 64,
-"city": "",
-"country": "PH",
-"homepage": "https://us1.amfmph.com:2199/start/fmrmanila/",
-"id": "051ee815-6240-4410-8d3c-18ce449b8a93",
-"language": "",
-"logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/FMRadio_Philippines.png/200px-FMRadio_Philippines.png",
-"name": "FM Radio Manila",
-"tags": [],
-"url": "http://209.126.124.126:8872/stream"
+"url": "https://streaming.tdiradio.com/tdiradiobezreklama.mp3"
 }
 },
 "057cbae7-dcec-410f-9223-e115314328a4": {
@@ -61,439 +63,324 @@
 "url": "https://online.goradio.com.ng/listen/gr/radio.mp3"
 }
 },
-"05e3dfae-889b-4583-81d9-93fe1a9116b4": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "",
-"country": "AU",
-"homepage": "https://indianlink1.radioca.st/",
-"id": "05e3dfae-889b-4583-81d9-93fe1a9116b4",
-"language": "hindi",
-"logo": "",
-"name": "Indian link radio",
-"tags": [],
-"url": "https://indianlink1.radioca.st/"
-}
-},
-"0826eaef-59e4-4761-b3e8-31670421a753": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "Stockholm",
-"country": "SE",
-"homepage": "https://sverigesradio.se/p2",
-"id": "0826eaef-59e4-4761-b3e8-31670421a753",
-"language": "",
-"logo": "",
-"name": "SR P2",
-"tags": [
-"classical",
-"jazz"
-],
-"url": "https://live1.sr.se/p2-flac"
-}
-},
-"083d312c-59c5-47fc-a00a-5515cc6771f2": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 64,
-"city": "",
-"country": "ID",
-"homepage": "https://www.lokermusik.com/",
-"id": "083d312c-59c5-47fc-a00a-5515cc6771f2",
-"language": "english",
-"logo": "https://cdn-profiles.tunein.com/s299056/images/logod.png",
-"name": "Loker Musik Indonesia",
-"tags": [
-"indonesia",
-"pop"
-],
-"url": "https://stream.lokermusik.com/listen/lokermusik/lokermusik"
-}
-},
-"0f239691-88f0-11e8-aa66-52543be04c81": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "",
-"country": "GR",
-"homepage": "https://www.laikos.gr/en/",
-"id": "0f239691-88f0-11e8-aa66-52543be04c81",
-"language": "greek",
-"logo": "https://www.laikos.gr/templates/bt_medical/favicon.ico",
-"name": "Laikos FM",
-"tags": [
-"greek pop"
-],
-"url": "http://netradio.live24.gr/laikos876"
-}
-},
-"10664ae1-0e7c-4c8d-92d4-98af67f0b20f": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 126,
-"city": "",
-"country": "IN",
-"homepage": "",
-"id": "10664ae1-0e7c-4c8d-92d4-98af67f0b20f",
-"language": "punjabi",
-"logo": "https://onlineradiohub.com/wp-content/uploads/2022/01/all-india-radio.jpg",
-"name": "FM AIR Punjabi",
-"tags": [],
-"url": "https://air.pc.cdn.bitgravity.com/air/live/pbaudio138/playlist.m3u8"
-}
-},
-"106dcd99-c665-4447-9d8a-3ff916920ec3": {
-"since": "2026-10-18",
+"082080f5-09e1-4727-b973-584a84e5560a": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 48,
-"city": "Nuevo León",
+"city": "Ciudad de México",
 "country": "MX",
-"homepage": "https://www.lasabrosita.fm/",
-"id": "106dcd99-c665-4447-9d8a-3ff916920ec3",
+"homepage": "https://acironline.mx/radio-online/",
+"id": "082080f5-09e1-4727-b973-584a84e5560a",
 "language": "spanish",
-"logo": "https://www.lasabrosita.fm/u/plantillas/p/la-sabrosita/imgs/favicons//apple-touch-icon.png",
-"name": "La Sabrosita (Monterrey) - 95.7 FM - XHRK-FM - Grupo Radio Alegría - Monterrey, NL",
+"logo": "https://i.iheart.com/v3/re/new_assets/5ced3f5677b0f30f02bf3386",
+"name": "SIEMPRE GRUPEROS de LA COMADRE (iHeart Radio) - Online - ACIR Online / iHeart Radio - Ciudad de México",
 "tags": [
-"95.7",
-"95.7 fm",
-"banda",
-"banda norteña",
-"banda tradicional"
+"acir",
+"acir online",
+"américa",
+"cdmx",
+"ciudad de méxico"
 ],
-"url": "https://playerservices.streamtheworld.com/api/livestream-redirect/LASABROSITA_957FMAAC.aac"
+"url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ACIR07_s01AAC.aac"
 }
 },
-"15d4642d-38af-4236-b9f3-caf6d6f247ae": {
-"since": "2026-10-18",
+"0a75ef13-0846-44e7-ac19-85f0d52d0d22": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 64,
+"bitrate": 48,
 "city": "",
-"country": "IN",
-"homepage": "",
-"id": "15d4642d-38af-4236-b9f3-caf6d6f247ae",
-"language": "punjabi",
-"logo": "https://onlineradiohub.com/wp-content/uploads/2022/01/desi-world-radio.jpg",
-"name": "Desi World Radio",
+"country": "VE",
+"homepage": "https://bellafm.com.ve/",
+"id": "0a75ef13-0846-44e7-ac19-85f0d52d0d22",
+"language": "spanish",
+"logo": "https://bellafm.com.ve/wp-content/uploads/2022/06/fondo-bella-web.jpg",
+"name": "Bella FM 96.9",
+"tags": [
+"entretenimiento",
+"latino",
+"pop music",
+"popular",
+"reggaeton"
+],
+"url": "https://server6.globalhostla.com:9380/stream"
+}
+},
+"0c08143d-3dfd-4eda-990e-68d493440bca": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 128,
+"city": "",
+"country": "UG",
+"homepage": "http://5230.cloudrad.io:8354/",
+"id": "0c08143d-3dfd-4eda-990e-68d493440bca",
+"language": "english",
+"logo": "",
+"name": "BEAT FM",
 "tags": [],
-"url": "https://stream.zenolive.com/4mbfcn4mf24tv"
+"url": "http://5230.cloudrad.io:8354/"
 }
 },
-"16e4f32b-81d3-42e5-b6ac-38a15ef148f1": {
-"since": "2026-10-18",
+"0c62b9d7-8de0-4693-9842-6bf9b50229d3": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 256,
+"bitrate": 192,
 "city": "",
-"country": "DK",
-"homepage": "https://radioabc.dk/",
-"id": "16e4f32b-81d3-42e5-b6ac-38a15ef148f1",
-"language": "danish",
-"logo": "https://radio.side-walk.dk/logos/KXRtPsQK5qjFmR5jvUpGRjSlQVsz7m2icSZsSfUs.png",
-"name": "Radio ABC",
+"country": "NL",
+"homepage": "https://www.npo3fm.nl/",
+"id": "0c62b9d7-8de0-4693-9842-6bf9b50229d3",
+"language": "",
+"logo": "https://www.npo3fm.nl/apple-touch-icon.png",
+"name": "NPO 3FM",
 "tags": [
 "pop"
 ],
-"url": "https://radioserver.dk/abc"
+"url": "https://icecast.omroep.nl/3fm-bb-mp3"
 }
 },
-"17142ca0-4faf-11e9-a4d7-52543be04c81": {
-"since": "2026-10-18",
+"10fc8177-339e-4470-b3d1-5346706addeb": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 192,
-"city": "Vienna",
-"country": "AT",
-"homepage": "http://city23.at/",
-"id": "17142ca0-4faf-11e9-a4d7-52543be04c81",
-"language": "german",
-"logo": "https://www.city23.at/wp-content/themes/city23/medias/app-icons/apple-icon-120x120.png",
-"name": "CITY23",
+"bitrate": 128,
+"city": "Sydney NSW",
+"country": "AU",
+"homepage": "http://www.australiandigitalradio.com/",
+"id": "10fc8177-339e-4470-b3d1-5346706addeb",
+"language": "english",
+"logo": "http://www.australiandigitalradio.com/favicon.ico",
+"name": "Australian Digital Radio Network - Happy Hardcore (MP3)",
 "tags": [
-"dab+",
-"easy listening"
+"happy hardcore"
 ],
-"url": "http://live.radiomax.technology/city23"
+"url": "http://abm22.com.au:8000/CONTAINER31"
 }
 },
-"175fb1d5-798a-4f3b-9aff-85e15032fa7a": {
-"since": "2026-10-18",
+"1378d991-a369-43a9-a6c9-db52dc055f66": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 48,
+"city": "",
+"country": "GT",
+"homepage": "http://radiolatina.live:8072/",
+"id": "1378d991-a369-43a9-a6c9-db52dc055f66",
+"language": "spanish",
+"logo": "https://static2.mytuner.mobi/media/tvos_radios/rZq3pt23v9.jpg",
+"name": "Radio Amiga 93.3 FM",
+"tags": [
+"2000s",
+"90s",
+"amor",
+"baladas en español",
+"love songs"
+],
+"url": "http://radiolatina.live:8072/;"
+}
+},
+"183a9879-22b7-4e51-88af-295c3effc7c1": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 128,
+"city": "Sydney NSW",
+"country": "AU",
+"homepage": "http://www.australiandigitalradio.com/",
+"id": "183a9879-22b7-4e51-88af-295c3effc7c1",
+"language": "english",
+"logo": "http://www.australiandigitalradio.com/favicon.ico",
+"name": "Australian Digital Radio Network - Acid House (MP3)",
+"tags": [
+"acid house"
+],
+"url": "http://abm22.com.au:8000/CONTAINER1"
+}
+},
+"209eeeef-33b4-4080-b1b0-1a38f7d07fa7": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 96,
-"city": "Punjab",
-"country": "IN",
-"homepage": "https://sgpc.net/",
-"id": "175fb1d5-798a-4f3b-9aff-85e15032fa7a",
-"language": "punjabi",
-"logo": "https://sgpc.net/wp-content/uploads/2014/05/logo.png",
-"name": "Live Gurbani - Sri Darbar Sahib (SGPC)",
+"city": "",
+"country": "NZ",
+"homepage": "http://www.powerhitfm.co.nz/",
+"id": "209eeeef-33b4-4080-b1b0-1a38f7d07fa7",
+"language": "",
+"logo": "",
+"name": "Power Hit FM 87.8 - Christchurch, NZ",
 "tags": [
-"amritsar",
-"gurbani",
-"religious",
-"sikhism"
+"pop music",
+"top 40"
 ],
-"url": "https://live.sgpc.net:8443/;stream.mp3"
+"url": "http://listen.powerhitfm.co.nz:16100/stream"
 }
 },
-"177dda8f-ce5f-4f18-a19e-c6c8b6f5319a": {
-"since": "2026-10-18",
+"21ba9188-59a9-11ea-be63-52543be04c81": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 64,
+"bitrate": 128,
+"city": "Krakow",
+"country": "PL",
+"homepage": "https://www.rmfon.pl/play,3",
+"id": "21ba9188-59a9-11ea-be63-52543be04c81",
+"language": "polish",
+"logo": "https://www.rmfon.pl/assets/images/favicon/apple-touch-icon.png",
+"name": "RMF Dance",
+"tags": [
+"128 kbit/s",
+"dance"
+],
+"url": "http://rmfstream1.interia.pl:8000/rmf_dance"
+}
+},
+"21e64d3f-fdb1-4414-a6f1-c30e0110dea2": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 416,
 "city": "",
-"country": "GB",
-"homepage": "https://talksport.com/",
-"id": "177dda8f-ce5f-4f18-a19e-c6c8b6f5319a",
+"country": "PH",
+"homepage": "https://www.brigadanews.ph/",
+"id": "21e64d3f-fdb1-4414-a6f1-c30e0110dea2",
+"language": "",
+"logo": "https://brigadanews.ph/fmstreamv2/assets/stationLogo/null.jpg",
+"name": "Brigada News FM Naga",
+"tags": [],
+"url": "http://18.141.67.248:8052/stream/1/"
+}
+},
+"2663055f-88c9-49d2-a45c-7a54be4820a5": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 320,
+"city": "",
+"country": "UA",
+"homepage": "https://loungefm.com.ua/chill",
+"id": "2663055f-88c9-49d2-a45c-7a54be4820a5",
 "language": "english",
-"logo": "",
-"name": "TalkSPORT",
+"logo": "https://loungefm.com.ua/img/favicon/favicon.ico",
+"name": "Lounge FM",
 "tags": [
-"sports"
+"chillout"
 ],
-"url": "https://radio.talksport.com/stream"
+"url": "https://cast.mediaonline.net.ua/chillout320"
 }
 },
-"1808e244-4ca2-4a4d-be3a-17babddef88a": {
-"since": "2026-10-18",
+"2968dc84-5e39-4091-8365-bb9dd9ca1b27": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
 "city": "",
-"country": "SE",
-"homepage": "https://radio-kullabygden.se/",
-"id": "1808e244-4ca2-4a4d-be3a-17babddef88a",
-"language": "swedish",
-"logo": "https://www.radio-kullabygden.se/wp-content/uploads/2016/04/hnfloggo_100px.png",
-"name": "Höganäs Närradio",
-"tags": [
-"1950s",
-"1960s",
-"blues",
-"classic rock",
-"country"
-],
-"url": "https://deb.patrikmalmgrenrask.se:10443/"
+"country": "PH",
+"homepage": "https://boracaybeachradio.com/",
+"id": "2968dc84-5e39-4091-8365-bb9dd9ca1b27",
+"language": "",
+"logo": "https://boracaybeachradio.com/wp-content/uploads/2023/10/boracaybeachradio-logo-200x200-1.jpg",
+"name": "Boracay Beach Radio",
+"tags": [],
+"url": "http://s7.viastreaming.net:8390/"
 }
 },
-"1c5674b0-2cfe-48e2-b859-2f3718c74598": {
-"since": "2026-10-18",
+"29c3799c-d7b8-49e0-a47c-143da177b90e": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
-"city": "",
-"country": "CH",
-"homepage": "https://www.radioswissclassic.ch/it",
-"id": "1c5674b0-2cfe-48e2-b859-2f3718c74598",
-"language": "italian",
-"logo": "https://www.radioswissclassic.ch/favicon.ico",
-"name": "Radio Swiss Classic",
-"tags": [
-"classical",
-"musica classica",
-"srg ssr"
-],
-"url": "http://stream.srg-ssr.ch/m/rsc_it/mp3_128"
+"city": "Antwerpen",
+"country": "BE",
+"homepage": "https://www.radiominerva.be/",
+"id": "29c3799c-d7b8-49e0-a47c-143da177b90e",
+"language": "",
+"logo": "https://www.radiominerva.be/radio/assets/img/Logo.png",
+"name": "Radio Minerva",
+"tags": [],
+"url": "http://streaming.radiominerva.be/minerva"
 }
 },
-"1d6d9870-b554-4919-a0a9-93457d3de6da": {
-"since": "2026-10-18",
+"2a0eb2d1-63bb-4212-a757-ce53be4016c8": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 128,
-"city": "Bucuresti",
-"country": "RO",
-"homepage": "https://virginradio.ro/",
-"id": "1d6d9870-b554-4919-a0a9-93457d3de6da",
-"language": "romanian",
-"logo": "",
-"name": "Virgin Radio Romania",
-"tags": [
-"hip hop",
-"hip hop romanian",
-"pop",
-"pop dance",
-"pop music"
-],
-"url": "https://astreaming.edi.ro:8443/VirginRadio_aac"
-}
-},
-"20489f66-8d40-493b-bf8a-36f2941237c8": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 0,
+"bitrate": 48,
 "city": "",
-"country": "CZ",
-"homepage": "http://www.queenradio.net/",
-"id": "20489f66-8d40-493b-bf8a-36f2941237c8",
-"language": "czech",
-"logo": "",
-"name": "Queenradio.net",
+"country": "VE",
+"homepage": "https://www.insuperable891fm.com.ve/",
+"id": "2a0eb2d1-63bb-4212-a757-ce53be4016c8",
+"language": "spanish",
+"logo": "https://www.insuperable891fm.com.ve/images/logo%20coye%20fm.png?crc=3915360359",
+"name": "C-Oye 89.1 FM",
 "tags": [
-"queen",
-"rock"
+"2000s",
+"80s",
+"90s",
+"baladas en español",
+"entretenimiento"
 ],
-"url": "http://stream.radiojar.com/4gw72qm8u68uv"
+"url": "http://streamingned.com:7146/;"
 }
 },
-"24e3676a-8de5-474c-8ed2-288fbb66d447": {
-"since": "2026-10-18",
+"2c04603e-fc3d-43f2-9155-408dfa092b50": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 48,
+"city": "",
+"country": "VE",
+"homepage": "https://banderafm.net.ve/",
+"id": "2c04603e-fc3d-43f2-9155-408dfa092b50",
+"language": "spanish",
+"logo": "https://banderafm.net.ve/images/logo-bandera-fm.png?crc=304081514",
+"name": "BANDERA 105.7 FM",
+"tags": [
+"baladas en español",
+"entretenimiento",
+"musica romantica",
+"radio hablada",
+"retro"
+],
+"url": "http://streamingned.com:7148/;"
+}
+},
+"2ce23ee2-95c5-407d-9df8-54c3cdde2825": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 192,
 "city": "",
 "country": "US",
-"homepage": "https://walmradio.com/christmas",
-"id": "24e3676a-8de5-474c-8ed2-288fbb66d447",
+"homepage": "https://walmradio.com/jazz",
+"id": "2ce23ee2-95c5-407d-9df8-54c3cdde2825",
 "language": "english",
-"logo": "https://icecast.walmradio.com:8443/christmas.jpg",
-"name": "Christmas Vinyl HD Opus",
+"logo": "https://icecast.walmradio.com:8443/jazz.jpg",
+"name": "Adroit Jazz Underground HD Opus",
 "tags": [
-"christian",
-"christmas",
-"easy listening",
-"hd",
-"holiday"
+"avant-garde",
+"bebop",
+"big band",
+"bop",
+"combos"
 ],
-"url": "https://icecast.walmradio.com:8443/christmas_opus"
+"url": "https://icecast.walmradio.com:8443/jazz_opus"
 }
 },
-"25449d5b-482f-4616-bd5d-ed9eb882d9f2": {
-"since": "2026-10-18",
+"30492fe7-76d6-4902-8af2-bbdee89501bf": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 64,
+"city": "Carabobo",
+"country": "VE",
+"homepage": "http://www.lafmmundial.com/",
+"id": "30492fe7-76d6-4902-8af2-bbdee89501bf",
+"language": "spanish",
+"logo": "",
+"name": "FM Mundial 104.1",
+"tags": [],
+"url": "https://onlineradiobox.com/json/ve/lafmmundial/play?platform=web"
+}
+},
+"30af3c01-199e-11e9-a80b-52543be04c81": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 64,
 "city": "",
-"country": "IN",
-"homepage": "",
-"id": "25449d5b-482f-4616-bd5d-ed9eb882d9f2",
-"language": "punjabi",
-"logo": "",
-"name": "KRPI Ferndale 1550 AM",
-"tags": [],
-"url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KRPIAM_SC"
-}
-},
-"256a4654-81ec-4d30-a3ca-bf146a753183": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "West Yorkshire",
-"country": "GB",
-"homepage": "https://akashradioleeds.co.uk/",
-"id": "256a4654-81ec-4d30-a3ca-bf146a753183",
-"language": "punjabi",
-"logo": "https://akashradioleeds.co.uk/wp-content/uploads/2026/04/cropped-akash-radio-logo-new-v2-1.png",
-"name": "Akash Radio (Leeds)",
-"tags": [
-"asian",
-"punjabi"
-],
-"url": "http://c2.radioboss.fm:8276/stream"
-}
-},
-"264b28d1-7d6b-4fba-a220-a46333442462": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "Ciudad de México",
-"country": "MX",
-"homepage": "http://elpandazambrano.com/",
-"id": "264b28d1-7d6b-4fba-a220-a46333442462",
-"language": "spanish",
-"logo": "https://cdn-radiotime-logos.tunein.com/s96692d.png",
-"name": "Panda Show Radio - Online - El Panda Zambrano - Ciudad de México",
-"tags": [
-"banda",
-"cdmx",
-"ciudad de mexico",
-"ciudad de méxico",
-"ciudad mexico"
-],
-"url": "http://65.21.202.84:8062/"
-}
-},
-"2c95d027-273a-4e9a-a84e-56a21a556ebc": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "",
-"country": "OM",
-"homepage": "",
-"id": "2c95d027-273a-4e9a-a84e-56a21a556ebc",
+"country": "CA",
+"homepage": "https://radiox.com/",
+"id": "30af3c01-199e-11e9-a80b-52543be04c81",
 "language": "",
-"logo": "",
-"name": "إذاعة ماهر المعيقلي",
-"tags": [
-"classical"
-],
-"url": "https://backup.qurango.net/radio/maher"
-}
-},
-"2d411ff6-99f8-4cf3-895f-2bbd3ee672ce": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 0,
-"city": "",
-"country": "SE",
-"homepage": "https://madmix.se/",
-"id": "2d411ff6-99f8-4cf3-895f-2bbd3ee672ce",
-"language": "english",
-"logo": "https://madmix.se/images/logo.jpg",
-"name": "Workout",
-"tags": [
-"edm",
-"fitness",
-"motivation",
-"workout"
-],
-"url": "https://mml2.prostream.se/listen/workout/radio.mp3"
-}
-},
-"3275a0ad-77bb-4167-a9a7-db6f40bf6ae8": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 192,
-"city": "",
-"country": "GB",
-"homepage": "https://www.lycaradio.com/",
-"id": "3275a0ad-77bb-4167-a9a7-db6f40bf6ae8",
-"language": "english",
-"logo": "https://www.lycaradio.com/wp-content/uploads/2021/06/favicon-01-150x150.png",
-"name": "Lyca Radio",
+"logo": "https://radiox.com/apple-touch-icon.png",
+"name": "CHOI 98.1 \"Radio X\" Quebec City, QC",
 "tags": [],
-"url": "http://ads-direct.sharp-stream.com/1458.mp3"
-}
-},
-"344ebbce-77c4-11e9-aa30-52543be04c81": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 96,
-"city": "Maharashtra",
-"country": "IN",
-"homepage": "http://radio2.sikhnet.com:8038/live",
-"id": "344ebbce-77c4-11e9-aa30-52543be04c81",
-"language": "punjabi",
-"logo": "",
-"name": "Hazur Sahib Live",
-"tags": [
-"religious",
-"shabads"
-],
-"url": "http://radio2.sikhnet.com:8038/live"
-}
-},
-"3b3f521f-793e-46eb-8bbf-c5fd199f26ed": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "Utrecht, Utrecht",
-"country": "NL",
-"homepage": "https://radiosbs.nl/",
-"id": "3b3f521f-793e-46eb-8bbf-c5fd199f26ed",
-"language": "dutch",
-"logo": "https://radiosbs.nl/wp-content/uploads/2020/05/cropped-radioSBS2020logoCP.png",
-"name": "Radio SBS",
-"tags": [
-"bollywood",
-"dutch",
-"hindi",
-"surinam"
-],
-"url": "http://live.radiosbs.nl:8272/radiosbs"
+"url": "http://icecast-choi.rncm.ca/choi.mp3"
 }
 },
 "3c7aba81-3375-41e3-b268-5231fcf576ba": {
@@ -513,107 +400,97 @@
 "url": "http://178.33.135.244:20095/;?DIST=TuneIn&TGT=TuneIn&maxServers=2&partnertok=eyJhbGciOiJIUzI1NiIsImtpZCI6InR1bmVpbiIsInR5cCI6IkpXVCJ9.eyJ0cnVzdGVkX3BhcnRuZXIiOnRydWUsImlhdCI6MTYzNjA1OTE3OCwiaXNzIjoidGlzcnYifQ.Me0snc2PBcQhvlzte9L7zQxa-IHgNinhu3XdNJ6_Xa8"
 }
 },
-"3f1d3248-26db-468d-9667-df088b018fdc": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "Brussels",
-"country": "BE",
-"homepage": "http://www.radiocampus.be/",
-"id": "3f1d3248-26db-468d-9667-df088b018fdc",
-"language": "french",
-"logo": "http://www.radiocampus.be/favicon.ico",
-"name": "radio campus",
-"tags": [
-"alternative",
-"community radio",
-"free radio",
-"university radio"
-],
-"url": "http://streamer.radiocampus.be/stream.mp3"
-}
-},
-"40848844-f87c-45a8-9e8a-710c7738796d": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 32,
-"city": "",
-"country": "IN",
-"homepage": "",
-"id": "40848844-f87c-45a8-9e8a-710c7738796d",
-"language": "punjabi",
-"logo": "",
-"name": "radiopunjabitoday",
-"tags": [],
-"url": "http://stream.zeno.fm/019324w4ez4tv"
-}
-},
-"41fbe760-75f0-46a9-aef4-9283667b58dc": {
-"since": "2026-10-18",
+"430e9ddb-5a84-11e9-a622-52543be04c81": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
 "city": "",
-"country": "AE",
-"homepage": "https://classicalradio.world/",
-"id": "41fbe760-75f0-46a9-aef4-9283667b58dc",
-"language": "english",
-"logo": "https://classicalradio.world/static/assets/img/apple-icon-120x120.png",
-"name": "Classical Radio - London Symphony Orchestra",
-"tags": [
-"classical"
-],
-"url": "https://drive.uber.radio/uber/crlso/icecast.audio"
-}
-},
-"46c93c88-147e-4bf5-9e08-ff93680984bf": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 48,
-"city": "",
-"country": "TH",
-"homepage": "https://bestradio89.com/",
-"id": "46c93c88-147e-4bf5-9e08-ff93680984bf",
-"language": "thai",
+"country": "RS",
+"homepage": "http://www.mariaradio.rs/",
+"id": "430e9ddb-5a84-11e9-a622-52543be04c81",
+"language": "hungarian",
 "logo": "",
-"name": "Best Radio FM. 89.0 MHz",
-"tags": [],
-"url": "https://80sv2.hostpleng.com/?url=http://112.121.150.133:8198/;"
-}
-},
-"4d1d714a-904d-4c33-abd4-a19da2ffbfb6": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 96,
-"city": "",
-"country": "SG",
-"homepage": "http://melisten.sg/cna938",
-"id": "4d1d714a-904d-4c33-abd4-a19da2ffbfb6",
-"language": "",
-"logo": "http://melisten.sg/static/apple-icon-120x120.png",
-"name": "CNA 938",
+"name": "RADIO MARIA SERBIA HUNG",
 "tags": [
-"news"
+"catholic",
+"religion",
+"talk"
 ],
-"url": "https://22893.live.streamtheworld.com/938NOW_SC"
+"url": "http://dreamsiteradiocp.com:8014/stream"
 }
 },
-"4d31a6ea-a652-4862-9e9d-0d69c0f8f403": {
-"since": "2026-10-18",
+"46193193-c490-41d0-8fbf-bbb576cf4bea": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 64,
-"city": "West Midlands",
-"country": "GB",
-"homepage": "https://raajfm.com/",
-"id": "4d31a6ea-a652-4862-9e9d-0d69c0f8f403",
-"language": "punjabi",
-"logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMexJa_B8lx-RGlu22U9DNUtjolrmrrcOC4cRjNLYvHyZ5OakyI5sPCeM&s=10",
-"name": "Raaj FM",
+"city": "",
+"country": "VE",
+"homepage": "https://www.produccionesstereoshow.com/",
+"id": "46193193-c490-41d0-8fbf-bbb576cf4bea",
+"language": "spanish",
+"logo": "https://zeno.fm/_ipx/q_100&fit_cover&s_160x160/https://images.zeno.fm/VTioVCjEg3ffCkk1biB-0OpUzw26qUbT1bGOO3qVHzI/rs:fill:256:256/g:ce:0:0/aHR0cHM6Ly9wcm94eS56ZW5vLmZtL2NvbnRlbnQvc3RhdGlvbnMvYWd4emZucGxibTh0YzNSaGRITnlNZ3NTQ2tGMWRHaERiR2xsYm5RWWdJQ3duWjNKbUFrTUN4SU9VM1JoZEdsdmJsQnliMlpwYkdVWWdJQ3c3YlRfX3dzTW9nRUVlbVZ1YncvaW1hZ2UvP3U9MTY2MTM3MDc3NDAwMA.webp",
+"name": "Radio Mix Retro",
 "tags": [
-"asian",
-"asian pop",
-"punjabi"
+"2000s",
+"70s",
+"80s",
+"90s",
+"latino"
 ],
-"url": "http://live.canstream.co.uk:8000/raajfm.mp3"
+"url": "https://streamingned.com:7084/stream"
+}
+},
+"47891e88-36ba-4dc0-b381-a53a0b9c19a4": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 1500,
+"city": "",
+"country": "ES",
+"homepage": "https://bluesflac.com/",
+"id": "47891e88-36ba-4dc0-b381-a53a0b9c19a4",
+"language": "",
+"logo": "https://bluesflac.com/wp-content/uploads/2020/02/cropped-bluesflac1.png",
+"name": "Radio Bluesflac",
+"tags": [],
+"url": "https://audio-edge-jfbmv.sin.d.radiomast.io/radioblues-flac?t=nightvision%3Fs%3D88baf5be-4b2d-416a-afc6-b0d9be7c9f1e&cachebuster=5213503296919065"
+}
+},
+"47b98530-6132-47b2-8f42-7fd27c32f81f": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 64,
+"city": "",
+"country": "AR",
+"homepage": "",
+"id": "47b98530-6132-47b2-8f42-7fd27c32f81f",
+"language": "",
+"logo": "",
+"name": "FM 97.9 Vida",
+"tags": [
+"pop"
+],
+"url": "https://streaming450tb.locucionar.com/proxy/fmvida979?mp=/stream"
+}
+},
+"4a912d4e-00b0-49e7-87db-cf4ccd0d1269": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 128,
+"city": "San Jose",
+"country": "PH",
+"homepage": "https://play.google.com/store/apps/details?id=com.lacolinares.ragemusicph",
+"id": "4a912d4e-00b0-49e7-87db-cf4ccd0d1269",
+"language": "",
+"logo": "https://play.google.com/favicon.ico",
+"name": "Scream Radio",
+"tags": [
+"alternative",
+"alternative rock",
+"emo",
+"punk",
+"rock"
+],
+"url": "https://stream.zeno.fm/c3z135w8zxhvv.mp3"
 }
 },
 "4dad0ae3-720a-434e-b350-7186e4c5ea6f": {
@@ -634,56 +511,69 @@
 "url": "https://purenature-mynoise.radioca.st/stream"
 }
 },
-"52e08b5e-dc94-4d2f-9a62-7479bfcade1c": {
-"since": "2026-10-18",
+"4e7604ac-dcd1-462e-aa9e-dea4fcc32bdb": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 96,
+"bitrate": 64,
 "city": "",
-"country": "IN",
-"homepage": "",
-"id": "52e08b5e-dc94-4d2f-9a62-7479bfcade1c",
-"language": "punjabi",
-"logo": "https://onlineradiohub.com/wp-content/uploads/2022/01/punjab-radio-uk.jpg",
-"name": "Panjab Radio UK",
-"tags": [],
-"url": "http://s1.voscast.com:7918/;"
-}
-},
-"53c13dee-e203-4afd-b282-2f46f8fc0621": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 72,
-"city": "madhya pradesh",
-"country": "IN",
-"homepage": "https://prasarbharati.gov.in/",
-"id": "53c13dee-e203-4afd-b282-2f46f8fc0621",
+"country": "UG",
+"homepage": "https://www.arsenal.com/",
+"id": "4e7604ac-dcd1-462e-aa9e-dea4fcc32bdb",
 "language": "english",
-"logo": "",
-"name": "AIR Indore",
+"logo": "https://www.arsenal.com/themes/custom/arsenal_main/images/apple-touch-icon-120x120.png",
+"name": "Talksport Premier League",
 "tags": [
-"infotainment",
-"news",
-"talk"
+"live commentary"
 ],
-"url": "https://air.pc.cdn.bitgravity.com/air/live/pbaudio212/playlist.m3u8"
+"url": "https://radio.talksport.com/stream"
 }
 },
-"5493e201-3dfc-4035-8c58-9636c8680e90": {
-"since": "2026-10-18",
+"50d2c7dd-dec7-4169-84a1-a2f1614278ad": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
-"city": "Sydney NSW",
-"country": "AU",
-"homepage": "http://www.australiandigitalradio.com/",
-"id": "5493e201-3dfc-4035-8c58-9636c8680e90",
-"language": "english",
-"logo": "http://www.australiandigitalradio.com/favicon.ico",
-"name": "Australian Digital Radio Network - Trip Hop and Acid Jazz (MP3)",
+"city": "",
+"country": "SE",
+"homepage": "https://www.ilikeradio.se/rixfm/",
+"id": "50d2c7dd-dec7-4169-84a1-a2f1614278ad",
+"language": "swedish",
+"logo": "",
+"name": "Rix FM",
+"tags": [],
+"url": "http://fm01-ice.stream.khz.se/fm01_mp3"
+}
+},
+"52e6aa2b-9d35-4b8c-938a-a91bac4140ed": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 0,
+"city": "",
+"country": "ZA",
+"homepage": "https://boxradio-edge-00.streamafrica.net/chillwave",
+"id": "52e6aa2b-9d35-4b8c-938a-a91bac4140ed",
+"language": "",
+"logo": "",
+"name": "BOX Chillwave",
+"tags": [],
+"url": "https://boxradio-edge-00.streamafrica.net/chillwave"
+}
+},
+"5340dba1-bf4a-4e7a-92fb-b7b53c2bc089": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 128,
+"city": "Bucharest",
+"country": "RO",
+"homepage": "https://darkedge.ro/",
+"id": "5340dba1-bf4a-4e7a-92fb-b7b53c2bc089",
+"language": "",
+"logo": "https://darkedge.ro/logo.svg",
+"name": "Dark Edge Radio",
 "tags": [
-"acid jazz",
-"trip hop"
+"alternative",
+"indie"
 ],
-"url": "http://abm22.com.au:8000/CONTAINER67"
+"url": "https://stream.darkedge.ro:8002/stream/1/"
 }
 },
 "568c832b-671d-4397-b61b-b682b0d6baa7": {
@@ -704,190 +594,46 @@
 "url": "http://rainyday.radio.mynoise.net/"
 }
 },
-"5baa918a-01b6-4231-abab-9f8f9cfefb2f": {
-"since": "2026-10-18",
+"5ea09dba-c14e-4ae8-8500-1c0990994b41": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 128,
+"bitrate": 48,
 "city": "",
-"country": "IN",
-"homepage": "",
-"id": "5baa918a-01b6-4231-abab-9f8f9cfefb2f",
-"language": "punjabi",
-"logo": "",
-"name": "Gurbani Kirtan",
-"tags": [],
-"url": "https://gurbanikirtan.radioca.st/start.mp3"
-}
-},
-"5cf5a7de-1cf8-4225-91e8-58d0d0dcddc1": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "",
-"country": "NL",
-"homepage": "http://radiopehchaan.com/",
-"id": "5cf5a7de-1cf8-4225-91e8-58d0d0dcddc1",
-"language": "dutch",
-"logo": "http://radiopehchaan.com/radio_pehchaan_logo.png",
-"name": "Radio Pechaan",
-"tags": [
-"bollywood",
-"dutch",
-"hindi",
-"surinam"
-],
-"url": "http://mscp3.live-streams.nl:8050/stream"
-}
-},
-"5e56863d-b865-4803-a957-761877f686e2": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "Buenos Aires",
-"country": "AR",
-"homepage": "https://ar.radiodisney.com/",
-"id": "5e56863d-b865-4803-a957-761877f686e2",
+"country": "VE",
+"homepage": "https://costera1027fm.com/",
+"id": "5ea09dba-c14e-4ae8-8500-1c0990994b41",
 "language": "spanish",
-"logo": "https://ar.radiodisney.com/favicon.ico",
-"name": "Radio Disney (Argentina) - 94.3 FM - LRL301 - Ciudad de Buenos Aires, Argentina",
+"logo": "https://costera1027fm.com/wp-content/uploads/2021/07/faviconcostera.png",
+"name": "COSTERA 102.7 FM",
 "tags": [
-"94.3 fm",
-"américa",
-"argentina",
-"buenos aires",
-"disney"
+"bachata",
+"entretenimiento",
+"latino",
+"local radio",
+"musica romantica"
 ],
-"url": "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_ARG_BAAAC.aac"
+"url": "https://streamingned.com:7112/stream"
 }
 },
-"5e900633-27d6-4ee4-88e2-9064a6095a1f": {
-"since": "2026-10-18",
+"64b357e7-d9e9-4cb6-99b5-4cb6cef785cc": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 128,
+"bitrate": 32,
 "city": "",
-"country": "ID",
-"homepage": "http://www.girifm.com/",
-"id": "5e900633-27d6-4ee4-88e2-9064a6095a1f",
-"language": "",
-"logo": "",
-"name": "98,4 Suara Giri FM Gresik",
-"tags": [
-"misc"
-],
-"url": "http://streaming.girifm.com:8010/;stream.nsv"
-}
-},
-"5f04ff2f-ee2d-46ce-9e63-12c877150d11": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 320,
-"city": "London",
-"country": "GB",
-"homepage": "https://www.akashradio.co.uk/",
-"id": "5f04ff2f-ee2d-46ce-9e63-12c877150d11",
-"language": "punjabi",
-"logo": "https://static.wixstatic.com/media/0d1189_37acfc40875f4e0e9eb3b0d7420b85b8~mv2.jpg/v1/fill/w_140,h_154,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Hijau%20Gelap%20Modern%20Podcast%20Studio%20Logo_edited.jpg",
-"name": "Akash Radio (London)",
-"tags": [
-"asian",
-"punjabi"
-],
-"url": "http://radio.canstream.co.uk:8161/stream"
-}
-},
-"5f344328-0823-42fa-b2c5-39375543bbee": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 64,
-"city": "",
-"country": "DZ",
-"homepage": "https://my.radioalgerie.dz/ar/zamanfm",
-"id": "5f344328-0823-42fa-b2c5-39375543bbee",
-"language": "arabic",
-"logo": "https://my.radioalgerie.dz/sites/default/files/styles/d02/public/2023-06/logo_zmen_fm.png",
-"name": "Zaman FM زمان",
-"tags": [
-"news"
-],
-"url": "https://webradio2.tda.dz:8001/Zamen_64K.mp3"
-}
-},
-"61af0dc5-231f-4a47-8046-1c5d3d7581b8": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 64,
-"city": "",
-"country": "AR",
-"homepage": "https://www.antena-libre.com.ar/radioenvivo",
-"id": "61af0dc5-231f-4a47-8046-1c5d3d7581b8",
-"language": "español argentina",
-"logo": "null",
-"name": "antena libre 89.1 argentina universidad conahue",
-"tags": [
-"comunitaria",
-"noticias",
-"universitaria"
-],
-"url": "http://cdn.instream.audio:9140/stream"
-}
-},
-"6297d10b-e9a9-4f6b-8504-0aba01f646bd": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "",
-"country": "IE",
-"homepage": "https://www.ucbireland.ie/",
-"id": "6297d10b-e9a9-4f6b-8504-0aba01f646bd",
-"language": "",
-"logo": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fuk.radio.net%2Fimages%2Fbroadcasts%2F93%2F9f%2F130137%2F1%2Fc300.png&tbnid=_l8rjHnL2ip3MM&vet=12ahUKEwjBkOeNpIaBAxWBs4sKHWJKCJwQMygAegQIARA9..i&imgrefurl=https%3A%2F%2Fuk.radio.net%2Fs%2Fucbirelandworship&docid=LLoJBiNVqqetTM&w=300&h=300&q=ucbi%20worship&client=firefox-b-lm&ved=2ahUKEwjBkOeNpIaBAxWBs4sKHWJKCJwQMygAegQIARA9",
-"name": "UCBI WORSHIP",
-"tags": [
-"praise & worship"
-],
-"url": "https://stream.btsstream.com/stream/iworship"
-}
-},
-"64bb1467-2585-4454-a96f-34cfbc864d41": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 320,
-"city": "New York",
 "country": "US",
-"homepage": "https://walmradio.com/walm2",
-"id": "64bb1467-2585-4454-a96f-34cfbc864d41",
+"homepage": "https://walmradio.com/otr",
+"id": "64b357e7-d9e9-4cb6-99b5-4cb6cef785cc",
 "language": "english",
-"logo": "https://icecast.walmradio.com:8443/walm.jpg",
-"name": "WALM 2 HD",
+"logo": "https://icecast.walmradio.com:8443/otr.jpg",
+"name": "WALM - Old Time Radio Opus",
 "tags": [
-"choral",
-"christian",
-"christian music",
-"classical music",
-"hymns"
+"78",
+"78-rpm",
+"78rpm",
+"classic",
+"comedy"
 ],
-"url": "https://icecast.walmradio.com:8443/walm2"
-}
-},
-"6509a08d-1b3c-4725-8449-85024b5a64bd": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 96,
-"city": "British Columbia",
-"country": "CA",
-"homepage": "https://www.sherepunjabradio.ca/",
-"id": "6509a08d-1b3c-4725-8449-85024b5a64bd",
-"language": "english",
-"logo": "https://www.sherepunjabradio.ca/wp-content/uploads/2020/03/Shep-Logo-Final-Blue.png",
-"name": "SHER E PUNJAB AM 600",
-"tags": [
-"abbotsford",
-"punjab",
-"punjabi",
-"sher",
-"surrey"
-],
-"url": "https://ais-sa1.streamon.fm/7676_48k.aac"
+"url": "https://icecast.walmradio.com:8443/otr_opus"
 }
 },
 "685b47ed-1703-4ddd-8c72-c3ac65e1e669": {
@@ -908,104 +654,63 @@
 "url": "http://zengarden.radio.mynoise.net/"
 }
 },
-"68aba27b-fe79-4f35-a7e1-8520dd4b55a7": {
-"since": "2026-10-18",
+"68f52212-e3b0-479b-9da6-962a6c5e713d": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 128,
-"city": "Ciudad de México",
-"country": "MX",
-"homepage": "https://www.imer.mx/xeb/",
-"id": "68aba27b-fe79-4f35-a7e1-8520dd4b55a7",
-"language": "spanish",
-"logo": "",
-"name": "XEB La B grande de Mexico 1220 AM / 94.5 HD2 \"Con la Música de México\" IMER",
+"bitrate": 48,
+"city": "London, England",
+"country": "GB",
+"homepage": "https://rokitradio.com/",
+"id": "68f52212-e3b0-479b-9da6-962a6c5e713d",
+"language": "english",
+"logo": "https://rokitradio.com/images/channels/scifi.jpg",
+"name": "ROKit Radio Science Fiction",
 "tags": [
-"baladas",
-"bolero",
-"ciudad de mexico",
-"estado de mexico",
-"guerrero"
+"action",
+"drama",
+"old time radio",
+"otr",
+"radio shows"
 ],
-"url": "https://s2.mexside.net/8024/stream"
+"url": "https://streaming05.liveboxstream.uk/proxy/roksta12/stream"
 }
 },
-"6b17e3b9-a93e-43fe-8943-334027c97e0e": {
-"since": "2026-10-18",
+"69c95e05-882e-4e2e-ae6b-bf7b4bcfb450": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 126,
+"bitrate": 6144,
 "city": "",
-"country": "IN",
-"homepage": "",
-"id": "6b17e3b9-a93e-43fe-8943-334027c97e0e",
-"language": "punjabi",
-"logo": "https://radiosindia.com/images/airpunjabi.jpg",
-"name": "airpunjabi",
-"tags": [],
-"url": "https://air.pc.cdn.bitgravity.com/air/live/pbaudio138/playlist.m3u8"
-}
-},
-"6b29239e-051a-4e07-ba79-b0658e505a7f": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "",
-"country": "AU",
-"homepage": "http://radio2.sikhnet.com:8047/live",
-"id": "6b29239e-051a-4e07-ba79-b0658e505a7f",
-"language": "punjabi",
-"logo": "null",
-"name": "Guy Glenwood Sydney",
-"tags": [],
-"url": "http://radio2.sikhnet.com:8047/live"
-}
-},
-"6d4cc42b-f6c4-4e75-9ede-0ccad6b908a9": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "",
-"country": "AR",
-"homepage": "https://www.unidiversidad.com.ar/",
-"id": "6d4cc42b-f6c4-4e75-9ede-0ccad6b908a9",
-"language": "spanish",
-"logo": "",
-"name": "Radio Universidad Mendoza",
-"tags": [],
-"url": "https://fm.uncu.edu.ar/"
-}
-},
-"6d83cb72-52aa-4b26-83ee-010d44e8ad2d": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 0,
-"city": "Beijing",
-"country": "CN",
-"homepage": "https://www.rbc.cn/index.shtml",
-"id": "6d83cb72-52aa-4b26-83ee-010d44e8ad2d",
-"language": "chinese",
-"logo": "http://pic.qingting.fm/2019/0227/20190227023249.png",
-"name": "北京交通广播",
-"tags": [
-"103.9",
-"103.9 fm",
-"entertainment"
-],
-"url": "https://lhttp.qingting.fm/live/336/64k.mp3"
-}
-},
-"6e6b07e9-8fcf-4ab5-b2cb-562e07e28ce6": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "Dublin",
-"country": "IE",
-"homepage": "https://www.sunshineradio.ie/",
-"id": "6e6b07e9-8fcf-4ab5-b2cb-562e07e28ce6",
+"country": "CL",
+"homepage": "https://streaminghires.cl/",
+"id": "69c95e05-882e-4e2e-ae6b-bf7b4bcfb450",
 "language": "",
-"logo": "https://mm.aiircdn.com/529/5e1463a7c9707.png",
-"name": "Sunshine 106.8",
-"tags": [],
-"url": "https://live-bauerie.sharp-stream.com/SUN?_=808250"
+"logo": "https://ibb.co/bMfVPpZs",
+"name": "Radio Club 80",
+"tags": [
+"other"
+],
+"url": "https://stream.radioclub80.cl:8002/clasicos80.flac"
+}
+},
+"6d4127ba-cd83-45c2-90ad-57dfd90b1457": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 128,
+"city": "",
+"country": "CH",
+"homepage": "https://swissgroove.ch/",
+"id": "6d4127ba-cd83-45c2-90ad-57dfd90b1457",
+"language": "",
+"logo": "https://swissgroove.ch/favicon.ico",
+"name": "SWISS GROOVE",
+"tags": [
+"funk",
+"jazz",
+"latin",
+"lounge",
+"nu grooves"
+],
+"url": "https://relay2.swissgroove.ch/;"
 }
 },
 "6eff3484-4ab4-4d36-bf27-9172c5aac15c": {
@@ -1029,39 +734,19 @@
 "url": "https://icecast.walmradio.com:8443/christmas"
 }
 },
-"6f2cf352-e0fe-4026-892d-691c3e7b5c3f": {
-"since": "2026-10-18",
+"707f6233-7b09-4059-9b2f-453502c3761d": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 32,
+"bitrate": 128,
 "city": "",
-"country": "IN",
-"homepage": "",
-"id": "6f2cf352-e0fe-4026-892d-691c3e7b5c3f",
-"language": "punjabi",
+"country": "HR",
+"homepage": "https://happyfm.hr/",
+"id": "707f6233-7b09-4059-9b2f-453502c3761d",
+"language": "",
 "logo": "",
-"name": "Radio Punjabi Mehak",
+"name": "Happy FM - Party",
 "tags": [],
-"url": "http://stream.zenolive.com/0xsvm1nr7a5tv"
-}
-},
-"70846d7a-3de8-49cf-92ea-43795335191a": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 192,
-"city": "Arequipa",
-"country": "PE",
-"homepage": "https://radiomelodia.com.pe/",
-"id": "70846d7a-3de8-49cf-92ea-43795335191a",
-"language": "spanish",
-"logo": "https://static-media.streema.com/media/cache/aa/5b/aa5be888d41f0aa82ba13804d1ad1ab3.jpg",
-"name": "Melodia Arequipa",
-"tags": [
-"cumbia peruana",
-"local news",
-"salsa",
-"talks"
-],
-"url": "http://stream.radiomelodia.com.pe:8000/radio.mp3"
+"url": "http://c5.hostingcentar.com:8390/"
 }
 },
 "708b0757-a13b-42d5-adef-65aa6d459f7d": {
@@ -1082,41 +767,6 @@
 "url": "https://archi-us.digitalproserver.com/ritoquefm_aac"
 }
 },
-"7191f94e-a5cf-44d2-9c5b-61ce66cae854": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "",
-"country": "IN",
-"homepage": "",
-"id": "7191f94e-a5cf-44d2-9c5b-61ce66cae854",
-"language": "punjabi",
-"logo": "",
-"name": "dreamzzpunjabiradio",
-"tags": [],
-"url": "https://c7.radioboss.fm/stream/52"
-}
-},
-"729352e3-ed3d-4572-bd98-06493db514b6": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 96,
-"city": "Accra",
-"country": "GH",
-"homepage": "https://www.facebook.com/UniiqFM",
-"id": "729352e3-ed3d-4572-bd98-06493db514b6",
-"language": "english",
-"logo": "https://scontent-los4-1.xx.fbcdn.net/v/t39.30808-6/476211391_1140917558043725_5359624271353467391_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_eui2=AeEqGZgQ6-OlqrcluLfF6JbhisOaLLqCgiqKw5osuoKCKsvZ4wVITa7erhL1o64IcUUex8BdeVtSyPV4h1KIK9Ct&_nc_ohc=VfPfNOrJgIAQ7kNvwHoFeiC&_nc_oc=AdpN0f3NC0134TMKoSGlMclopwB1quLcka2MqaqpzxSzIk-fBpsocx9BidMbKbGHIzLTUlfYjUnaky7OT2NkCFoQ&_nc_zt=23&_nc_ht=scontent-los4-1.xx&_nc_gid=PkPsf4Ld7h1MITeA3Vi7Bw&_nc_ss=7b2a8&oh=00_Af9QWdBIutyG-YWrFHsvP0x41AmCffVzxCuRDuGoa2hFmQ&oe=6A25EB56",
-"name": "GBC Uniiq 95.7FM",
-"tags": [
-"accra",
-"ghana",
-"mrcrosby",
-"news talk sports"
-],
-"url": "https://mediagh.us:2000/stream/uniiqfm"
-}
-},
 "730d9f95-57a3-4eec-94a2-ed270baa64c8": {
 "since": "2026-10-18",
 "station": {
@@ -1132,138 +782,116 @@
 "url": "https://minimw.imbc.com/dmfm/_definst_/mfm.stream/playlist.m3u8?_lsu_sa_=6CB1331AC3D939342F48E5F83B412B41B50B3265A40D62C43F7060a4462C3606D3a1B34C37523C44E0153D0100bDD19DE7CA20BC7874766A676459ED88440440D34C4FCD7495ED0932CD12CEE53E3967B503DFF365D07AFC15D9BA4FACD1D1BEC24033984AFD65B155158BA42B4B6CAD"
 }
 },
-"74817f73-69ae-11e8-b15b-52543be04c81": {
-"since": "2026-10-18",
+"78ffd9e4-5ff7-11e8-b15b-52543be04c81": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 24,
-"city": "Punjab",
-"country": "IN",
-"homepage": "https://www.sikhnet.com/radio",
-"id": "74817f73-69ae-11e8-b15b-52543be04c81",
-"language": "punjabi",
-"logo": "https://www.sikhnet.com/files/styles/social-sharing/public/icons/logos/sikhnet-logo-wide-social-share.jpg?itok=5vgOhuyx",
-"name": "Sikhnet Radio",
-"tags": [],
-"url": "http://radio2.sikhnet.com:8010/stream"
-}
-},
-"753394b9-f6ee-47fc-be25-7de91c19295b": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "Ontario",
-"country": "CA",
-"homepage": "http://www.eastfm.ca/",
-"id": "753394b9-f6ee-47fc-be25-7de91c19295b",
-"language": "+7 languages",
-"logo": "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/CJRK_EastFM102.7_logo.png/220px-CJRK_EastFM102.7_logo.png",
-"name": "CJRK-FM 102.7 \"East FM\" Toronto, ON",
+"bitrate": 88,
+"city": "Lausanne",
+"country": "CH",
+"homepage": "http://programmesradio.rts.ch/couleur3",
+"id": "78ffd9e4-5ff7-11e8-b15b-52543be04c81",
+"language": "french",
+"logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Couleur_3_logo.svg/1200px-Couleur_3_logo.svg.png",
+"name": "Couleur3",
 "tags": [
-"multicultural",
-"multilingual"
+"indie",
+"pop",
+"rock"
 ],
-"url": "https://centova.radioservers.biz/proxy/eastfmc1/stream"
+"url": "http://stream.srg-ssr.ch/m/couleur3/aacp_96"
 }
 },
-"78da01c7-0a2a-11ea-a87e-52543be04c81": {
-"since": "2026-10-18",
+"7e6c07b7-c7d7-4d16-9ee9-a0964b159901": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 64,
-"city": "California",
-"country": "US",
-"homepage": "http://desiworldradio.com/",
-"id": "78da01c7-0a2a-11ea-a87e-52543be04c81",
-"language": "punjabi",
-"logo": "",
-"name": "desi world radio (USA)",
-"tags": [],
-"url": "https://stream.zeno.fm/4mbfcn4mf24tv"
-}
-},
-"7b132f6c-9097-4f85-9682-1de87d38d946": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 64,
-"city": "Guadalajara",
+"bitrate": 48,
+"city": "Ciudad de México",
 "country": "MX",
-"homepage": "https://www.notisistema.com/",
-"id": "7b132f6c-9097-4f85-9682-1de87d38d946",
-"language": "",
-"logo": "",
-"name": "Radio Metrópoli – XEAD-AM",
+"homepage": "https://www.stereorey.com/",
+"id": "7e6c07b7-c7d7-4d16-9ee9-a0964b159901",
+"language": "spanish",
+"logo": "https://cdn-radiotime-logos.tunein.com/s220691d.png",
+"name": "STEREOREY: La Máxima Dimensión del Radio",
 "tags": [
-"entrevistas",
-"news",
-"noticias"
+"all-time-classics",
+"américa",
+"baladas en inglés",
+"cdmx",
+"ciudad de méxico"
 ],
-"url": "https://s2.yesstreaming.net:9088/stream"
+"url": "https://playerservices.streamtheworld.com/api/livestream-redirect/STEREOREYAAC.aac"
 }
 },
-"7cc21bae-ae92-47c8-8a7e-b87d87e48f29": {
-"since": "2026-10-18",
+"7efe33cf-f29b-411b-9f3d-6a50d38dcbd0": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
-"city": "West Midlands",
-"country": "GB",
-"homepage": "https://gulshanradio.co.uk/",
-"id": "7cc21bae-ae92-47c8-8a7e-b87d87e48f29",
+"city": "",
+"country": "UG",
+"homepage": "http://ais-sa2.cdnstream1.com/2365_128.mp3",
+"id": "7efe33cf-f29b-411b-9f3d-6a50d38dcbd0",
 "language": "english",
-"logo": "https://gulshanradio.co.uk/GulshanRadio-UPDATE3-03(1).png",
-"name": "Gulshan Radio",
+"logo": "https://firebasestorage.googleapis.com/v0/b/radiogalaxy-580f4.appspot.com/o/images%2FIMG_20240317_035102736.jpg?alt=media&token=1413f958-9b3e-4d6d-b611-2a190957ed0d",
+"name": "Country Music",
 "tags": [
-"asian",
-"community radio"
+"country music"
 ],
-"url": "http://s3.voscast.com:11510/;.mp3"
+"url": "http://ais-sa2.cdnstream1.com/2365_128.mp3"
 }
 },
-"829fd981-fee1-4771-a488-2b932fa62509": {
-"since": "2026-10-18",
+"80b8d79b-38bf-4c17-b8f8-bee9a4fa3bf9": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 64,
+"bitrate": 128,
+"city": "Sydney NSW",
+"country": "AU",
+"homepage": "http://www.australiandigitalradio.com/",
+"id": "80b8d79b-38bf-4c17-b8f8-bee9a4fa3bf9",
+"language": "english",
+"logo": "http://www.australiandigitalradio.com/favicon.ico",
+"name": "Australian Digital Radio Network - Pink Floyd (MP3)",
+"tags": [
+"pink floyd"
+],
+"url": "http://abm21.com.au:8000/CONTAINER148"
+}
+},
+"85600c22-79dd-465a-873a-bda637f95a8b": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 128,
 "city": "",
-"country": "AF",
-"homepage": "",
-"id": "829fd981-fee1-4771-a488-2b932fa62509",
+"country": "CN",
+"homepage": "https://chinesemusicworld.com/",
+"id": "85600c22-79dd-465a-873a-bda637f95a8b",
 "language": "",
-"logo": "",
-"name": "MEGASTAR FM",
+"logo": "https://i.imgur.com/z9wfFZW.png",
+"name": "Chinese Music World",
 "tags": [
-"classical"
+"folk"
 ],
-"url": "https://megastar-cope.flumotion.com/playlist.m3u8"
+"url": "https://radio.chinesemusicworld.com/chinesemusic.mp3"
 }
 },
-"85166474-fa4a-4063-acd2-4990c1644810": {
-"since": "2026-10-18",
+"87aa35fa-37b4-47bf-bb10-bceeb024a7d3": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 64,
-"city": "Uusimaa",
-"country": "FI",
-"homepage": "https://radioplay.fi/radio-nova",
-"id": "85166474-fa4a-4063-acd2-4990c1644810",
-"language": "finnish",
-"logo": "https://assets.planetradio.co.uk/img/ConfigLockScreenImageUrl/254.jpg",
-"name": "Radio Nova",
-"tags": [
-"pop"
-],
-"url": "https://stream-redirect.bauermedia.fi/radionova/radionova_64.aac?aw_0_1st.bauer_loggedin=false&aw_0_1st.playerid=BMUK_tunein"
-}
-},
-"897fbd40-69af-11e8-b15b-52543be04c81": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 96,
+"bitrate": 128,
 "city": "",
-"country": "US",
-"homepage": "http://punjabiradiousa.com/",
-"id": "897fbd40-69af-11e8-b15b-52543be04c81",
-"language": "punjabi",
-"logo": "",
-"name": "Radio Punjabi USA",
-"tags": [],
-"url": "http://s2.voscast.com:7016/"
+"country": "ES",
+"homepage": "http://radionature.weebly.com/",
+"id": "87aa35fa-37b4-47bf-bb10-bceeb024a7d3",
+"language": "",
+"logo": "https://www.radio.pl/300/radionature.png",
+"name": "Radio Nature",
+"tags": [
+"ambient",
+"chill",
+"meditation",
+"nature",
+"relax"
+],
+"url": "https://stream.zeno.fm/3ac97ysh6f0uv.aac"
 }
 },
 "8bf0d36b-ed07-4ccd-8142-4a2c59400fbe": {
@@ -1283,21 +911,36 @@
 "url": "http://wowccm.iptime.org:8000/stream/1/"
 }
 },
-"8f3323ed-ed03-48e4-8cac-d5956096feb7": {
-"since": "2026-10-18",
+"8c0a5e3f-1c20-41be-9f81-efc3270b7b2c": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 128,
+"bitrate": 64,
 "city": "",
-"country": "AU",
-"homepage": "http://radio2.sikhnet.com:8047/live",
-"id": "8f3323ed-ed03-48e4-8cac-d5956096feb7",
-"language": "punjabi",
-"logo": "null",
-"name": "Glenwood Gurudwara Live Sydney Australia",
+"country": "ZA",
+"homepage": "https://rt1485.com/",
+"id": "8c0a5e3f-1c20-41be-9f81-efc3270b7b2c",
+"language": "english",
+"logo": "https://rt1485.com/wp-content/uploads/2020/06/RTH-Logo01-W.png",
+"name": "Radio Today",
 "tags": [
-"sikh religion"
+"old time radio"
 ],
-"url": "http://radio2.sikhnet.com:8047/live"
+"url": "https://rt1485.out.airtime.pro/rt1485_b"
+}
+},
+"8d506cea-1979-4732-8cd5-a493d13cee72": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 192,
+"city": "",
+"country": "HU",
+"homepage": "https://klasszikradio.hu/",
+"id": "8d506cea-1979-4732-8cd5-a493d13cee72",
+"language": "",
+"logo": "https://klasszikradio.hu/wp-content/uploads/2023/03/cropped-klassziklogo-01-e1680102856142.png",
+"name": "Klasszik Rádió 92.1",
+"tags": [],
+"url": "https://radio.musorok.org/listen/klasszik/radio.mp3"
 }
 },
 "8f6a0b47-7be2-11e9-aa30-52543be04c81": {
@@ -1315,105 +958,58 @@
 "url": "https://minimw.imbc.com/dmfm/_definst_/mfm.stream/playlist.m3u8?_lsu_sa_=6A01E51233A93174BE43A5BC31713C4C65193C05A403F2673F9069a836AC37F69Da1337F33F2864720D937A118b8C114A7AE89C9FD4A1A75CD22C8BD2C45774AC19C0B1B982899642A72669FCEBFA488C566152CAE37304420EC9E457B13542A79CD5F420452D820265BD377F9B91AB8"
 }
 },
-"9189d106-620f-46d9-b539-0902af971a68": {
-"since": "2026-10-18",
+"94495c5b-9f3e-4f90-a7fc-bc2ef1c8e383": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 96,
+"bitrate": 64,
 "city": "",
-"country": "GB",
-"homepage": "https://panjabradio.co.uk/",
-"id": "9189d106-620f-46d9-b539-0902af971a68",
-"language": "english",
-"logo": "https://www.panjabradio.co.uk/wp-content/uploads/2021/03/pr-flag-244x248-1-150x150.png",
-"name": "Panjab Radio London",
-"tags": [],
-"url": "http://s1.voscast.com:7918/stream"
-}
-},
-"92a31eea-e951-480b-a38d-27273a37b2ba": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 96,
-"city": "",
-"country": "IN",
-"homepage": "https://live.sgpc.net:8443/;nocache=889869",
-"id": "92a31eea-e951-480b-a38d-27273a37b2ba",
-"language": "punjabi",
-"logo": "",
-"name": "Live Kirtan Sri Harmandir Sahib",
+"country": "UG",
+"homepage": "https://www.akaboozi.fm/",
+"id": "94495c5b-9f3e-4f90-a7fc-bc2ef1c8e383",
+"language": "luganda",
+"logo": "null",
+"name": "87.9 Kaboozi Fm",
 "tags": [
-"religious"
+"rock"
 ],
-"url": "https://live.sgpc.net:8443/;nocache=889869"
+"url": "http://162.244.80.52:8732/stream.mp3"
 }
 },
-"947d864c-a9da-44eb-81ac-2f5d377e993d": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 96,
-"city": "",
-"country": "IN",
-"homepage": "",
-"id": "947d864c-a9da-44eb-81ac-2f5d377e993d",
-"language": "punjabi",
-"logo": "https://onlineradiohub.com/wp-content/uploads/2022/01/radio-punjabi-virsa.jpg",
-"name": "Radio Punjabi Virsa",
-"tags": [],
-"url": "https://node-15.zeno.fm/vpak30btzwzuv"
-}
-},
-"952aac3d-e5df-4799-8866-bb9caa6ee9d3": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "",
-"country": "IN",
-"homepage": "",
-"id": "952aac3d-e5df-4799-8866-bb9caa6ee9d3",
-"language": "punjabi",
-"logo": "https://onlineradiohub.com/wp-content/uploads/2022/01/akash-radio-leeds.jpg",
-"name": "Akash Radio leeds",
-"tags": [],
-"url": "https://c2.radioboss.fm:8276/stream"
-}
-},
-"96077079-0601-11e8-ae97-52543be04c81": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "Bern",
-"country": "CH",
-"homepage": "http://www.radioswissclassic.ch/",
-"id": "96077079-0601-11e8-ae97-52543be04c81",
-"language": "german",
-"logo": "",
-"name": "Radio Swiss Classic German",
-"tags": [
-"classical",
-"public radio",
-"srg ssr"
-],
-"url": "http://stream.srg-ssr.ch/m/rsc_de/mp3_128"
-}
-},
-"960bbed9-0601-11e8-ae97-52543be04c81": {
-"since": "2026-10-18",
+"9607cdda-0601-11e8-ae97-52543be04c81": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
 "city": "",
 "country": "CH",
-"homepage": "http://www.srf.ch/radio-srf-2-kultur",
-"id": "960bbed9-0601-11e8-ae97-52543be04c81",
-"language": "german",
-"logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Radio_SRF_2_Kultur.svg/155px-Radio_SRF_2_Kultur.svg.png",
-"name": "SRF 2",
+"homepage": "http://www.couleur3.ch/",
+"id": "9607cdda-0601-11e8-ae97-52543be04c81",
+"language": "french",
+"logo": "",
+"name": "RTS Couleur 3",
 "tags": [
-"culture",
-"kultur",
+"public radio",
+"rock",
+"srg ssr"
+],
+"url": "http://stream.srg-ssr.ch/m/couleur3/mp3_128"
+}
+},
+"9608efd5-0601-11e8-ae97-52543be04c81": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 128,
+"city": "",
+"country": "CH",
+"homepage": "http://www.rts.ch/la-1ere/",
+"id": "9608efd5-0601-11e8-ae97-52543be04c81",
+"language": "french",
+"logo": "https://www.rts.ch/hbv7/static/images/favicon/rts/152x152.png",
+"name": "RTS La Première",
+"tags": [
 "public radio",
 "srg ssr"
 ],
-"url": "http://stream.srg-ssr.ch/srgssr/srf2/mp3/128"
+"url": "http://stream.srg-ssr.ch/m/la-1ere/mp3_128"
 }
 },
 "960dae40-0601-11e8-ae97-52543be04c81": {
@@ -1436,38 +1032,41 @@
 "url": "http://stream.srg-ssr.ch/srgssr/srfmw/mp3/128"
 }
 },
-"960f5583-0601-11e8-ae97-52543be04c81": {
-"since": "2026-10-18",
+"960e57c5-0601-11e8-ae97-52543be04c81": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
 "city": "",
-"country": "DK",
-"homepage": "http://www.dr.dk/p4nord",
-"id": "960f5583-0601-11e8-ae97-52543be04c81",
-"language": "danish",
-"logo": "http://www.dr.dk/favicon.ico",
-"name": "DR P4 Nordjylland",
+"country": "CH",
+"homepage": "http://ww.srf.ch/radio-srf-1",
+"id": "960e57c5-0601-11e8-ae97-52543be04c81",
+"language": "german",
+"logo": "",
+"name": "SRF 1",
 "tags": [
-"regional radio"
+"public radio",
+"srg ssr"
 ],
-"url": "http://live-icy.dr.dk/A/A10H.mp3"
+"url": "http://stream.srg-ssr.ch/m/drs1/mp3_128"
 }
 },
-"96157e6f-0601-11e8-ae97-52543be04c81": {
-"since": "2026-10-18",
+"960ed987-0601-11e8-ae97-52543be04c81": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 224,
+"bitrate": 128,
 "city": "",
-"country": "IE",
-"homepage": "http://www.raidionalife.ie/",
-"id": "96157e6f-0601-11e8-ae97-52543be04c81",
-"language": "irish",
-"logo": "https://www.raidionalife.ie/wp-content/uploads/cropped-favicon-180x180.png",
-"name": "Raidió na Life",
+"country": "CH",
+"homepage": "http://www.srf.ch/radio-srf-4-news",
+"id": "960ed987-0601-11e8-ae97-52543be04c81",
+"language": "german",
+"logo": "http://www.srf.ch/var/storage/assets/webpack/favicons/srf-apple-touch-icon.png",
+"name": "SRF 4 News",
 "tags": [
-"community"
+"news",
+"public radio",
+"srg ssr"
 ],
-"url": "http://beryl.streamguys.com:5010/live"
+"url": "http://stream.srg-ssr.ch/m/drs4news/mp3_128"
 }
 },
 "9617b9cb-0601-11e8-ae97-52543be04c81": {
@@ -1505,41 +1104,42 @@
 "url": "http://latinasalsa.ice.infomaniak.ch/latinasalsa.mp3"
 }
 },
-"9618e6cb-0601-11e8-ae97-52543be04c81": {
-"since": "2026-10-18",
+"96195c13-0601-11e8-ae97-52543be04c81": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
-"city": "Santarém",
-"country": "PT",
-"homepage": "http://www.hiper.fm/",
-"id": "9618e6cb-0601-11e8-ae97-52543be04c81",
-"language": "portuguese",
-"logo": "http://www.hiper.fm/apple-touch-icon.png?v=qaqbm5nz6j",
-"name": "Hiper FM",
+"city": "",
+"country": "CH",
+"homepage": "http://www.srf.ch/radio-srf-1",
+"id": "96195c13-0601-11e8-ae97-52543be04c81",
+"language": "german",
+"logo": "",
+"name": "Radio SRF 1 Regionaljournal Zürich, Schaffhausen",
 "tags": [
-"electro",
-"pop",
-"top 40"
+"local news",
+"news",
+"public radio"
 ],
-"url": "http://195.23.85.126:9500/;"
+"url": "http://stream.srg-ssr.ch/m/regi_zh_sh/mp3_128"
 }
 },
-"9619fd8c-0601-11e8-ae97-52543be04c81": {
-"since": "2026-10-18",
+"961ac56b-0601-11e8-ae97-52543be04c81": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 0,
-"city": "Pretoria",
-"country": "ZA",
-"homepage": "http://www.tuksfm.co.za/",
-"id": "9619fd8c-0601-11e8-ae97-52543be04c81",
-"language": "english",
+"bitrate": 128,
+"city": "Bern",
+"country": "CH",
+"homepage": "http://www.radioswissjazz.ch/",
+"id": "961ac56b-0601-11e8-ae97-52543be04c81",
+"language": "",
 "logo": "",
-"name": "Tuks FM",
+"name": "Radio Swiss Jazz",
 "tags": [
-"alternative",
-"rock"
+"jazz",
+"public radio",
+"srg ssr"
 ],
-"url": "http://edge.iono.fm/xice/tuksfm_live_medium.aac"
+"url": "http://stream.srg-ssr.ch/m/rsj/mp3_128"
 }
 },
 "961f1da4-0601-11e8-ae97-52543be04c81": {
@@ -1561,6 +1161,27 @@
 "url": "http://stream.srg-ssr.ch/m/drs3/mp3_128"
 }
 },
+"962103f8-0601-11e8-ae97-52543be04c81": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 57,
+"city": "Alberta",
+"country": "CA",
+"homepage": "http://www.newstalk770.com/",
+"id": "962103f8-0601-11e8-ae97-52543be04c81",
+"language": "english",
+"logo": "https://globalnews.ca/wp-content/themes/shaw-globalnews/_img/pwa/news_square-144.png",
+"name": "CHQR 770 (Calgary, AB)",
+"tags": [
+"calgary",
+"information",
+"local news",
+"news",
+"news talk"
+],
+"url": "http://live.leanstream.co/CHQRAM"
+}
+},
 "9622b8e0-0601-11e8-ae97-52543be04c81": {
 "since": "2026-10-18",
 "station": {
@@ -1580,127 +1201,78 @@
 "url": "http://stream.radiojar.com/kokkino-ath.mp3"
 }
 },
-"9624977c-0601-11e8-ae97-52543be04c81": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "Illinois",
-"country": "US",
-"homepage": "https://channpardesi.com/",
-"id": "9624977c-0601-11e8-ae97-52543be04c81",
-"language": "punjabi",
-"logo": "http://channpardesi.com/wp-content/uploads/2015/08/ic_launcher.png",
-"name": "Radio Chann Pardesi",
-"tags": [
-"chann",
-"desi",
-"pardesi",
-"punjabi"
-],
-"url": "http://mehramedia.com:8021/;"
-}
-},
-"96286c14-0601-11e8-ae97-52543be04c81": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "Lombardia",
-"country": "IT",
-"homepage": "http://www.radiomontecarlo.net/",
-"id": "96286c14-0601-11e8-ae97-52543be04c81",
-"language": "italian",
-"logo": "",
-"name": "RMC 90",
-"tags": [
-"90s",
-"mediaset"
-],
-"url": "http://edge.radiomontecarlo.net/rmcweb009"
-}
-},
-"962dac19-0601-11e8-ae97-52543be04c81": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "Quillota",
-"country": "CL",
-"homepage": "http://www.radiocarnaval.cl/",
-"id": "962dac19-0601-11e8-ae97-52543be04c81",
-"language": "spanish",
-"logo": "https://www.radiocarnaval.cl/wp-content/uploads/2019/10/favicon-webcarnaval.png",
-"name": "Carnaval Quillota",
-"tags": [
-"cumbia"
-],
-"url": "http://sonando.us.digitalproserver.com/carnaval_quillota.aac"
-}
-},
-"962ed0ef-0601-11e8-ae97-52543be04c81": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "Ontario",
-"country": "CA",
-"homepage": "https://www.calmradio.com/",
-"id": "962ed0ef-0601-11e8-ae97-52543be04c81",
-"language": "english",
-"logo": "https://calmradio.com/templates/calmradio/favicons/apple-touch-icon.png",
-"name": "Calm Radio - Vivaldi",
-"tags": [
-"classical",
-"vivaldi"
-],
-"url": "http://streams.calmradio.com:8928/stream"
-}
-},
-"9647ec96-0601-11e8-ae97-52543be04c81": {
-"since": "2026-10-18",
+"964963c1-0601-11e8-ae97-52543be04c81": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
 "city": "",
-"country": "CZ",
-"homepage": "http://www.classicpraha.cz/",
-"id": "9647ec96-0601-11e8-ae97-52543be04c81",
-"language": "czech",
-"logo": "http://www.classicpraha.cz/static/images/favicon.ico",
-"name": "Classic Praha",
+"country": "CH",
+"homepage": "https://www.srf.ch/radio-srf-1/",
+"id": "964963c1-0601-11e8-ae97-52543be04c81",
+"language": "german",
+"logo": "https://www.srf.ch/var/storage/assets/webpack/favicons/srf-apple-touch-icon.png",
+"name": "Radio SRF 1 Regionaljournal Ostschweiz",
+"tags": [
+"local news",
+"news",
+"public radio"
+],
+"url": "http://stream.srg-ssr.ch/m/regi_ost/mp3_128"
+}
+},
+"964a1754-0601-11e8-ae97-52543be04c81": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 96,
+"city": "Bern",
+"country": "CH",
+"homepage": "http://www.radioswissclassic.ch/",
+"id": "964a1754-0601-11e8-ae97-52543be04c81",
+"language": "french",
+"logo": "",
+"name": "Radio Swiss Classic French",
+"tags": [
+"classical",
+"french",
+"srg ssr"
+],
+"url": "http://stream.srg-ssr.ch/srgssr/rsc_fr/aac/96"
+}
+},
+"96feee92-485f-4f55-ac86-4f398f148fdc": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 36,
+"city": "",
+"country": "RS",
+"homepage": "https://www.radios.rs/digitalni-radio/10/ex-yu",
+"id": "96feee92-485f-4f55-ac86-4f398f148fdc",
+"language": "serbian",
+"logo": "https://www.radios.rs/media/PNG%20LOGOS/Crna-pozadina-Ex-Yu-Rock-350x350px.png",
+"name": "Radio S EX YU",
+"tags": [
+"bosnia",
+"croatia",
+"evergreen",
+"ex-yu",
+"macedonia"
+],
+"url": "https://stream.radios.rs:9042/stream"
+}
+},
+"98152a6d-9a3d-46d7-8019-c8c03f29be38": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 160,
+"city": "",
+"country": "PL",
+"homepage": "http://www.radio.bialystok.pl/",
+"id": "98152a6d-9a3d-46d7-8019-c8c03f29be38",
+"language": "polish",
+"logo": "http://www.radio.bialystok.pl/favicon.ico",
+"name": "Polskie Radio Bialystok",
 "tags": [],
-"url": "http://icecast8.play.cz/classic128.mp3"
-}
-},
-"964fb9c9-0601-11e8-ae97-52543be04c81": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 48,
-"city": "New South Wales",
-"country": "AU",
-"homepage": "https://www.smooth.com.au/smooth",
-"id": "964fb9c9-0601-11e8-ae97-52543be04c81",
-"language": "english",
-"logo": "https://d2nzqyyfd6k6c7.cloudfront.net/favicon_2.ico",
-"name": "Smooth FM 95.3",
-"tags": [
-"commercial",
-"easy listening"
-],
-"url": "http://playerservices.streamtheworld.com/api/livestream-redirect/SMOOTH953_AAC48.aac?src=neweb"
-}
-},
-"96d381f7-69ac-11e8-b15b-52543be04c81": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 64,
-"city": "Alberta",
-"country": "CA",
-"homepage": "http://khalsafm.com/",
-"id": "96d381f7-69ac-11e8-b15b-52543be04c81",
-"language": "punjabi",
-"logo": "http://khalsafm.com/favicon.ico",
-"name": "Khalsa FM",
-"tags": [
-"gurbani"
-],
-"url": "http://198.178.123.8:7798/;stream.mp3"
+"url": "http://stream4.nadaje.com:15476/radiobialystok"
 }
 },
 "9be45c80-d20b-4ae5-a6cb-0ac53856086f": {
@@ -1720,276 +1292,174 @@
 "url": "https://stream.zenolive.com/gzudz59nz9duv"
 }
 },
-"9c69a400-cc27-4d7f-9c37-389e446b10f0": {
-"since": "2026-10-18",
+"9eacd0ad-c01c-4bd4-8f9b-65e3a9db23f5": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 80,
-"city": "Auckland",
-"country": "NZ",
-"homepage": "http://retrohitradio.co.nz/",
-"id": "9c69a400-cc27-4d7f-9c37-389e446b10f0",
-"language": "",
-"logo": "http://retrohitradio.co.nz/favicon.ico",
-"name": "Retro Hit Radio",
-"tags": [
-"1980s",
-"1990s",
-"adult hits",
-"classic hits",
-"pop rock"
-],
-"url": "https://riphel02.radioca.st/;"
-}
-},
-"9fa0214e-ecb3-46fa-bfaf-bafa8b7adb62": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 320,
+"bitrate": 0,
 "city": "",
-"country": "IN",
-"homepage": "",
-"id": "9fa0214e-ecb3-46fa-bfaf-bafa8b7adb62",
-"language": "punjabi",
-"logo": "https://onlineradiohub.com/wp-content/uploads/2022/01/brit-asia-radio-punjabi.jpg",
-"name": "BritAsia Radio Punjabi",
-"tags": [],
-"url": "https://s4.radio.co/sfefce156f/listen"
-}
-},
-"a1a7045e-dd95-4e7b-999c-d0352aad4ef3": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 64,
-"city": "",
-"country": "PH",
-"homepage": "http://www.yesthebest.com.ph/dagupan/",
-"id": "a1a7045e-dd95-4e7b-999c-d0352aad4ef3",
-"language": "",
-"logo": "http://www.yesthebest.com.ph/apple-touch-icon.png",
-"name": "Yes The Best Dagupan",
-"tags": [],
-"url": "http://yesfmdagupan.radioca.st:10300/stream"
-}
-},
-"a44e9b2b-ed6f-4245-862e-bc701da97fdb": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 256,
-"city": "Queensland",
-"country": "AU",
-"homepage": "https://www.systrum.net/",
-"id": "a44e9b2b-ed6f-4245-862e-bc701da97fdb",
+"country": "UG",
+"homepage": "https://www.livescore.cz/",
+"id": "9eacd0ad-c01c-4bd4-8f9b-65e3a9db23f5",
 "language": "english",
-"logo": "",
-"name": "Systrum Sistum - SSR2",
+"logo": "https://static.flashscore.com/res/_fs/image/4_favicons/_mobi/touch-icon-180x180.png?v=8",
+"name": "NBC NEWS RADIO",
 "tags": [
-"electro",
-"electronica",
-"idm",
-"techno"
+"🌎🌎🌎"
 ],
-"url": "https://systrum.net:8443/SSR2"
+"url": "http://stream.revma.ihrhls.com/zc6043"
 }
 },
-"a5700462-a3ba-47d1-835f-c72bc2ef81e7": {
-"since": "2026-10-18",
+"9f756e2d-8e9b-45f5-8fc1-61573e23036b": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
-"city": "Zuid-Holland, Den Haag",
-"country": "NL",
-"homepage": "https://www.radiosangam.nl/",
-"id": "a5700462-a3ba-47d1-835f-c72bc2ef81e7",
-"language": "dutch",
-"logo": "https://www.radiosangam.nl/wp-content/uploads/2016/02/260pxlogo.png",
-"name": "Radio Sangam",
-"tags": [
-"bollywood",
-"dutch",
-"hindi",
-"surinam"
-],
-"url": "https://mediaserv68.live-streams.nl:8067/stream"
-}
-},
-"a7683a1d-462c-4fa8-8ea1-e61c597371ed": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 192,
-"city": "Dublin",
-"country": "IE",
-"homepage": "https://www.phever.ie/",
-"id": "a7683a1d-462c-4fa8-8ea1-e61c597371ed",
-"language": "english",
-"logo": "",
-"name": "Phever Dublin",
+"city": "",
+"country": "FR",
+"homepage": "https://www.funradio.fr/",
+"id": "9f756e2d-8e9b-45f5-8fc1-61573e23036b",
+"language": "french",
+"logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Logo_Fun_Radio_%282021%29.svg/langfr-1280px-Logo_Fun_Radio_%282021%29.svg.png",
+"name": "FUN Radio",
 "tags": [
 "dance",
-"house",
-"techno"
+"electro",
+"latino"
 ],
-"url": "http://uk1.internet-radio.com:8200/live"
+"url": "http://icecast.funradio.fr/fun-1-44-128"
 }
 },
-"a7989b64-675c-46d0-9597-78f5e70450c9": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "Sachsen",
-"country": "DZ",
-"homepage": "https://www.hitradio-rtl.de/",
-"id": "a7989b64-675c-46d0-9597-78f5e70450c9",
-"language": "deutch",
-"logo": "",
-"name": "Hitradio RTL Chemnitz",
-"tags": [],
-"url": "https://web.radio.hitradio-rtl.de/hrrtl-chemnitz/stream/mp3?aggregator=direktlink"
-}
-},
-"a8172760-2b84-422f-abb9-8582971a5143": {
-"since": "2026-10-18",
+"a6a965ab-d9ab-4e56-8aef-99b52829743f": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
 "city": "",
-"country": "GB",
-"homepage": "http://radiocentral24.com/",
-"id": "a8172760-2b84-422f-abb9-8582971a5143",
-"language": "english",
-"logo": "http://radiocentral24.com/assets/images/transparent-121x64.png",
-"name": "Radio Central 24",
-"tags": [
-"bhangra",
-"bollywood"
-],
-"url": "http://138.201.52.248:8459/stream"
-}
-},
-"a8cefe0a-0dfa-11e9-a80b-52543be04c81": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "Buenos Aires",
 "country": "AR",
-"homepage": "https://radio2.com.ar/",
-"id": "a8cefe0a-0dfa-11e9-a80b-52543be04c81",
-"language": "spanish",
-"logo": "https://radio2.com.ar/apple-icon-120x120.png",
-"name": "Radio 2",
-"tags": [
-"easy listening",
-"news",
-"roadtrip",
-"services",
-"tourism"
-],
-"url": "https://cdn.instream.audio/:9056/stream?_=1680ada412b"
-}
-},
-"ab9e3dda-fecd-4e58-8b08-9aeda7ea65b0": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 48,
-"city": "Ciudad de México",
-"country": "MX",
-"homepage": "https://www.iheart.com/live/la-comadre-pa-que-duela-8046/",
-"id": "ab9e3dda-fecd-4e58-8b08-9aeda7ea65b0",
-"language": "spanish",
-"logo": "https://www.iheart.com/favicon.ico",
-"name": "La Comadre Pa Que Duela (iHeart Radio) - Online - ACIR Online / iHeart Radio - Ciudad de México",
-"tags": [
-"acir",
-"acir online",
-"banda",
-"banda norteña",
-"banda tradicional"
-],
-"url": "https://playerservices.streamtheworld.com/api/livestream-redirect/ACIR05_s01AAC.aac"
-}
-},
-"af6b817a-2eda-4276-aaf0-9b010890ee40": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "",
-"country": "CL",
-"homepage": "https://www.codigometal.cl/",
-"id": "af6b817a-2eda-4276-aaf0-9b010890ee40",
+"homepage": "http://radiodisney.disneylatino.com/argentina",
+"id": "a6a965ab-d9ab-4e56-8aef-99b52829743f",
 "language": "",
 "logo": "",
-"name": "Código Metal Radio",
-"tags": [
-"metal"
-],
-"url": "https://streaming.viphosting.cl/8012/stream"
+"name": "Radio Disney Argentina 94.3. Ciudad de Buenos Aires",
+"tags": [],
+"url": "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_ARG_BA.mp3"
 }
 },
-"b1701098-8044-4c86-bb46-881c2a0ce1bd": {
-"since": "2026-10-18",
+"a7e5cb12-70fb-40c7-b8d5-172f94aea2b1": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 64,
-"city": "Quezon City",
+"city": "Tacloban",
 "country": "PH",
-"homepage": "https://allradio1035.com.ph/",
-"id": "b1701098-8044-4c86-bb46-881c2a0ce1bd",
-"language": "english",
-"logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz1ERZBjCdStxOc4uCDvwgRa780ElW2hkU1icaaJSa6w&s=10",
-"name": "ABS-CBN All Radio 101.9 FM",
-"tags": [
-"news",
-"talk"
-],
-"url": "http://209.126.124.126:8872/stream"
+"homepage": "https://dreamradiotacloban.weebly.com/",
+"id": "a7e5cb12-70fb-40c7-b8d5-172f94aea2b1",
+"language": "",
+"logo": "https://dreamradiotacloban.weebly.com/uploads/1/4/0/1/140104418/profile-picture-dream-radio-transparent_orig.png",
+"name": "Dream Radio Tacloban",
+"tags": [],
+"url": "http://streamnavs.net:8133/live"
 }
 },
-"b35104c4-a3a3-4600-9f3b-7fbafa4ba7c4": {
-"since": "2026-10-18",
+"a854e4eb-78b0-4b48-a7d2-c20845da886c": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 320,
+"city": "Kiev",
+"country": "UA",
+"homepage": "https://loungefm.com.ua/chill",
+"id": "a854e4eb-78b0-4b48-a7d2-c20845da886c",
+"language": "ukrainian",
+"logo": "https://loungefm.com.ua/img/icon-144x144.png",
+"name": "LoungeFm Chill Out",
+"tags": [
+"chillout",
+"chillout+lounge"
+],
+"url": "https://cast.mediaonline.net.ua/chillout320"
+}
+},
+"a93119fc-0295-464c-ac42-367eb8415773": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 32,
 "city": "",
-"country": "IN",
-"homepage": "",
-"id": "b35104c4-a3a3-4600-9f3b-7fbafa4ba7c4",
-"language": "punjabi",
-"logo": "https://onlineradiohub.com/wp-content/uploads/2023/04/parwaz-radio.jpg",
-"name": "Parwaz Radio Punjabi",
+"country": "UA",
+"homepage": "http://online.melodiafm.ua/",
+"id": "a93119fc-0295-464c-ac42-367eb8415773",
+"language": "ukrainian",
+"logo": "",
+"name": "Мелодія Int",
 "tags": [],
-"url": "http://mehramedia.com:8081/;"
+"url": "http://online.melodiafm.ua/MelodiaFM_Int_Live"
 }
 },
-"b4489557-58f3-4971-bc3a-c57c9a6b497d": {
-"since": "2026-10-18",
+"ac551e97-29fe-4eb2-979f-7438ad647d15": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 256,
+"bitrate": 312,
 "city": "",
-"country": "GR",
-"homepage": "https://webradio.ert.gr/kosmos/",
-"id": "b4489557-58f3-4971-bc3a-c57c9a6b497d",
-"language": "greek",
-"logo": "https://www.ertecho.gr/wp-content/uploads/2022/06/cropped-ertecho-favicon-180x180.png",
-"name": "ΕΡΤ Kosmos",
-"tags": [
-"ert",
-"ert kosmos",
-"public radio"
-],
-"url": "https://radiostreaming.ert.gr/ert-kosmos"
+"country": "SE",
+"homepage": "https://www.sverigesradio.se/stockholm",
+"id": "ac551e97-29fe-4eb2-979f-7438ad647d15",
+"language": "swedish",
+"logo": "https://sverigesradio.se/dist/images/apple-touch-icon-p4.png",
+"name": "Sveriges Radio P4 Stockholm",
+"tags": [],
+"url": "https://edge1.sr.se/p4sth-aac-320"
 }
 },
-"b61e2d85-286e-4510-b6af-a7549cfeb13d": {
-"since": "2026-10-18",
+"ad90b0ca-d168-469d-af63-b1deb8bce273": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 130,
-"city": "Auckland",
-"country": "NZ",
-"homepage": "https://sportnation.nz/",
-"id": "b61e2d85-286e-4510-b6af-a7549cfeb13d",
+"bitrate": 128,
+"city": "Sydney NSW",
+"country": "AU",
+"homepage": "http://www.australiandigitalradio.com/",
+"id": "ad90b0ca-d168-469d-af63-b1deb8bce273",
 "language": "english",
-"logo": "https://sportnation.nz/radio.png",
-"name": "Sport Nation - AAC",
+"logo": "http://www.australiandigitalradio.com/favicon.ico",
+"name": "Australian Digital Radio Network - Jungle and Breakbeat (MP3)",
 "tags": [
-"sports",
-"cricket"
+"breakbeat",
+"jungle"
 ],
-"url": "https://sen.streamguys1.com/SENZ-AAC/playlist.m3u8"
+"url": "http://abm22.com.au:8000/CONTAINER39"
+}
+},
+"adb2d678-5e99-4d24-b789-fb4836895887": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 32,
+"city": "wellington",
+"country": "NZ",
+"homepage": "http://worldfm.co.nz/",
+"id": "adb2d678-5e99-4d24-b789-fb4836895887",
+"language": "english",
+"logo": "",
+"name": "World FM Tawa 88.2",
+"tags": [
+"current affairs",
+"kiwi",
+"tawa",
+"wellington",
+"world"
+],
+"url": "http://www.worldfm.co.nz:8882/worldfm.aac"
+}
+},
+"ae3f689e-8f2c-4936-baa1-c6c958addef8": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 128,
+"city": "",
+"country": "NL",
+"homepage": "https://www.concertzender.nl/programma_genre/geen-dag-zonder-bach__klassiek-nl/",
+"id": "ae3f689e-8f2c-4936-baa1-c6c958addef8",
+"language": "english",
+"logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyGVlusKpxzHZ6EAQRaFX5MHiYqVGjkeC3Ww&usqp=CAU",
+"name": "Concertzender Geen dag zonder Bach",
+"tags": [
+"classical"
+],
+"url": "http://streams.greenhost.nl:8080/bach"
 }
 },
 "b69fe610-1522-47b1-a784-e7025d11f884": {
@@ -2010,160 +1480,154 @@
 "url": "http://oceanwaves.radio.mynoise.net/"
 }
 },
-"b7cea21c-1c85-4385-8d8a-10b9b66cbb7c": {
-"since": "2026-10-18",
+"b74c8d24-1639-11e9-a80b-52543be04c81": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 96,
+"city": "",
+"country": "CH",
+"homepage": "",
+"id": "b74c8d24-1639-11e9-a80b-52543be04c81",
+"language": "",
+"logo": "",
+"name": "Swiss Pop",
+"tags": [],
+"url": "http://stream.srg-ssr.ch/srgssr/rsp/aac/96"
+}
+},
+"b8f2ef5c-eaac-499c-b006-6a2fd276efb1": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
 "city": "",
-"country": "IN",
-"homepage": "",
-"id": "b7cea21c-1c85-4385-8d8a-10b9b66cbb7c",
-"language": "punjabi",
-"logo": "https://onlineradiohub.com/wp-content/uploads/2022/01/rasdio-risham-punjabi.jpg",
-"name": "Radio Risham Punjabi",
-"tags": [],
-"url": "https://stream.zeno.fm/4pd041xv1a0uv"
+"country": "SE",
+"homepage": "https://www.dagnysjukebox.se/",
+"id": "b8f2ef5c-eaac-499c-b006-6a2fd276efb1",
+"language": "swedish",
+"logo": "https://www.dagnysjukebox.se/wp-content/uploads/2021/06/cropped-dagnys-jukebox-logo-180x180.png",
+"name": "Dagnys Jukebox",
+"tags": [
+"rock",
+"rockabilly"
+],
+"url": "https://stream.dagnysjukebox.se/dagny"
 }
 },
-"b931cfd0-ce31-4bd8-891e-04e40550f3be": {
-"since": "2026-10-18",
+"b9101f84-db3a-42cb-96dd-6e556a8898c6": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 128,
+"city": "Ciudad de México",
+"country": "MX",
+"homepage": "https://www.imer.mx/radio710/",
+"id": "b9101f84-db3a-42cb-96dd-6e556a8898c6",
+"language": "spanish",
+"logo": "",
+"name": "Radio 710 AM \"Pura musica mexicana\" (XEMP) IMER",
+"tags": [
+"banda norteña",
+"ciudad de mexico",
+"grupera",
+"guerrero",
+"hidalgo"
+],
+"url": "https://s2.mexside.net/8028/stream"
+}
+},
+"ba4a59be-3ba1-4461-b9de-f489d605c7ac": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 168,
+"city": "",
+"country": "PT",
+"homepage": "https://www.rtp.pt/",
+"id": "ba4a59be-3ba1-4461-b9de-f489d605c7ac",
+"language": "portuguese",
+"logo": "https://i.ibb.co/1rcQ9sr/1-143718101410.webp",
+"name": "Antena 3 (Portugal)",
+"tags": [
+"alternative"
+],
+"url": "https://streaming-live.rtp.pt/liveradio/antena380a/playlist.m3u8?DVR"
+}
+},
+"bccab20d-a566-494b-a620-fd2b31bd41d5": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 64,
-"city": "Lima",
-"country": "PE",
-"homepage": "http://www.generacionkpop.net/",
-"id": "b931cfd0-ce31-4bd8-891e-04e40550f3be",
-"language": "spanish",
-"logo": "http://www.generacionkpop.net/favicon.ico",
-"name": "Generacion Kpop",
-"tags": [
-"kpop"
-],
-"url": "http://stream9.mexiserver.com:8242/stream"
+"city": "",
+"country": "PH",
+"homepage": "http://209.126.124.126:8852/stream",
+"id": "bccab20d-a566-494b-a620-fd2b31bd41d5",
+"language": "tagalog",
+"logo": "null",
+"name": "DWPM RADYO SAIS TRENTA",
+"tags": [],
+"url": "http://209.126.124.126:8852/stream"
 }
 },
-"b96225b2-8536-4b9b-8add-03582fd2e6a2": {
-"since": "2026-10-18",
+"c257d985-4a5a-4f5d-b861-6a1397d8a9c1": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 128,
+"city": "",
+"country": "FR",
+"homepage": "https://www.rtl.fr/",
+"id": "c257d985-4a5a-4f5d-b861-6a1397d8a9c1",
+"language": "french",
+"logo": "https://www.rtl.fr/favicon.ico",
+"name": "RTL France",
+"tags": [],
+"url": "https://icecast.rtl.fr/rtl-1-44-128"
+}
+},
+"c67c1183-a504-4ca8-9c33-ab8bb8a49aa0": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 320,
+"city": "",
+"country": "UA",
+"homepage": "https://avtoradio.ua/",
+"id": "c67c1183-a504-4ca8-9c33-ab8bb8a49aa0",
+"language": "ukrainian",
+"logo": "",
+"name": "Авторадіо",
+"tags": [
+"information",
+"news",
+"pop"
+],
+"url": "https://cast.mediaonline.net.ua/avtoradio320"
+}
+},
+"c9c7126d-baee-4433-9dab-b6a228072ace": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 192,
 "city": "",
-"country": "US",
-"homepage": "https://walmradio.com/walm2",
-"id": "b96225b2-8536-4b9b-8add-03582fd2e6a2",
-"language": "english",
-"logo": "https://icecast.walmradio.com:8443/walm.jpg",
-"name": "WALM 2 HD Opus",
-"tags": [
-"choral",
-"christian",
-"christian music",
-"classical music",
-"hymns"
-],
-"url": "https://icecast.walmradio.com:8443/walm2_opus"
-}
-},
-"bffdc007-3f6b-445e-aa53-edd1ae20d040": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 32,
-"city": "Western Cape",
-"country": "ZA",
-"homepage": "https://magic828.co.za/",
-"id": "bffdc007-3f6b-445e-aa53-edd1ae20d040",
-"language": "english",
+"country": "HR",
+"homepage": "https://radio101.hr/rock/",
+"id": "c9c7126d-baee-4433-9dab-b6a228072ace",
+"language": "",
 "logo": "",
-"name": "Magic 828",
+"name": "Radio 101 ROCK",
 "tags": [],
-"url": "http://cast.fabrik.fm:8106/"
+"url": "https://live.radio101.hr:8010/;"
 }
 },
-"c6996bc4-239a-4a76-a2b7-0c1fa18b8a29": {
-"since": "2026-10-18",
+"cb31301a-6e75-4d70-8139-e495cdeaaea2": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 112,
+"bitrate": 64,
 "city": "",
-"country": "PE",
-"homepage": "https://wwwradiocadenastereo.blogspot.com/",
-"id": "c6996bc4-239a-4a76-a2b7-0c1fa18b8a29",
-"language": "spanish",
-"logo": "https://i.ytimg.com/vi/s4rgiw1yd84/hqdefault.jpg",
-"name": "Mega St☆r Peru",
+"country": "HR",
+"homepage": "https://kaj.hr/",
+"id": "cb31301a-6e75-4d70-8139-e495cdeaaea2",
+"language": "",
+"logo": "https://kaj.hr/wp-content/uploads/2024/01/logoradiokaj-2.png",
+"name": "Radio Kaj",
 "tags": [],
-"url": "http://stream.zeno.fm/m0gb9v7aqs8uv"
-}
-},
-"c6fa893b-8530-4d7c-803e-724e1575239f": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "Junin",
-"country": "PE",
-"homepage": "https://www.radiohuancayo.com.pe/",
-"id": "c6fa893b-8530-4d7c-803e-724e1575239f",
-"language": "spanish",
-"logo": "",
-"name": "Radio Huancayo",
-"tags": [
-"peruvian cumbia",
-"pop music",
-"raggaeton"
-],
-"url": "https://cloud9.ldwebstudios.net:7000/;"
-}
-},
-"cb9eb6f5-2f54-477f-b43a-ea0606072294": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "",
-"country": "US",
-"homepage": "http://pakfilmi.com/",
-"id": "cb9eb6f5-2f54-477f-b43a-ea0606072294",
-"language": "urdu",
-"logo": "https://hpanel.hostinger.com/favicons/hostinger.png",
-"name": "Radio Pak Filmi",
-"tags": [
-"film",
-"movie",
-"oldies"
-],
-"url": "http://s17.ssl-stream.com:8214/stream"
-}
-},
-"cc559c9c-3551-437a-845d-a9d8731c9c7d": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 320,
-"city": "Flevoland, Lelystad",
-"country": "NL",
-"homepage": "https://radiohulchul.nl/",
-"id": "cc559c9c-3551-437a-845d-a9d8731c9c7d",
-"language": "dutch",
-"logo": "https://radiohulchul.nl/wp-content/uploads/2021/05/cropped-logo-1-192x192.png",
-"name": "Radio Hulchul",
-"tags": [
-"bollywood",
-"dutch",
-"hindi",
-"surinam"
-],
-"url": "https://everestcast.live-streams.nl:18015/stream"
-}
-},
-"cc83b904-69ac-11e8-b15b-52543be04c81": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "",
-"country": "US",
-"homepage": "http://parwaazradio.caom/",
-"id": "cc83b904-69ac-11e8-b15b-52543be04c81",
-"language": "punjabi",
-"logo": "",
-"name": "Parwaaz Radio (US)",
-"tags": [],
-"url": "http://192.99.8.192:3404/"
+"url": "http://s8.iqstreaming.com:8050/stream"
 }
 },
 "ceba48a5-9356-4891-a1fc-5ff9ea832120": {
@@ -2181,195 +1645,124 @@
 "url": "http://eu1.fastcast4u.com/proxy/prontofm"
 }
 },
-"cfb55d7d-9576-4dc8-ac00-e8e912e10578": {
-"since": "2026-10-18",
+"cf8f4744-c913-11e8-a54a-52543be04c81": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 320,
-"city": "GBR",
-"country": "IE",
-"homepage": "http://dhr.com/",
-"id": "cfb55d7d-9576-4dc8-ac00-e8e912e10578",
-"language": "",
-"logo": "",
-"name": "Deephouse radio",
-"tags": [
-"deephouse"
-],
-"url": "http://ec1.everestcast.host:1490/stream?xi1amefeqvksbquhue3jidp6boikushz"
-}
-},
-"d1c40bbb-618a-11e8-b15b-52543be04c81": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 0,
+"bitrate": 48,
 "city": "",
-"country": "SE",
-"homepage": "https://scenesat.com/",
-"id": "d1c40bbb-618a-11e8-b15b-52543be04c81",
-"language": "",
-"logo": "",
-"name": "SceneSat Radio (AAC+ mobile)",
-"tags": [
-"demoscene"
-],
-"url": "https://streams.scenesat.com/main/mobile.aac"
-}
-},
-"d953b891-0a2b-11ea-a87e-52543be04c81": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 64,
-"city": "Punjab",
-"country": "IN",
-"homepage": "http://www.japradio.com/",
-"id": "d953b891-0a2b-11ea-a87e-52543be04c81",
-"language": "punjabi",
-"logo": "",
-"name": "Jap Radio",
+"country": "TW",
+"homepage": "https://www.1766.today/",
+"id": "cf8f4744-c913-11e8-a54a-52543be04c81",
+"language": "chinese",
+"logo": "https://www.1766.today/wp-content/uploads/2016/11/cropped-radio_icon_660px-180x180.png",
+"name": "1766線上電臺-百家知識",
 "tags": [],
-"url": "http://stream.zeno.fm/r3m0whh0kxquv"
+"url": "http://livestream.1766.today:1768/live1.mp3"
 }
 },
-"da5d71d1-d8cc-4301-9f86-b6abaa1201bd": {
-"since": "2026-10-18",
+"cfff1782-dbdb-4bb8-8fda-3dcd878731b7": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
 "city": "",
-"country": "NL",
-"homepage": "https://www.bnr.nl/",
-"id": "da5d71d1-d8cc-4301-9f86-b6abaa1201bd",
-"language": "dutch",
-"logo": "https://static.bnr.nl/assets/bnr-next/logo.png",
-"name": "BNR Nieuwsradio",
-"tags": [
-"business",
-"news",
-"talk"
-],
-"url": "https://stream.bnr.nl/bnr_mp3_128_20"
-}
-},
-"db092dc0-7e0c-4d25-8fa0-2804cc4c3f4a": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 32,
-"city": "",
-"country": "IN",
-"homepage": "",
-"id": "db092dc0-7e0c-4d25-8fa0-2804cc4c3f4a",
-"language": "punjabi",
-"logo": "https://onlineradiohub.com/wp-content/uploads/2022/01/radio-panjab-today.jpg",
-"name": "Radio Punjab Today",
-"tags": [],
-"url": "http://stream.zenolive.com/019324w4ez4tv"
-}
-},
-"dc35b6d4-e4f0-48d1-b7c0-c947580a49d4": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 131,
-"city": "Zuid-Holland, Rotterdam",
-"country": "NL",
-"homepage": "https://www.sunrisefm.eu/",
-"id": "dc35b6d4-e4f0-48d1-b7c0-c947580a49d4",
-"language": "dutch",
-"logo": "https://www.sunrisefm.eu/wp-content/uploads/2020/07/SunriseFM_Logo_orgineel.png",
-"name": "SunriseFM",
-"tags": [
-"bollywood",
-"dutch",
-"hindi",
-"surinam"
-],
-"url": "http://stream.sunrisefm.nl:9600/"
-}
-},
-"e05fda96-6853-49d6-982f-d64f6c9e6c49": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 64,
-"city": "",
-"country": "AR",
-"homepage": "https://www.cadena3.com/",
-"id": "e05fda96-6853-49d6-982f-d64f6c9e6c49",
+"country": "PE",
+"homepage": "https://radiohuancayo.com.pe/",
+"id": "cfff1782-dbdb-4bb8-8fda-3dcd878731b7",
 "language": "",
-"logo": "https://imgs.search.brave.com/TPQbDA-qy7PFlxsdVDkyz8cyuG-fCpWAwAEEewJKI6M/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/cmFkaW8ubmV0L2lt/YWdlcy9icm9hZGNh/c3RzL2IyL2Y4LzIw/NzI0LzEvYzMwMC5w/bmc",
-"name": "Radio Cadena 3",
-"tags": [
-"news"
-],
-"url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO3_SC"
+"logo": "",
+"name": "RADIO HUANCAYO",
+"tags": [],
+"url": "https://cloud9.ldwebstudios.net:7000/stream"
 }
 },
-"ea8059be-d119-4de3-b27b-0d9bd6aedb17": {
-"since": "2026-10-18",
+"d1a54d2e-623e-4970-ab11-35f7b56c5ec3": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 320,
-"city": "Wisconsin",
+"city": "New York NY",
 "country": "US",
-"homepage": "https://walmradio.com/jazz",
-"id": "ea8059be-d119-4de3-b27b-0d9bd6aedb17",
+"homepage": "https://walmradio.com/classic",
+"id": "d1a54d2e-623e-4970-ab11-35f7b56c5ec3",
 "language": "english",
-"logo": "https://icecast.walmradio.com:8443/jazz.jpg",
-"name": "Adroit Jazz Underground",
+"logo": "https://icecast.walmradio.com:8443/classic.jpg",
+"name": "Classic Vinyl HD",
 "tags": [
-"avant-garde",
-"bebop",
-"big band",
-"bop",
-"combos"
+"1930",
+"1940",
+"1950",
+"1960",
+"beautiful music"
 ],
-"url": "https://icecast.walmradio.com:8443/jazz"
+"url": "https://icecast.walmradio.com:8443/classic"
 }
 },
-"eaf13335-827f-45df-b9c8-a983b3778bd8": {
-"since": "2026-10-18",
+"d9f10aef-3453-4a7a-9ba9-35f5931392a9": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 67,
-"city": "Alberta",
-"country": "CA",
-"homepage": "https://www.myradio580.com/",
-"id": "eaf13335-827f-45df-b9c8-a983b3778bd8",
-"language": "english",
-"logo": "",
-"name": "CHAH \"My Radio 580\" Edmonton, AB",
+"bitrate": 320,
+"city": "Bulgaria",
+"country": "BG",
+"homepage": "https://badrockradio.net/",
+"id": "d9f10aef-3453-4a7a-9ba9-35f5931392a9",
+"language": "bulgarian",
+"logo": "https://badrockradio.net/wp-content/uploads/2021/10/BadRock-Logo-tvoyat1.png",
+"name": "Badrock Classic Rock",
 "tags": [
-"multicultural",
-"multilingual"
+"classic rock",
+"rock"
 ],
-"url": "https://ais-sa1.streamon.fm/7681_64k.mp3"
+"url": "https://streams.badrockradio.net/classic-rock"
 }
 },
-"ec8d5679-6b61-49b5-9bfc-3e71a8777c44": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 0,
-"city": "Pirkanmaa",
-"country": "FI",
-"homepage": "https://yle.fi/aihe/s/yle-radio-suomi/yle-tampere",
-"id": "ec8d5679-6b61-49b5-9bfc-3e71a8777c44",
-"language": "finnish",
-"logo": "https://images.cdn.yle.fi/image/upload/f_auto,fl_progressive/q_auto/w_2890,h_2890,c_crop,x_632,y_612/w_700/v1641897373/39-90051461dd5d3129248.jpg",
-"name": "YLE Radio Suomi - Tampere",
-"tags": [],
-"url": "https://icecast.live.yle.fi/radio/YleTampere/icecast.audio"
-}
-},
-"ed186ea7-ac3e-47f5-bf33-99fbb15ffc86": {
-"since": "2026-10-18",
+"e4d474fc-5e54-43d3-b23a-f846a9e96839": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 64,
 "city": "",
-"country": "DZ",
-"homepage": "https://my.radioalgerie.dz/fr/jilfm",
-"id": "ed186ea7-ac3e-47f5-bf33-99fbb15ffc86",
-"language": "arabic",
-"logo": "https://my.radioalgerie.dz/sites/default/files/styles/d02/public/2021-09/jilfm.png",
-"name": "Jil FM",
+"country": "PH",
+"homepage": "",
+"id": "e4d474fc-5e54-43d3-b23a-f846a9e96839",
+"language": "",
+"logo": "https://www.yesthebest.com.ph/wp-content/uploads/2016/01/DAGUPAN.png",
+"name": "Yes The Best Dagupan",
+"tags": [],
+"url": "http://yesfmdagupan.radioca.st:10300/stream"
+}
+},
+"ec7bc4ac-3a3a-4caf-ab46-c22865f534a9": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 96,
+"city": "",
+"country": "SV",
+"homepage": "https://ysuca.org.sv/",
+"id": "ec7bc4ac-3a3a-4caf-ab46-c22865f534a9",
+"language": "castellano. español",
+"logo": "https://ysuca.org.sv/wp-content/uploads/2024/08/favicon-base-blanca-circle.png",
+"name": "Radio YSUCA, 91.7 FM",
+"tags": [],
+"url": "https://fast.citrus3.com:8314/stream"
+}
+},
+"ed2cc553-e526-4388-a113-d3b5d062e58f": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 0,
+"city": "Hunan",
+"country": "CN",
+"homepage": "https://www.csbtv.com/",
+"id": "ed2cc553-e526-4388-a113-d3b5d062e58f",
+"language": "chinese",
+"logo": "",
+"name": "长沙音乐广播",
 "tags": [
-"local radio"
+"88.6",
+"88.6 fm",
+"folk",
+"hits",
+"pop"
 ],
-"url": "https://webradio1.tda.dz:8001/Jeunesse_64K.mp3"
+"url": "https://lhttp.qtfm.cn/live/20847/64k.mp3"
 }
 },
 "ed39bcfe-7256-46a6-a9d2-5529605946b5": {
@@ -2392,138 +1785,114 @@
 "url": "https://online.goradio.com.ng/listen/gr/radio.mp3"
 }
 },
-"f1dc8d83-40b9-4d37-be99-5722ca4db0b7": {
-"since": "2026-10-18",
+"ee9f15b9-508a-11e8-a4d1-52543be04c81": {
+"since": "2026-10-19",
 "station": {
-"bitrate": 64,
-"city": "Banjarmasin",
-"country": "ID",
-"homepage": "https://www.rri.co.id/",
-"id": "f1dc8d83-40b9-4d37-be99-5722ca4db0b7",
-"language": "bahasa indonesia",
-"logo": "https://www.rri.co.id/assets/images/favicon-rri.ico",
-"name": "RRI Pro1 Banjarmasin",
-"tags": [
-"news talk music"
-],
-"url": "https://stream-node0.rri.co.id/streaming/19/9019/rribanjarmasinpro1.mp3"
+"bitrate": 88,
+"city": "Suisse Romande",
+"country": "CH",
+"homepage": "http://programmesradio.rts.ch/couleur3/",
+"id": "ee9f15b9-508a-11e8-a4d1-52543be04c81",
+"language": "",
+"logo": "",
+"name": "RSR Couleur 3",
+"tags": [],
+"url": "http://stream.srg-ssr.ch/srgssr/couleur3/aac/96"
 }
 },
-"f37ed4e9-b930-4ff3-a7c6-a44a96c5877e": {
-"since": "2026-10-18",
+"ef42169c-4515-4011-b44a-5ae792af7424": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
-"city": "",
-"country": "AE",
-"homepage": "https://easy.radio/",
-"id": "f37ed4e9-b930-4ff3-a7c6-a44a96c5877e",
+"city": "Sydney NSW",
+"country": "AU",
+"homepage": "http://www.australiandigitalradio.com/",
+"id": "ef42169c-4515-4011-b44a-5ae792af7424",
 "language": "english",
-"logo": "https://easy.radio/static/assets/img/apple-icon-120x120.png",
-"name": "Easy Classical",
+"logo": "http://www.australiandigitalradio.com/favicon.ico",
+"name": "Australian Digital Radio Network - Old Time Radio Channel 4 - Films, Horror, Sci Fi, Adventure (MP3)",
 "tags": [
-"classical"
+"old time radio"
 ],
-"url": "https://streaming.exclusive.radio/uber/easyclassical/icecast.audio"
+"url": "http://abm21.com.au:8000/CONTAINER5"
 }
 },
-"f482a97f-8bfb-469f-8b99-e7e5b20af40f": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "",
-"country": "IN",
-"homepage": "",
-"id": "f482a97f-8bfb-469f-8b99-e7e5b20af40f",
-"language": "punjabi",
-"logo": "",
-"name": "bolpunjabi",
-"tags": [],
-"url": "https://bolpunjabi-ekamsoftware.radioca.st/stream"
-}
-},
-"f4b06e3c-abd4-4ab8-b8d8-04b83e324cc2": {
-"since": "2026-10-18",
+"f3d2d0f4-f868-488c-907e-d20eaed831ad": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 64,
 "city": "",
-"country": "BR",
-"homepage": "https://www.mgtradio.net/",
-"id": "f4b06e3c-abd4-4ab8-b8d8-04b83e324cc2",
-"language": "",
-"logo": "",
-"name": "Rádio MGT Sertanejo",
+"country": "VE",
+"homepage": "https://www.andesfm893.com/",
+"id": "f3d2d0f4-f868-488c-907e-d20eaed831ad",
+"language": "spanish",
+"logo": "https://www.andesfm893.com/images/logo-andes-fm3-crop-u1143.png",
+"name": "Andes 89.3 FM",
 "tags": [
-"misc"
+"entretenimiento",
+"musica",
+"reggaeton",
+"urbano",
+"varios"
 ],
-"url": "https://cast.mgtradio.net/radio/8000/aac"
+"url": "http://streamingned.com:7098/;"
 }
 },
-"f5798d6a-ef45-410c-be31-601791118126": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 192,
-"city": "",
-"country": "BE",
-"homepage": "https://www.radiocontact.be/",
-"id": "f5798d6a-ef45-410c-be31-601791118126",
-"language": "",
-"logo": "https://www.radiocontact.be/apple-touch-icon.png",
-"name": "Radio contact",
-"tags": [],
-"url": "http://radiocontact.ice.infomaniak.ch/radiocontact-mp3-192.mp3"
-}
-},
-"f6bd573d-3fc2-490b-8cd5-7c5f8c840e78": {
-"since": "2026-10-18",
+"f503d591-56b7-45d2-9a31-df046af717ae": {
+"since": "2026-10-19",
 "station": {
 "bitrate": 128,
-"city": "Greater Manchester",
+"city": "",
+"country": "HU",
+"homepage": "https://radio1.hu/",
+"id": "f503d591-56b7-45d2-9a31-df046af717ae",
+"language": "hungarian",
+"logo": "https://radio1.hu/template/radio1/assets/img/favicon/apple-touch-icon.png",
+"name": "Rádió 1",
+"tags": [
+"dance"
+],
+"url": "https://icast.connectmedia.hu/5201/live.mp3"
+}
+},
+"fd0ba191-cfbe-42de-b1b3-4e283a77f5e9": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 48,
+"city": "",
+"country": "VE",
+"homepage": "https://circuitoelectrikfm.com.ve/electrikg.html",
+"id": "fd0ba191-cfbe-42de-b1b3-4e283a77f5e9",
+"language": "spanish",
+"logo": "https://circuitoelectrikfm.com.ve/images/logo-electrik-web.png?crc=3868536483",
+"name": "Electrik 97.7 FM",
+"tags": [
+"bachata",
+"cumbia",
+"latino",
+"merengue",
+"reggaeton"
+],
+"url": "https://streamingned.com:7044/stream"
+}
+},
+"fec7847c-b936-4bb3-a4c0-610db9b66c93": {
+"since": "2026-10-19",
+"station": {
+"bitrate": 128,
+"city": "",
 "country": "GB",
-"homepage": "https://www.taiyabahmasjid.com/",
-"id": "f6bd573d-3fc2-490b-8cd5-7c5f8c840e78",
-"language": "arabic",
-"logo": "",
-"name": "Taiyabah Masjid",
+"homepage": "https://www.gbnews.uk/",
+"id": "fec7847c-b936-4bb3-a4c0-610db9b66c93",
+"language": "english",
+"logo": "http://cdn-profiles.tunein.com/s310252/images/logod.png",
+"name": "GB News",
 "tags": [
-"islamic",
-"masjid",
-"mosque",
-"religion",
-"religious"
+"news",
+"speech",
+"talk"
 ],
-"url": "https://taiyabahmbolton.radioca.st/stream"
-}
-},
-"fc5fe23a-2369-4b1c-bc74-97df6468642b": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 128,
-"city": "",
-"country": "SA",
-"homepage": "",
-"id": "fc5fe23a-2369-4b1c-bc74-97df6468642b",
-"language": "",
-"logo": "",
-"name": "ماهر المعيقلي",
-"tags": [
-"classical"
-],
-"url": "https://backup.qurango.net/radio/maher"
-}
-},
-"feaf6d61-20d3-431c-8ff4-97ab5964db3e": {
-"since": "2026-10-18",
-"station": {
-"bitrate": 96,
-"city": "",
-"country": "IN",
-"homepage": "",
-"id": "feaf6d61-20d3-431c-8ff4-97ab5964db3e",
-"language": "punjabi",
-"logo": "https://onlineradiohub.com/wp-content/uploads/2022/01/kirtan.jpg",
-"name": "Sri Harmandir Sahib Live Kirtan",
-"tags": [],
-"url": "https://radio.sikhnet.com/proxy/channel9/live"
+"url": "http://listen-gbnews.sharp-stream.com/gbnews.mp3"
 }
 },
 "pbc-radio-pakistan-gilgit-mw-1512": {
