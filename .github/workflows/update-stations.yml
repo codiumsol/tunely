@@ -6,7 +6,9 @@ name: Update stations (nightly)
 # file on start, so users get fixes without any app update.
 on:
   schedule:
-    - cron: "13 21 * * *"   # 21:13 UTC = 02:13 Pakistan time
+    # Four times a day (21 Oct 2026, Asim: dead stations must disappear
+    # fast): 02:13, 08:13, 14:13, 20:13 Pakistan time. Free (public repo).
+    - cron: "13 3,9,15,21 * * *"
   workflow_dispatch:        # "Run workflow" button for a manual refresh
     inputs:
       trial:
@@ -16,6 +18,11 @@ on:
 
 permissions:
   contents: write
+
+# Never two runs at once (they would both write the lists); a new one waits.
+concurrency:
+  group: update-stations
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -44,6 +51,9 @@ jobs:
           # Every station of every country: pages 2, 3 ... (+ search files),
           # long tail tested weekly; published to Cloudflare only (20 Oct 2026).
           TAIL: '1'
+          # Re-test EVERY station on every run (not 1/7 of the tail per week),
+          # so a station that died is gone within ~6 hours (21 Oct 2026).
+          TAIL_FULL: '1'
         run: python3 scripts/update_stations.py
 
       # Copy of the finished lists on Cloudflare Pages (free, fast everywhere):

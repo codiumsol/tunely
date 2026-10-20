@@ -27,6 +27,7 @@ import re
 import ssl
 import sys
 import time
+import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -186,23 +187,77 @@ def from_radio_browser(s):
     }
 
 
+# How much audio a stream must really send before it counts as working
+# (21 Oct 2026: a stream that answers but then stalls used to pass with only
+# 2 KB, and listeners saw endless "loading"). 16 KB = about 2 s of 64 kbps.
+MIN_AUDIO_BYTES = 16 * 1024
+
+
+def _read_some(r, want, deadline):
+    got = b""
+    while len(got) < want and time.time() < deadline:
+        part = r.read(min(8192, want - len(got)))
+        if not part:
+            break
+        got += part
+    return got
+
+
+def _hls_works(url, body, timeout, deadline):
+    """An HLS playlist counts only when its first entry (a variant playlist
+    or a media segment) really downloads."""
+    lines = [l.strip() for l in body.decode("utf-8", "ignore").splitlines()]
+    entry = next((l for l in lines if l and not l.startswith("#")), None)
+    if not entry:
+        return False
+    nxt = urllib.parse.urljoin(url, entry)
+    req = urllib.request.Request(nxt, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req, timeout=timeout,
+                                context=ssl.create_default_context()) as r:
+        data = _read_some(r, 4096, deadline)
+        if not data:
+            return False
+        if b"#EXTM3U" in data[:64]:  # variant playlist: needs a segment too
+            seg = next((l.strip() for l in data.decode("utf-8", "ignore").splitlines()
+                        if l.strip() and not l.startswith("#")), None)
+            if not seg:
+                return False
+            req = urllib.request.Request(urllib.parse.urljoin(nxt, seg),
+                                         headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(req, timeout=timeout,
+                                        context=ssl.create_default_context()) as r2:
+                return bool(_read_some(r2, 4096, deadline))
+        return True
+
+
 def stream_works(st, timeout=10):
-    """Connects to the stream and checks that audio actually comes back."""
+    """Connects to the stream and checks that audio really keeps coming:
+    at least MIN_AUDIO_BYTES within the time limit (HLS: a real segment)."""
     url = st["url"]
+    deadline = time.time() + timeout + 4
     try:
         req = urllib.request.Request(url, headers={
             "User-Agent": USER_AGENT, "Icy-MetaData": "0", "Range": "bytes=0-"})
         ctx = ssl.create_default_context()
         with urllib.request.urlopen(req, timeout=timeout, context=ctx) as r:
             ctype = (r.headers.get("Content-Type") or "").lower()
-            chunk = r.read(2048)
-            if not chunk:
-                return False
             if "text/html" in ctype:
                 return False
             if url.lower().split("?")[0].endswith(".m3u8") or "mpegurl" in ctype:
-                return b"#EXTM3U" in chunk[:64]
-            return ctype.startswith(AUDIO_TYPES) or ctype == "" or "icy" in ctype
+                body = _read_some(r, 64 * 1024, deadline)
+                if b"#EXTM3U" not in body[:64]:
+                    return False
+                return _hls_works(r.geturl(), body, timeout, deadline)
+            if not (ctype.startswith(AUDIO_TYPES) or ctype == "" or "icy" in ctype):
+                return False
+            chunk = _read_some(r, MIN_AUDIO_BYTES, deadline)
+            if len(chunk) < MIN_AUDIO_BYTES:
+                return False
+            # A text error page sent as audio is not a stream.
+            head = chunk[:256].lstrip().lower()
+            if head.startswith((b"<!doctype", b"<html", b"{", b"error")):
+                return False
+            return True
     except Exception:
         return False
 
@@ -359,11 +414,14 @@ def build_tail(per, tail_pool, shard_dir, today, failed_countries, report_file):
     pool = {cc: [st for st in lst if st["id"] not in head_ids]
             for cc, lst in tail_pool.items()}
     day = int(time.strftime("%j", time.gmtime())) % 7
+    full = bool(os.environ.get("TAIL_FULL"))
     due, unseen_by_cc = [], {}
     for cc, lst in pool.items():
         for st in lst:
             if st["id"] in state:
-                if _bucket(st["id"]) == day:
+                # TAIL_FULL: every known tail station is re-tested on every
+                # run (several runs a day), not 1/7 per week.
+                if full or _bucket(st["id"]) == day:
                     due.append(st)
             else:
                 unseen_by_cc.setdefault(cc, []).append(st)
@@ -375,7 +433,7 @@ def build_tail(per, tail_pool, shard_dir, today, failed_countries, report_file):
             if rank < len(v):
                 unseen.append(v[rank])
         rank += 1
-    tests = due + unseen[:max(0, TAIL_MAX_TESTS - len(due))]
+    tests = due + unseen[:max(0, TAIL_MAX_TESTS - (0 if full else len(due)))]
     print(f"Tail: {sum(len(v) for v in pool.values())} stations beyond the top lists, "
           f"testing {len(due)} due this week + {len(tests) - len(due)} new ...")
     for st, good in zip(tests, test_streams(tests, timeout=8, workers=192)):
