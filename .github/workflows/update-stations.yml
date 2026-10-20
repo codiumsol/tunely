@@ -43,6 +43,31 @@ jobs:
           ALL_COUNTRIES: '1'
         run: python3 scripts/update_stations.py
 
+      # Copy of the finished lists on Cloudflare Pages (free, fast everywhere):
+      # https://tunely-data.pages.dev/data/... The app reads there first and
+      # falls back to GitHub. Skipped on trial runs or without the secrets.
+      - name: Publish to Cloudflare Pages
+        if: ${{ !inputs.trial }}
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
+            echo "Cloudflare secrets not set - skipped."; exit 0
+          fi
+          mkdir -p public/data
+          cp data/stations.json data/report.json public/data/
+          [ -f data/index.json ] && cp data/index.json public/data/
+          [ -d data/c ] && cp -r data/c public/data/c
+          printf '%s\n' '/*' \
+            '  Access-Control-Allow-Origin: *' \
+            '  Cache-Control: public, max-age=600' > public/_headers
+          npx --yes wrangler@4 pages project create tunely-data --production-branch=main || true
+          npx --yes wrangler@4 pages deploy public --project-name=tunely-data --branch=main --commit-dirty=true
+          # Check it really is there.
+          sleep 20
+          curl -fsS https://tunely-data.pages.dev/data/index.json | head -c 200; echo
+
       - name: Save if anything changed
         run: |
           git config user.name "tunely-bot"
