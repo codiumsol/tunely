@@ -89,7 +89,7 @@ TEST_WORKERS = 128
 # ALL_COUNTRIES=1: besides COUNTRIES, every country the directory knows with at
 # least MIN_DIRECTORY_STATIONS stations (all countries equal), plus every
 # country we listed before (never dropped because the directory was busy).
-MIN_DIRECTORY_STATIONS = 10
+MIN_DIRECTORY_STATIONS = 3
 # TAIL=1 (plan "unlimited stations", 20 Oct 2026): every station of a country,
 # not only the top SHARD_MAX. The top part (page 1, data/c/<cc>.json) is
 # tested every night as before; the rest ("tail") is tested once a week
@@ -118,7 +118,10 @@ REPORT = DATA / "report.json"
 MISSING = DATA / "missing.json"
 TRIAL_DIR = DATA / "trial"  # TRIAL=1: write here, leave the real list alone
 MISSING_DAYS = 30
-OK_CODECS = {"MP3", "AAC", "AAC+", "OGG", "OPUS", ""}
+# Formats the app's player (ExoPlayer) plays. "UNKNOWN" = the directory
+# doesn't know: our own stream test decides (20 Oct: more stations).
+OK_CODECS = {"MP3", "AAC", "AAC+", "OGG", "OPUS", "FLAC", "UNKNOWN", ""}
+DROPPED = {"junk": 0, "codec": 0, "blocked": 0, "duplicate": 0}
 AUDIO_TYPES = ("audio/", "application/ogg", "application/octet-stream",
                "application/vnd.apple.mpegurl", "application/x-mpegurl",
                "video/mp2t")
@@ -205,6 +208,7 @@ def stream_works(st, timeout=10):
 
 
 QUERY_COUNTS = {}
+CODECS_DROPPED = {}
 
 
 def collect(queries, blocked):
@@ -243,10 +247,14 @@ def collect(queries, blocked):
             if not st["id"] or not st["name"] or not st["url"]:
                 continue
             if is_junk(st["name"]):
+                DROPPED["junk"] += 1
                 continue
             if st["_codec"] not in OK_CODECS:
+                DROPPED["codec"] += 1
+                CODECS_DROPPED[st["_codec"]] = CODECS_DROPPED.get(st["_codec"], 0) + 1
                 continue
             if {st["id"].lower(), st["name"].lower(), st["url"].lower()} & blocked:
+                DROPPED["blocked"] += 1
                 continue
             stations[st["id"]] = st
     # Same station listed twice (same name in the same country): keep the
@@ -256,6 +264,7 @@ def collect(queries, blocked):
         key = (st["country"], re.sub(r"[^a-z0-9]", "", st["name"].lower()) or st["name"])
         if key not in best or st["_score"] > best[key]["_score"]:
             best[key] = st
+    DROPPED["duplicate"] += len(stations) - len(best)
     return sorted(best.values(), key=lambda s: -s["_score"])
 
 
@@ -623,6 +632,8 @@ def main():
         "new_tonight_sample": new_tonight[:100] if previous_list else [],
         "failed_sample": {k: v[:15] for k, v in failed_sample.items()},
         "queries": QUERY_COUNTS,
+        "dropped": DROPPED,
+        "codecs_dropped": dict(sorted(CODECS_DROPPED.items(), key=lambda x: -x[1])[:20]),
         "directory_sizes": dict(sorted(directory_sizes.items(), key=lambda x: -x[1])),
     }, ensure_ascii=False, indent=1), encoding="utf-8")
 
