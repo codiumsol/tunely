@@ -1,0 +1,6 @@
+
+# Tail pages, search files and test memory live on Cloudflare only (size).
+data/c/*/
+data/tail_state.json
+data/trial/c/*/
+data/trial/tail_state.json

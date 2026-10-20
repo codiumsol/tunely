@@ -20,6 +20,7 @@ Builds data/stations.json for Tunely Radio.
 
 Runs every night on GitHub. No server needed. Standard library only.
 """
+import hashlib
 import json
 import os
 import re
@@ -89,6 +90,19 @@ TEST_WORKERS = 128
 # least MIN_DIRECTORY_STATIONS stations (all countries equal), plus every
 # country we listed before (never dropped because the directory was busy).
 MIN_DIRECTORY_STATIONS = 10
+# TAIL=1 (plan "unlimited stations", 20 Oct 2026): every station of a country,
+# not only the top SHARD_MAX. The top part (page 1, data/c/<cc>.json) is
+# tested every night as before; the rest ("tail") is tested once a week
+# (1/7 of it each night) plus up to TAIL_MAX_TESTS stations never tested
+# before, and kept while its last good test is at most TAIL_DAYS old. Tail
+# pages (data/c/<cc>/<n>.json, TAIL_PAGE stations each), a search file per
+# country (data/c/<cc>/names.json) and the test memory (data/tail_state.json)
+# are published to Cloudflare only - never committed to git (size).
+TAIL_PAGE = 200
+TAIL_MAX_TESTS = 12000
+TAIL_DAYS = 8
+DIRECTORY_ALL = 100000   # "every station" per country from the directory
+CDN = "https://tunely-data.pages.dev/data/"
 # Not real listening countries in the directory (Antarctica; "US minor
 # islands" = mislabelled US stations) and North Korea (state media under
 # sanctions; Asim decides, 19 Oct). Never listed.
@@ -309,6 +323,128 @@ def test_streams(candidates, timeout=10, workers=TEST_WORKERS):
         return list(pool.map(lambda st: stream_works(st, timeout=timeout), candidates))
 
 
+def _bucket(sid):
+    return int(hashlib.md5(sid.encode("utf-8")).hexdigest(), 16) % 7
+
+
+def _fetch_cdn(path, timeout=60):
+    req = urllib.request.Request(CDN + path, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        return json.load(r)
+
+
+def _public(st):
+    return {k: v for k, v in st.items() if not k.startswith("_")}
+
+
+def build_tail(per, tail_pool, shard_dir, today, failed_countries, report_file):
+    """Pages 2, 3 ... of every country (the stations beyond the nightly top
+    list) and a search file per country. Returns (totals, pages)."""
+    started = time.time()
+    try:
+        state = _fetch_cdn("tail_state.json").get("ok", {})
+    except Exception as e:
+        print(f"  no tail memory yet ({e}) - starting fresh", file=sys.stderr)
+        state = {}
+    head_ids = {st["id"] for lst in per.values() for st in lst}
+    pool = {cc: [st for st in lst if st["id"] not in head_ids]
+            for cc, lst in tail_pool.items()}
+    day = int(time.strftime("%j", time.gmtime())) % 7
+    due, unseen_by_cc = [], {}
+    for cc, lst in pool.items():
+        for st in lst:
+            if st["id"] in state:
+                if _bucket(st["id"]) == day:
+                    due.append(st)
+            else:
+                unseen_by_cc.setdefault(cc, []).append(st)
+    # Never-tested stations: fair between countries (round robin by rank).
+    unseen, rank = [], 0
+    while len(unseen) < TAIL_MAX_TESTS and any(
+            rank < len(v) for v in unseen_by_cc.values()):
+        for v in unseen_by_cc.values():
+            if rank < len(v):
+                unseen.append(v[rank])
+        rank += 1
+    tests = due + unseen[:max(0, TAIL_MAX_TESTS - len(due))]
+    print(f"Tail: {sum(len(v) for v in pool.values())} stations beyond the top lists, "
+          f"testing {len(due)} due this week + {len(tests) - len(due)} new ...")
+    for st, good in zip(tests, test_streams(tests, timeout=8, workers=192)):
+        if good:
+            state[st["id"]] = today
+        else:
+            state.pop(st["id"], None)
+    cutoff = time.strftime("%Y-%m-%d", time.gmtime(time.time() - TAIL_DAYS * 86400))
+    state = {k: v for k, v in state.items() if v >= cutoff}
+
+    totals, pages, kept_all = {}, {}, 0
+    for cc in sorted(set(per) | set(pool)):
+        head = per.get(cc, [])
+        if not head:
+            continue
+        folder = shard_dir / cc.lower()
+        if cc in failed_countries:
+            # Directory didn't answer for this country tonight: keep last
+            # night's pages as they were.
+            try:
+                names = _fetch_cdn(f"c/{cc.lower()}/names.json")
+                n_pages = int(names.get("pages", 1))
+                folder.mkdir(parents=True, exist_ok=True)
+                for n in range(2, n_pages + 1):
+                    (folder / f"{n}.json").write_text(json.dumps(
+                        _fetch_cdn(f"c/{cc.lower()}/{n}.json"),
+                        ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+                (folder / "names.json").write_text(json.dumps(
+                    names, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+                totals[cc] = int(names.get("total", len(head)))
+                pages[cc] = n_pages
+                continue
+            except Exception:
+                pass
+        tail = [_public(st) for st in pool.get(cc, []) if st["id"] in state]
+        kept_all += len(tail)
+        chunks = [tail[i:i + TAIL_PAGE] for i in range(0, len(tail), TAIL_PAGE)]
+        n_pages = 1 + len(chunks)
+        total = len(head) + len(tail)
+        totals[cc], pages[cc] = total, n_pages
+        folder.mkdir(parents=True, exist_ok=True)
+        for p in folder.glob("*.json"):
+            p.unlink()
+        for i, chunk in enumerate(chunks):
+            n = i + 2
+            (folder / f"{n}.json").write_text(json.dumps(
+                {"version": 1, "country": cc, "page": n, "pages": n_pages,
+                 "total": total, "stations": chunk},
+                ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+        rows = [[st["id"], st["name"], st.get("city", ""), " ".join(st.get("tags", [])), 1]
+                for st in head]
+        for i, chunk in enumerate(chunks):
+            rows += [[st["id"], st["name"], st.get("city", ""),
+                      " ".join(st.get("tags", [])), i + 2] for st in chunk]
+        (folder / "names.json").write_text(json.dumps(
+            {"version": 1, "country": cc, "total": total, "pages": n_pages,
+             "rows": rows}, ensure_ascii=False, separators=(",", ":")),
+            encoding="utf-8")
+    for d in shard_dir.iterdir():  # countries with nothing left
+        if d.is_dir() and d.name.upper() not in totals:
+            for p in d.glob("*.json"):
+                p.unlink()
+            d.rmdir()
+    (shard_dir.parent / "tail_state.json").write_text(json.dumps(
+        {"date": today, "ok": state}, separators=(",", ":")), encoding="utf-8")
+    print(f"Tail: {kept_all} more stations kept, {time.time() - started:.0f} s")
+    try:  # add to tonight's report
+        rep = json.loads(report_file.read_text(encoding="utf-8"))
+        rep.update({"tail_tested": len(tests), "tail_kept": kept_all,
+                    "tail_seconds": round(time.time() - started),
+                    "total_all_pages": sum(totals.values())})
+        report_file.write_text(json.dumps(rep, ensure_ascii=False, indent=1),
+                               encoding="utf-8")
+    except Exception:
+        pass
+    return totals, pages
+
+
 def main():
     blocked = set()
     if BLOCKED.exists():
@@ -363,8 +499,10 @@ def main():
     # 1. Candidates per country: hand-picked extras first, then stations on
     #    the watch list, then the directory by popularity (new stations
     #    included, so new channels are found every night).
+    tail_on = shards and bool(os.environ.get("TAIL"))
+    limit = DIRECTORY_ALL if tail_on else fetch
     queries = [f"/json/stations/bycountrycodeexact/{cc}?order=clickcount"
-               f"&reverse=true&limit={fetch}" for cc in countries]
+               f"&reverse=true&limit={limit}" for cc in countries]
     directory = merge_extras(collect(queries, blocked), blocked)
     by_cc = {}
     for st in directory:
@@ -382,6 +520,15 @@ def main():
             known.add(st["id"])
     for cc, lst in by_cc.items():
         lst.sort(key=lambda st: (0 if st.get("_extra") else 1, -st["_score"]))
+    # How many usable stations the directory has per country (all of them
+    # when TAIL is on). The nightly head test takes the first `fetch`; the
+    # rest is the tail, tested on a weekly rotation.
+    directory_sizes = {cc: len(lst) for cc, lst in by_cc.items()}
+    tail_pool = {}
+    if tail_on:
+        for cc in list(by_cc):
+            tail_pool[cc] = by_cc[cc][fetch:]
+            by_cc[cc] = by_cc[cc][:fetch]
     ids = {st["id"] for st in directory}
     for m in missing.values():
         st = m["station"]
@@ -476,6 +623,7 @@ def main():
         "new_tonight_sample": new_tonight[:100] if previous_list else [],
         "failed_sample": {k: v[:15] for k, v in failed_sample.items()},
         "queries": QUERY_COUNTS,
+        "directory_sizes": dict(sorted(directory_sizes.items(), key=lambda x: -x[1])),
     }, ensure_ascii=False, indent=1), encoding="utf-8")
 
     previous = len(previous_list)
@@ -501,16 +649,26 @@ def main():
         per = {}
         for st in working:
             per.setdefault(st["country"], []).append(st)
+        totals = {cc: len(lst) for cc, lst in per.items()}
+        pages = {cc: 1 for cc in per}
+        if tail_on:
+            totals, pages = build_tail(per, tail_pool, shard_dir, today, fallback,
+                                       report_file)
         for cc, lst in per.items():
             (shard_dir / f"{cc.lower()}.json").write_text(json.dumps(
-                {"version": 2, "country": cc, "count": len(lst), "stations": lst},
+                {"version": 2, "country": cc, "count": len(lst),
+                 "total": totals.get(cc, len(lst)), "pages": pages.get(cc, 1),
+                 "stations": lst},
                 ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
         for p in shard_dir.glob("*.json"):  # countries with nothing left
             if p.stem.upper() not in per:
                 p.unlink()
+        # "countries" = every working station of the country (all pages);
+        # "pages" = how many page files it has (1 = only data/c/<cc>.json).
         index_file.write_text(json.dumps(
-            {"version": 2, "date": today,
-             "countries": {cc: len(lst) for cc, lst in sorted(per.items())}},
+            {"version": 3, "date": today,
+             "countries": {cc: totals.get(cc, len(per[cc])) for cc in sorted(per)},
+             "pages": {cc: pages[cc] for cc in sorted(per) if pages.get(cc, 1) > 1}},
             separators=(",", ":")), encoding="utf-8")
         # The base list never loses a station it had (app versions without
         # per-country files may have it saved); new ones up to BASE_MAX.

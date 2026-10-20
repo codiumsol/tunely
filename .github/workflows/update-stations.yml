@@ -20,7 +20,7 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-24.04
-    timeout-minutes: 75
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v5
 
@@ -41,6 +41,9 @@ jobs:
           # Every country the directory knows with 10+ stations, not only the
           # core list (19 Oct 2026). '' = only the core list.
           ALL_COUNTRIES: '1'
+          # Every station of every country: pages 2, 3 ... (+ search files),
+          # long tail tested weekly; published to Cloudflare only (20 Oct 2026).
+          TAIL: '1'
         run: python3 scripts/update_stations.py
 
       # Copy of the finished lists on Cloudflare Pages (free, fast everywhere):
@@ -59,6 +62,7 @@ jobs:
           cp data/stations.json data/report.json public/data/
           [ -f data/index.json ] && cp data/index.json public/data/
           [ -d data/c ] && cp -r data/c public/data/c
+          [ -f data/tail_state.json ] && cp data/tail_state.json public/data/
           printf '%s\n' '/*' \
             '  Access-Control-Allow-Origin: *' \
             '  Cache-Control: public, max-age=600' > public/_headers
