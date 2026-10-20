@@ -99,7 +99,7 @@ MIN_DIRECTORY_STATIONS = 10
 # country (data/c/<cc>/names.json) and the test memory (data/tail_state.json)
 # are published to Cloudflare only - never committed to git (size).
 TAIL_PAGE = 200
-TAIL_MAX_TESTS = 12000
+TAIL_MAX_TESTS = 25000
 TAIL_DAYS = 8
 DIRECTORY_ALL = 100000   # "every station" per country from the directory
 CDN = "https://tunely-data.pages.dev/data/"
