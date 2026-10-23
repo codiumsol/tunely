@@ -1,142 +1,141 @@
 {
- "date": "2026-10-22 19:26 UTC",
+ "date": "2026-10-23 00:12 UTC",
  "trial": false,
- "seconds": 759,
- "candidates": 21575,
- "working": 14170,
+ "seconds": 774,
+ "candidates": 21508,
+ "working": 14162,
  "countries": 208,
- "second_try": 1048,
- "second_try_saved": 39,
+ "second_try": 1050,
+ "second_try_saved": 45,
  "directory_failed_used_last_night": [],
  "per_country": {
-  "BE": 245,
-  "CO": 243,
-  "AE": 240,
-  "NL": 239,
-  "AR": 237,
-  "GB": 234,
-  "IT": 231,
-  "TR": 225,
-  "ES": 224,
-  "US": 222,
-  "CH": 221,
-  "AU": 221,
+  "BE": 253,
+  "CO": 242,
+  "AE": 239,
+  "PH": 237,
+  "GB": 231,
+  "AR": 231,
+  "IT": 227,
+  "ID": 227,
+  "US": 225,
+  "ES": 223,
+  "PL": 222,
+  "NL": 220,
+  "TR": 220,
   "CL": 220,
-  "PL": 219,
-  "DE": 218,
-  "ID": 218,
-  "GR": 216,
-  "CA": 214,
-  "MX": 212,
-  "FR": 210,
-  "AT": 209,
-  "PH": 207,
-  "RU": 206,
-  "RS": 205,
-  "CZ": 204,
-  "BG": 204,
+  "CH": 219,
+  "DE": 216,
+  "CA": 216,
+  "AU": 216,
+  "AT": 211,
+  "GR": 211,
+  "PT": 210,
+  "UG": 209,
+  "MX": 207,
+  "BR": 207,
+  "CN": 207,
+  "BG": 206,
+  "UA": 206,
+  "HR": 205,
+  "RU": 205,
   "PE": 204,
-  "UG": 204,
-  "RO": 203,
-  "BR": 203,
-  "CN": 203,
-  "IN": 202,
-  "PT": 202,
+  "FR": 203,
+  "RS": 203,
   "HU": 202,
-  "HR": 202,
-  "UA": 200,
-  "NZ": 185,
-  "ZA": 179,
-  "DK": 168,
-  "TW": 161,
-  "IE": 158,
-  "VE": 151,
-  "EC": 141,
-  "SE": 134,
+  "IN": 201,
+  "CZ": 201,
+  "RO": 200,
+  "NZ": 183,
+  "ZA": 180,
+  "DK": 166,
+  "TW": 162,
+  "IE": 156,
+  "VE": 149,
+  "SE": 137,
+  "EC": 137,
   "LV": 128,
-  "IL": 127,
   "UY": 127,
-  "FI": 120,
-  "BA": 120,
-  "EE": 120,
-  "SI": 114,
+  "IL": 126,
+  "EE": 122,
+  "BA": 117,
+  "FI": 115,
   "LB": 113,
-  "NO": 111,
+  "SI": 113,
   "SK": 111,
+  "NO": 110,
   "JP": 109,
-  "DZ": 108,
-  "DO": 102,
-  "AL": 101,
-  "LT": 93,
-  "AF": 89,
-  "SA": 89,
+  "DZ": 105,
+  "AL": 102,
+  "DO": 101,
+  "LT": 96,
+  "SA": 91,
+  "AF": 87,
+  "TH": 87,
   "GH": 87,
-  "TH": 85,
-  "ZM": 77,
-  "HK": 76,
+  "ZM": 78,
+  "HK": 77,
   "MD": 75,
-  "MY": 74,
-  "PK": 72,
-  "GT": 72,
-  "BO": 71,
-  "NG": 65,
+  "GT": 73,
+  "MY": 72,
+  "PK": 70,
+  "BO": 70,
+  "AO": 66,
   "MA": 65,
-  "AO": 65,
-  "TN": 63,
-  "LK": 62,
-  "BY": 62,
+  "LK": 64,
+  "NG": 63,
   "KR": 61,
+  "TN": 61,
+  "BY": 61,
   "SV": 60,
   "MW": 59,
   "CI": 58,
-  "PY": 57,
   "CR": 56,
+  "PY": 55,
   "KE": 54,
   "PR": 53,
-  "SG": 51,
-  "CY": 48,
+  "SG": 50,
   "MK": 48,
   "EG": 47,
+  "CY": 47,
   "CM": 46,
+  "HN": 44,
   "ME": 43,
-  "HN": 42,
   "RE": 41,
   "KZ": 40,
   "JM": 38,
   "JO": 32,
-  "AZ": 31,
   "VN": 31,
   "NP": 30,
+  "AZ": 30,
   "PA": 29,
-  "ET": 29,
   "SN": 29,
   "GE": 29,
   "HT": 29,
   "IR": 28,
-  "LU": 28,
-  "IS": 27,
+  "IS": 28,
+  "ET": 28,
+  "LU": 27,
+  "BD": 25,
+  "SY": 25,
   "TT": 25,
-  "BD": 24,
   "IQ": 24,
-  "SY": 24,
   "ZW": 24,
   "NI": 24,
   "MO": 23,
   "TZ": 21,
+  "CU": 21,
   "BH": 20,
-  "CU": 19,
   "QA": 18,
   "CV": 18,
+  "MG": 17,
+  "KW": 16,
   "BB": 16,
-  "MG": 16,
-  "KW": 15,
   "AS": 15,
   "CW": 15,
   "VA": 15,
   "XK": 15,
   "YE": 14,
   "AM": 14,
-  "CD": 14,
   "MZ": 13,
   "FO": 13,
   "GP": 13,
@@ -147,39 +146,40 @@
   "UZ": 12,
   "MT": 12,
   "BQ": 12,
+  "CD": 12,
   "LC": 12,
   "MQ": 12,
-  "OM": 11,
-  "KH": 10,
+  "OM": 10,
   "AD": 10,
-  "KY": 10,
   "LY": 10,
-  "VI": 10,
-  "MN": 9,
+  "PS": 9,
+  "KH": 9,
   "BS": 9,
   "GY": 9,
+  "KY": 9,
   "NC": 9,
-  "PS": 8,
+  "VI": 9,
+  "MN": 8,
   "AW": 8,
   "BF": 8,
+  "GI": 8,
   "KG": 8,
   "MC": 8,
   "PF": 8,
   "RW": 7,
-  "GI": 7,
   "IM": 7,
   "SR": 7,
+  "TG": 7,
   "SD": 6,
   "AG": 6,
   "GD": 6,
-  "TG": 6,
   "TM": 6,
   "MM": 5,
   "AI": 5,
+  "DM": 5,
   "ER": 5,
   "GF": 5,
   "GL": 5,
-  "GN": 5,
   "GU": 5,
   "KN": 5,
   "MV": 5,
@@ -190,14 +190,13 @@
   "BN": 4,
   "BZ": 4,
   "CF": 4,
-  "DM": 4,
   "FK": 4,
+  "GN": 4,
   "SC": 4,
   "SO": 4,
   "TO": 4,
   "BI": 3,
   "BW": 3,
-  "IO": 3,
   "KM": 3,
   "MH": 3,
   "NE": 3,
@@ -210,6 +209,7 @@
   "VG": 3,
   "YT": 3,
   "CX": 2,
+  "IO": 2,
   "LA": 2,
   "LI": 2,
   "MS": 2,
@@ -219,20 +219,23 @@
   "ST": 1
  },
  "shards": true,
- "off_air_watch": 1248,
- "came_back_tonight": 300,
- "new_tonight": 7,
+ "off_air_watch": 1265,
+ "came_back_tonight": 244,
+ "new_tonight": 9,
  "new_tonight_sample": [
-  "Stockholm FM 101,1 Sweden",
-  "Радіо Сяйво",
-  "Radio Skovoroda music",
-  "Radi.fm Clásica Global",
-  "KBS_kor",
-  "http://serpent0.duckdns.org:8088/kbs2fm.pls",
-  "Makie Max Radio"
+  "Rádió Gaga",
+  "Retró Rádió Csíkszereda",
+  "Radio liberty slagare",
+  "Radio RFM",
+  "Exclusive Radio",
+  "MBC FM",
+  "KBS CLASSIC",
+  "Kingdom Sounds Radio",
+  "Radio RSF 109 Antanifotsy"
  ],
  "failed_sample": {
   "PK": [
+   "Radio Pakistan Hyderabad MW 1008",
    "Radio Pakistan D.I. Khan MW 711",
    "Radio Pakistan Karachi MW 639",
    "Radio Pakistan Technology",
@@ -243,11 +246,10 @@
    "Radio Pakistan Khuzdar MW 567",
    "FM 101 Kohat",
    "FM 93 Muzaffarabad",
+   "Radio Pakistan Gilgit MW 1512",
    "FM 93 Gilgit",
    "Radio Pakistan Skardu MW 1557",
-   "FM 93 Skardu",
-   "Suno FM",
-   "ILM Radio Renala FM 92"
+   "FM 93 Skardu"
   ],
   "IN": [
    "Radio Schizoid - Dub Techno",
@@ -267,7 +269,6 @@
    "All India Radio News 24X7"
   ],
   "BD": [
-   "বাংলাদেশ বেতার ঢাকা ক",
    "Dhaka FM 90.4",
    "Dhaka FM",
    "Radio Din Raat 93.6 FM",
@@ -286,8 +287,6 @@
    "Punnagai Radio",
    "Siragugal Fm Tamil Srilanka",
    "Pirai FM",
-   "CIR",
-   "SLBC CIR",
    "The One Radio HD"
   ],
   "NP": [
@@ -309,7 +308,6 @@
   ],
   "AF": [
    "Classic Country",
-   "Ambient Space",
    "Radio Tarana",
    "РУКИ ВВЕРХ",
    "Радио Дача",
@@ -317,6 +315,7 @@
    "Rock Classics",
    "Radio Schizoid",
    "إذاعة طريق السلف",
+   "Русское радио ВЛ",
    "mujhe",
    "BNR Horizont",
    "gyor+",
@@ -338,13 +337,14 @@
    "106 fm",
    "Radio Space 104FM",
    "Azərbaycan Radiosu Baku 105.0 FM",
+   "KN Music TV",
    "Balakən FM"
   ],
   "KZ": [
    "Space Beat (64k AAC)",
    "Love Radio Kazakhstan",
-   "Astana Fm",
    "Space Beat (128k)",
+   "Astana Fm",
    "MUZZONE RADIO"
   ],
   "UZ": [
@@ -360,18 +360,17 @@
    "Vibe FM UAE",
    "Tick Tock Radio - 1962",
    "Tick Tock Radio - 1978",
+   "Emarat fm",
    "Tick Tock Radio - 1961",
    "Tick Tock Radio 1965",
    "Exclusively Beyonce",
    "Tick Tock Radio - 1958",
-   "Big Melodies",
-   "Tick Tock Radio - 1979"
+   "Big Melodies"
   ],
   "SA": [
    "QURAN KAREEM",
    "Al Arabiya FM",
    "MBC FM",
-   "AlifAlif FM",
    "Panorama FM",
    "إذاعة طريق السلف",
    "WANASAH",
@@ -382,15 +381,16 @@
    "راديو الشرق مع بلومبرغ",
    "Radio Asharq with Bloomberg / راديو الشرق مع بلومبرغ",
    "SBA Radio Call Of Islam 107.5 FM",
-   "SkyRadio FM 105.5"
+   "SkyRadio FM 105.5",
+   "OFW Kabayan Radio 91.5 FM"
   ],
   "QA": [
    "إذاعة طريق السلف",
    "Qabayan Radio 94.3 FM",
    "Habaib"
   ],
-  "KW": [
-   "islamina"
+  "OM": [
+   "90.4 FM الإذاعة-الإنجليزية"
   ],
   "BH": [
    "Panorama FM"
@@ -409,10 +409,10 @@
    "Radio Liban 96.2FM",
    "mfm",
    "Radio Voice of Van",
-   "Radio Sawt El Noujoum",
    "Matrix FM 103.5 Lebanon",
-   "Radio Zahle",
+   "Radio YaSour",
    "Sawt El Wifak",
+   "Radio Joie",
    "Mixer FM",
    "Pervoe Radio Lebanon"
   ],
@@ -432,8 +432,8 @@
    "OmniRadio - Sheikh Abdulbasit Abdulsamad (الشيخ عبد الباسط عبد الصمد)",
    "OmniRadio - Quran & Islamic Radio (إذاعة القرآن الكريم)",
    "OmniRadio - Holy Quran Radio Cairo (إذاعة القرآن الكريم (القاهرة))",
+   "OmniRadio - Islamic Audio Library (Uploads) (متنوع)",
    "OmniRadio - Sheikh Ahmad Tamim Al-Maraghi (الشيخ أحمد تميم المراغي)",
-   "OmniRadio - Islamic Audio Library (Uploads) (المكتبة الصوتية والملفات المرفوعة)",
    "OmniRadio - Sheikh Mishary Rashid Al-Afasy (الشيخ مشاري بن راشد العفاسي)",
    "OmniRadio - Sheikh Ammar Al-Mulla (الشيخ عمار الملا)"
   ],
@@ -449,11 +449,9 @@
   "SY": [
    "Radio Damascus إذاعة دمشق",
    "Version FM",
-   "Damascus Radio إذاعة دمشق",
    "Radio Rozana"
   ],
   "PS": [
-   "Quran Radio Station-Nablus",
    "Radio alHara",
    "Amen24"
   ],
@@ -480,6 +478,7 @@
    "כאן מורשת - Kan Moreshet"
   ],
   "CY": [
+   "Σπορ FM 95.0",
    "塞浦路斯中文广播",
    "Love FM",
    "Chillout Breeze",
@@ -525,7 +524,17 @@
    "Radio Arabella München",
    "Sunshine Live - Party",
    "Charivari München - Lounge Music",
-   "Partyvibe - Drum and Bass"
+   "104.6 RTL 60er & 70er",
+   "Sunshine Live - Hard",
+   "Sunshine Live - Afterhour",
+   "RadioBOB Metallica (64 kbps AAC)",
+   "89.0 RTL",
+   "105'5 Spreeradio 80er",
+   "DrGnu - Prog Rock Classics",
+   "NORA Oldie Stream",
+   "sunshine live - Classic & Vocal House",
+   "DrGnu - Metallica",
+   "BOBs Death Metal Stream"
   ],
   "FR": [
    "RTL",
@@ -546,20 +555,20 @@
   ],
   "NL": [
    "NPO Radio 2 Soul & Jazz",
+   "Concertzender Baroque",
    "Hi On Line World Radio",
    "Pinguin Radio",
+   "Concertzender Oude Muziek",
    "Jazz de Ville - Chill",
+   "Concertzender Geen dag zonder Bach",
    "Jazz de Ville - Groove",
    "Hi On Line Latin Radio",
    "jungletrain.net - 24/7 drum and bass",
    "Jazz de Ville - Jazz",
+   "Concertzender Gregoriaans",
    "Jazz de Ville - Dance",
-   "Hi On Line Radio - Flac",
-   "Classics Radio (1536Kbps Hi-Res FLAC Stream)",
-   "Hi On Line Radio - Latin",
-   "NPO Radio 6 Soul & Jazz",
-   "NPO 2 Soul and Jazz",
-   "SuperFM - IJmuiden"
+   "Concertzender De Muzikant",
+   "Hi On Line Radio - Flac"
   ],
   "BE": [
    "PINK",
@@ -567,34 +576,35 @@
    "Radio Eurodance Classic",
    "MyNoise Pure Nature",
    "Chillout CROOZE",
-   "RTBF VivaCité Liège",
-   "Musiq3 Baroque",
-   "RTBF Classic 21 - 90's",
    "Lazer Hot Hits",
-   "RTBF VivaCité Hainaut",
-   "RTBF VivaCité Luxembourg",
-   "Studio Brussel UNTZ",
-   "RTBF VivaCité Namur & Brabant Wallon",
-   "Musiq3 Jazz",
-   "Radio Minerva"
+   "Radio Minerva",
+   "RTBF Classic 21 - Live",
+   "YOLO - Life is like a dance",
+   "Sud Radio",
+   "RTBF VivaCité Charleroi",
+   "RTBF Viva+",
+   "RTBF Classic 21 - Soul Power",
+   "Classic 21 80’s Hits",
+   "VRT Radio 2 Oost-Vlaanderen"
   ],
   "LU": [
    "Rádio Larochette",
+   "Groovetime",
    "Opus 100,7",
    "Radio Puls Luxembourg",
    "AAAudio",
    "Radio ARA - Luxembourg"
   ],
   "IT": [
-   "Virgin Radio Italia",
    "Radio Studio Più - HQ",
    "Radio Viva FM",
    "m2o originals radio",
    "Radio Onda Rossa",
    "Radio Energy Classic (Italy)",
+   "Radio Amore One Dance Catania",
    "Radio Studio Più - The Dance Station",
+   "Radio Amore Nostalgia Catania",
    "m2o originals radio 2",
-   "Radio Cavolo",
    "SempreViva",
    "RTL 102.5 Best",
    "Radio 2000",
@@ -603,10 +613,12 @@
    "Radio Italia Network - Network satellite"
   ],
   "ES": [
-   "Ibiza Global Radio",
    "Digital hits",
+   "punk irratia",
    "FUNKY TRACKS RADIO Barcelona",
+   "Cope Madrid FM",
    "Aragón Radio Zaragoza",
+   "El Toro TV",
    "Radioteletaxi",
    "Ondamar80",
    "The Beatles Radio (MP3)",
@@ -615,15 +627,10 @@
    "Gozadera Fm",
    "La Jungla Radio",
    "Hitz Africa FM",
-   "Aragón Radio",
-   "FUNKY TRACKS RADIO",
-   "Ràdio 90 (320k)"
+   "Aragón Radio"
   ],
   "PT": [
-   "Antena 1",
-   "Antena 1 Fado",
    "Back to the 80s",
-   "Antena 3 - Main",
    "105.4 Cascais - O Rock da Linha",
    "Radio TugaNet",
    "Fama Rádio",
@@ -633,8 +640,11 @@
    "Radio 94 FM",
    "Rádio Internacional Odemira",
    "SuperFM",
-   "RDP Internacional - Main",
-   "Antena 1 - Main"
+   "00'S RFM",
+   "90'S RFM",
+   "RFM ROCKS",
+   "Cascais FM 105.4",
+   "porão da nau 2"
   ],
   "CH": [
    "Vibration Zen Relax",
@@ -651,7 +661,7 @@
    "Radio Texoplex",
    "Vibration Gayradio",
    "Global Sport - Suisse",
-   "Radio4TNG"
+   "Dream Sequence"
   ],
   "AT": [
    "Superfly FM",
@@ -662,13 +672,13 @@
    "T-Rock",
    "Lo-Fi Halloween and Chill",
    "Garage Sounds",
-   "Yeshua.at Radio",
    "Stadtradio Krems",
    "Splatoon Station Seven",
-   "ERF Plus Oesterreich 320k",
    "28Radio - Rock",
    "Austrianpower radio",
-   "Radio Max Merkur"
+   "Radio Max Merkur",
+   "emap.fm",
+   "CR 94.4"
   ],
   "SE": [
    "Mix Megapol",
@@ -699,8 +709,8 @@
    "RRA",
    "Metro Buskerud",
    "Scansat Radio (Scandinavian Satellite Radio)",
-   "1FM Jazz",
    "radiOrakel",
+   "1FM Jazz",
    "1FM Rock",
    "Radio Korgen"
   ],
@@ -734,12 +744,11 @@
    "Yle Radio Suomi, Lappeenranta",
    "Yle Radio 1",
    "Yle Sámi Radio",
+   "Radio Kaleva",
    "Yle Vega Huvudstadsregionen",
-   "MTV Uutiset",
-   "Keygen FM"
+   "MTV Uutiset"
   ],
   "IS": [
-   "Rondó",
    "Cathedral 13",
    "Suðurland FM"
   ],
@@ -766,7 +775,7 @@
    "Love Trap",
    "Athens Voice 102.5",
    "Πειρατικός",
-   "Libero FM 107.4",
+   "Παραδοσιακός 106.6",
    "Venus",
    "Μελωδία Θεσσαλονίκης 98",
    "Graceland",
@@ -788,11 +797,11 @@
    "Radio Vocea Evangheliei RVE Sibiu",
    "Radio Tequila Manele",
    "Radio Oldies Romania",
-   "Atmospheric dnb s0urce",
    "Radio Super Manele",
    "RADIO MANELE PETRECERE",
    "Nationa FM",
-   "Radio Manele Romania"
+   "Radio Manele Romania",
+   "Național FM"
   ],
   "CZ": [
    "Impuls Ráááádio",
@@ -807,9 +816,9 @@
    "FREERAVE.CZ",
    "Flash radio",
    "Radio Dechovka",
+   "Rádio Xaver",
    "Radio Sázava",
-   "Radio Otava",
-   "RockZone 105,9 FM"
+   "Fajn Fresh Radio"
   ],
   "SK": [
    "Rádio Janko Hraško",
@@ -829,8 +838,10 @@
    "janko hraško"
   ],
   "HU": [
+   "Mercy Rádió - Mulatós",
    "CEU Medieval Radio",
    "Forrás Rádió",
+   "Mercy Rádió",
    "Magic Disco Rádió",
    "Gong Rádió",
    "KORONAfm100",
@@ -841,9 +852,7 @@
    "Győr+",
    "Deja Vu Radio",
    "Győr+ Rádió",
-   "Sárvár Rádió",
-   "Rise FM Hit House",
-   "Rise FM Deep"
+   "Sárvár Rádió"
   ],
   "SI": [
    "Radio Antena",
@@ -892,7 +901,7 @@
    "Radio S",
    "Narodni Fm Radio",
    "Radio Belami",
-   "Radio D Lucani"
+   "Naxi Fresh Radio"
   ],
   "BA": [
    "HIT Radio Brčko",
@@ -913,12 +922,11 @@
   ],
   "AL": [
    "sasaram",
+   "القرآن",
    "Top Gold Radio",
    "Chill Albania",
-   "Pulse FM",
    "Radio Dielli",
    "Radio Klea",
-   "Radio 4+",
    "Intradio"
   ],
   "MK": [
@@ -959,13 +967,13 @@
    "Tauragės radijas",
    "Saules radijas",
    "Sol fm",
+   "LRT Radijas",
    "LRT Opus",
    "LRT Klasika",
    "Cold Tear Radio",
-   "Zip FM is Kasetes",
-   "Relax FM 100 Hitu",
    "Tauragės Radijas 98.2 FM",
-   "lsg radijas"
+   "lsg radijas",
+   "Saules Radijas LT"
   ],
   "LV": [
    "Latvijas Radio 2",
@@ -996,27 +1004,27 @@
    "Kiss FM Pride",
    "Tre Raadio Virumaa",
    "XFM",
-   "Radio Olematu",
    "Raadio PRT",
    "NikRadofem",
-   "XFM ESTONIA"
+   "XFM ESTONIA",
+   "XL Radio Estonia"
   ],
   "UA": [
-   "Brokenbeats",
    "Deep House Sunset Mix🇺🇦",
-   "Europa Plus",
-   "LoungeFm Chill Out",
    "УХ-Радіо",
    "tvoye radio",
    "Wolf Music Deep House Radio",
-   "Lounge FM Acoustic",
    "RECORD DANCE RADIO",
    "Гуцульське радіо",
    "Vatan Sedasi FM",
    "Ух радіо",
    "Ax Radio!",
    "xradioua",
-   "Радіо Svoboda FM"
+   "Радіо Svoboda FM",
+   "X Radio",
+   "Радіо Gonivo",
+   "Подільське",
+   "Fress FM"
   ],
   "RU": [
    "Дискотека СССР",
@@ -1026,14 +1034,14 @@
    "101,ru Russian Dance",
    "Radio Caprice - Eurodance",
    "Radio Caprice - Retrowave",
+   "Маруся ФМ",
    "Radio Caprice - Thrash Metal",
    "Radio Caprice - Classical Piano",
    "101.ru - Deep House",
    "Radio Caprice - Death Metal",
    "101.ru - Relax FM",
    "Radio Caprice - Power Metal",
-   "Radio Caprice - Relaxation Music",
-   "Promodj Too Nu"
+   "Radio Caprice - Relaxation Music"
   ],
   "TR": [
    "Radyo Vatan Türkü",
@@ -1054,25 +1062,24 @@
   ],
   "US": [
    "Classic Vinyl HD",
-   "Adroit Jazz Underground",
-   "Christmas Vinyl HD",
    "WALM HD",
-   "WALM - Old Time Radio",
    "Deep House Lounge",
+   "WALM 2 HD Opus",
    "Christmas Vinyl HD Opus",
-   "Classic Vinyl HD Opus",
    "Deep House Radio",
    "WALM - Old Time Radio Opus",
    "Soft Classic Rock Radio",
    "Chilltrax",
    "1980s.FM",
    "Megarock Radio 320k",
-   "100hitz - Indie"
+   "100hitz - Indie",
+   "Death.FM",
+   "Classical KDFC",
+   "Alex Jones - Infowars"
   ],
   "CA": [
    "Cinemix",
    "CILQ 107.1 \"Q107\" Toronto",
-   "SLOWLY RADIO",
    "radio classique quebec",
    "100 GREATEST CLASSICAL MUSIC",
    "Dylanradio.com Kentville, NS",
@@ -1083,8 +1090,9 @@
    "Radio Italia Canada",
    "CFOX 99.3 Vancouver, BC",
    "PunkRockRadio.ca",
+   "Toronto Global Radio - Freestyle",
    "CKWX \"News 1130\" Vancouver, BC",
-   "CIUT 89.5 University of Toronto"
+   "CKNW 980 New Westminster, BC"
   ],
   "MX": [
    "XLTN \"Radio Latina\" 104.5 FM Tijuana, BN",
@@ -1093,6 +1101,7 @@
    "El Heraldo Radio (Ciudad de México) - 98.5 FM - XHDL-FM - Heraldo Media Group - Ciudad de México",
    "Imagen (Ciudad de México) - 90.5 FM - XEDA-FM - Grupo Imagen - Ciudad de México",
    "Classic Rock Universal - Online - Grupo Radio Centro - Ciudad de México",
+   "Panda FM - Online - El Panda Zambrano - Ciudad de México",
    "Radio Ranchito (Morelia) - 102.5 FM - XHRPA-FM - Grupo ULTRA - Morelia, MI",
    "Imagen Radio",
    "City Pop Guadalajara",
@@ -1100,25 +1109,24 @@
    "Amor Monterrey - 90.9 FM - XHOK-FM - Grupo ACIR - Monterrey, NL",
    "Jalisco Radio (FM) (Guadalajara) - 96.3 FM - XEJB-FM - Gobierno del Estado de Jalisco - Guadalajara, JC",
    "La Mexicana (Aguascalientes) - 91.3 FM - XHPLA-FM - Radio Universal - Aguascalientes, AG",
-   "XHLY \"Los 40 Principales\" 92.3 FM Morelia, MC",
-   "La Jefa (Querétaro) - 98.7 FM - XHMQ-FM - Respuesta Radiofónica - Querétaro, QR"
+   "XHLY \"Los 40 Principales\" 92.3 FM Morelia, MC"
   ],
   "BR": [
-   "Jovem Pan Porto Alegre",
    "Máquina do Tempo (MPB Brasil)",
    "Máquina do Tempo (Internacional)",
    "GOLD INSTRUMENTAL",
-   "Rádio Metropolitana 98.5 FM Sertanejo",
    "GOLD INSTRUMENTAL 32",
    "Radio América Latina",
-   "Rádio Metropolitana 98.5 FM Pop",
    "Dumont FM",
-   "Rádio Metropolitana 98.5 FM",
-   "Melodia FM 97.5",
    "Rádio Ouro Verde FM 105.5",
    "Sertanejo FM",
    "GOLD INSTRUMENTAL (224kbps/mp3)",
-   "GOLD INSTRUMENTAL (32kbps/aacPlus)"
+   "GOLD INSTRUMENTAL (32kbps/aacPlus)",
+   "Esportes Total",
+   "Rádio Gospel Hits",
+   "Radio Whisper ASMR",
+   "Rádio Novo Tempo",
+   "Gold Web 32kb"
   ],
   "AR": [
    "Radio Latina FM 101.1",
@@ -1132,10 +1140,10 @@
    "El Destape",
    "Radio AM 750 Objetivos, pero no imparciales",
    "el destape sin fin",
+   "LT8 AM830",
    "FM La Tribu 88.5 Buenos Aires",
    "107.9 El Observador version 2",
-   "LU6 Radio Atlántica",
-   "Radio FM Gualamba 93.7. Resistencia Chaco"
+   "LU6 Radio Atlántica"
   ],
   "CO": [
    "Salsa Clásica Éxitos",
@@ -1179,31 +1187,31 @@
    "Radio victor music Perú",
    "Radio Concierto - FM 95.1",
    "Radio Matucana (102.9 FM, Lima)",
+   "Peruana Radio",
    "Nuevo Tiempo",
    "Radio Un Hueco en el Espacio",
    "Radio Nacional del Perú",
    "Radio Conoden",
-   "Radio 1550, La Radio Joven. Huancayo. 88.9 FM",
    "Corporación Radial E&L - Ocalli, Luya",
    "Radio Urbana (Caraz - Ancash Peru)",
    "Radio Antena 5 Cusco 1600 AM (más que una Radio !)"
   ],
   "VE": [
-   "Adulto Joven 88.1",
+   "FM Mundial 104.1",
    "MPB Radio Venezuela",
    "Radio 2000",
    "Imaginacion 96.1 FM",
    "Activa FM 104.9",
+   "Andes 89.3 FM",
+   "Radio Mix Retro",
+   "Gaiterísima 94.7 FM",
    "ROMANZAS VALLENATAS",
    "Latina 95.5 FM",
    "DJ Carlos Radio",
    "COSTERA 102.7 FM",
    "CUYUNI FM 106.5",
    "Circuito X 89.7 FM",
-   "Clasicos en la web",
-   "Espectaculo 100.7 FM",
-   "La Verdadera Rumba 105.1 FM",
-   "BOLIVAR 98.7 FM"
+   "BANDERA 105.7 FM"
   ],
   "EC": [
    "Radio Antena 3 91.7 FM",
@@ -1231,6 +1239,7 @@
    "Hit 105.7 FM",
    "AIQUILEÑA RADIO Y TELEVISIÓN",
    "Radio Activa Guanay 105.4 Fm",
+   "RADIO FRONTERA FM 100.3 MHz",
    "la patria",
    "Radio Conquistador FM 99.1",
    "Atlantida Radio Online",
@@ -1254,7 +1263,7 @@
    "Radio Cristal AM 1470 - Las Piedras"
   ],
   "PY": [
-   "Radio Digital 88.5 Fm Paraguay",
+   "Monumental 1080 AM",
    "Radio RQP 94.3 FM",
    "Radio ABC FM 98.5 (Asunción)",
    "Cuevas FM 91.7",
@@ -1282,8 +1291,7 @@
    "Radio Camino Santidad",
    "El Comandante 101.3 FM",
    "ARCA RADIO HD",
-   "Astro Radio",
-   "MUSIQUERA"
+   "Astro Radio"
   ],
   "DO": [
    "Independencia FM",
@@ -1295,12 +1303,12 @@
    "Estación 97.7 FM",
    "Caricias FM",
    "Naranjo Dulce Radio",
+   "Romantica 103.FM",
    "Urban Hits",
    "La Z101 Fm",
    "BE 99.7",
    "Ritmo Hits",
-   "Raices Radio Republica Dominicana",
-   "eztramsounds"
+   "Raices Radio Republica Dominicana"
   ],
   "PR": [
    "WRTU 89.7 Radio Universidad de Puerto Rico, San Juan",
@@ -1322,9 +1330,7 @@
   "HN": [
    "DCR Difusora Cristiana de Radio 103.1 FM",
    "Radio Globo 88.5 HN",
-   "Musiquera 93.3 FM",
    "Radio Radical",
-   "Girasol Stereo 102.3 FM",
    "Dee Jay",
    "Stereo Luz",
    "Blue Wave Radio",
@@ -1340,26 +1346,25 @@
    "Radio ASÍS"
   ],
   "CN": [
-   "FM100.8 包河之声",
    "80后音悦台",
-   "天籁之音 - 经典正流行",
-   "AisaFM亚洲粤语台",
-   "江苏新闻广播",
    "Raggakings雷鬼音乐频道",
    "Cinemix电影音乐频道",
-   "江苏经典流行音乐广播",
-   "江苏故事广播",
+   "格莱美音乐台",
+   "北京BTV新闻伴音",
    "周杰伦音乐台",
    "大自然白噪音",
+   "江苏交通广播网",
    "Heilungkiang Korean Radio",
    "河南网络广播·天籁古典",
    "綠邨電台",
-   "厦门闽南之声"
+   "厦门闽南之声",
+   "江苏音乐广播",
+   "第一财经（一财官网线路）",
+   "105.1成都简单音乐广播"
   ],
   "HK": [
    "Apple-FM.net",
    "Apple FM",
-   "熱血時報",
    "澳门绿邨电台",
    "陽光衛視",
    "源声态汽车音乐电台",
@@ -1367,8 +1372,6 @@
    "珠海資訊廣播"
   ],
   "TW": [
-   "中央廣播電台",
-   "RTI 臺灣之音",
    "TAIWAN LOUNGE RADIO",
    "Hit FM台北之音廣播",
    "教育廣播電臺-臺北總臺FM臺",
@@ -1381,7 +1384,9 @@
    "福建東南廣播",
    "NER教育電臺",
    "上海麗都廣播電台 1940's Shanghai Vintage Jazz Shidaiqu Radio",
-   "飛碟聯播網 太魯閣之音"
+   "飛碟聯播網 太魯閣之音",
+   "Nei-Di's ACG Music",
+   "飛碟聯播網 苗栗中港溪"
   ],
   "JP": [
    "Chofu FM",
@@ -1391,26 +1396,26 @@
    "エフエム椿台",
    "エフエム世田谷",
    "京都三条ラジオカフェ",
-   "AFN GO TOKYO",
    "FM RADIO3 (ラジオ3)",
    "775ライブリーFM",
    "JPHiP Radio",
    "Friends Forever 128kbps MP3",
    "超！A&G+",
    "Tokyo Star Radio",
-   "FM Kawaguchi 856 studio (FM川口)"
+   "FM Kawaguchi 856 studio (FM川口)",
+   "Radio Mix Kyoto FM87.0"
   ],
   "KR": [
-   "MBC FM",
    "SBS Power FM",
+   "MBC FM for you",
    "SBS Love FM",
    "kbs해피fm",
+   "MBC 올댓뮤직",
    "JTV 매직FM",
    "Classic Odyssey",
    "Floyd Server (Rock Ballad...From 09/25/05)",
    "KBS HappyFM",
    "CPBC",
-   "AFN GO HUMPHREYS The Eagle",
    "(BSOD) MBC mini All-That-Music",
    "AFN GO DAEGU",
    "(BSOD) KBS Classic FM",
@@ -1457,7 +1462,6 @@
   ],
   "PH": [
    "DZAR Radyo Ronda Plus 1026 AM",
-   "Love Radio Tarlac",
    "DYHP 612 RMN Cebu",
    "92.3 Radyo5 True FM",
    "RMN DWNX Naga",
@@ -1470,7 +1474,8 @@
    "Radyo Veritas 846",
    "Wild FM Davao",
    "MemoRieS FM 89.9 Cebu",
-   "Bespren Radio"
+   "Bespren Radio",
+   "DZMM Teleradyo"
   ],
   "TH": [
    "RequestRadio เพื่อชีวิต",
@@ -1508,7 +1513,11 @@
   ],
   "KH": [
    "Daun Penh EFM",
-   "Love FM Phnom Penh 97.5"
+   "Love FM Phnom Penh 97.5",
+   "Sangkem Radio"
+  ],
+  "MN": [
+   "Ehlelradio"
   ],
   "AU": [
    "ABC Country (MP3)",
@@ -1545,21 +1554,21 @@
    "Radio Bay FM 100.7"
   ],
   "NG": [
-   "METRO FM LAGOS",
-   "Bond 92.9 FM",
    "The Today Africa Radio",
    "NCBN Abuja",
-   "Metro 97.7 FM",
+   "Blast 98.3 FM",
+   "Sports Radio Brila FM",
    "Obong Radio",
    "Rose FM",
    "KCity Radio",
+   "Fresh 105.9 FM",
    "Godfrey Okoye University Radio 106.9fm",
    "Domi Radio",
    "GoRadio ng",
+   "Fresh 105.9 FM Ibadan",
    "GoRadio",
    "ZamRock Radio [Nigeria Relay]",
-   "Pidgin Radio",
-   "Hawa"
+   "Pidgin Radio"
   ],
   "KE": [
    "NRG Radio",
@@ -1597,6 +1606,7 @@
    "Angel FM",
    "Meyah Radio",
    "Kasapa Fm",
+   "Zaa Radio",
    "Lamp Radio",
    "Lawson Radio 96.3",
    "Nyatefe Radio",
@@ -1608,7 +1618,8 @@
   "ET": [
    "yonjon",
    "Sheger365",
-   "Daily Hype Radio"
+   "Daily Hype Radio",
+   "Bisrat FM 101.1 Addis Ababa · 101.1 FM"
   ],
   "MA": [
    "Mefi1 tarab",
@@ -1617,7 +1628,7 @@
    "Medi 1 Classique",
    "MRC:-Radio Adwaa MaZika 5",
    "إذاعة طريق السلف",
-   "Chada FM",
+   "aswatalweb",
    "Medi1 Tarab",
    "© XGlite™® XGlite Radio FM Web Station",
    "XGlite Radio FM Web Station",
@@ -1643,7 +1654,9 @@
   "TN": [
    "الشيخ سعد الغامدي",
    "تكبيرات العيد",
-   "إذاعة طريق السلف"
+   "Sodais",
+   "إذاعة طريق السلف",
+   "رواية قالون"
   ],
   "SN": [
    "Sweet Radio",
@@ -1654,8 +1667,8 @@
    "EB FM",
    "Radio Pulsar Katiola",
    "Radio Chandelier",
-   "Attécoubé FM",
    "Radio Nuit Blanche",
+   "Attécoubé FM",
    "Radio khadim"
   ],
   "CM": [
@@ -1693,14 +1706,13 @@
    "MSU RADIO 90.3 FM"
   ],
   "ZM": [
-   "Radio Chimwemwe 91.7 FM",
+   "Power FM Zambia",
    "K-FM 95.5",
    "Choma Maanu Radio Station",
    "Kasama Radio 87.7 FM",
    "Mafken FM",
    "Flava Radio & TV",
-   "Smooth 90.1fm",
-   "Tuta Radio"
+   "Smooth 90.1fm"
   ],
   "AO": [
    "Rádio MFM Angola",
@@ -1709,7 +1721,6 @@
    "Rádio Mais",
    "Radio Jihenda",
    "Platina FM",
-   "Rádio Malange",
    "Rádio Kairós Angola",
    "Rádio Cuquema"
   ],
@@ -1779,6 +1790,8 @@
   ],
   "CD": [
    "Radio Okapi",
+   "LAVDC",
+   "Radio Svein",
    "Kolo-mboka fm"
   ],
   "CU": [
@@ -1786,8 +1799,6 @@
    "Cubania Radio",
    "Prensa Latina - Agencia Informativa Latinoamericana",
    "Radio María de la Caridad",
-   "Radio Reloj Cuba 950 AM",
-   "Radio Progreso 90.3 FM",
    "Radio Habana Cuba 102.5 FM",
    "CMBQ Radio Enciclopedia - Habana, Cuba"
   ],
@@ -1806,7 +1817,6 @@
    "Paradise FM Disco Inferno"
   ],
   "DM": [
-   "Fabulosa 96.7",
    "Dominica Catholic Radio",
    "X Televisión"
   ],
@@ -1836,14 +1846,12 @@
    "chwitiweb GF stream",
    "Radio Contact Vosges"
   ],
-  "GI": [
-   "Alpha FM"
-  ],
   "GL": [
    "Dfm rtv int160k"
   ],
   "GN": [
-   "modrak"
+   "modrak",
+   "BONHEUR FM Guinée live - 101.4 FM"
   ],
   "GP": [
    "Nostalgie Guadeloupe",
@@ -1867,6 +1875,7 @@
   ],
   "IO": [
    "Tick Tock Radio - 2022",
+   "Підсунути свиню",
    "Tick Tock Radio - 1993",
    "Tick Tock Radio - 1992",
    "Tick Tock Radio - 1994",
@@ -1970,8 +1979,7 @@
    "Surinet radio"
   ],
   "TG": [
-   "Shalom Info",
-   "Nana FM Togo"
+   "Shalom Info"
   ],
   "TT": [
    "Freedom FM 106.5",
@@ -1983,6 +1991,9 @@
   "VG": [
    "ABC Classic FM (AAC)"
   ],
+  "VI": [
+   "107.9 FM Da Vybe"
+  ],
   "XK": [
    "Urban FM 103.5",
    "Kolektiv Radio"
@@ -1991,6 +2002,7 @@
  "queries": {
   "/json/stations/bycountrycodeexact/PK": 78,
   "/json/stations/bycountrycodeexact/IN": 1277,
+  "/json/stations/bycountrycodeexact/BD": 35,
   "/json/stations/bycountrycodeexact/LK": 92,
   "/json/stations/bycountrycodeexact/NP": 163,
   "/json/stations/bycountrycodeexact/AF": 125,
@@ -2016,11 +2028,12 @@
   "/json/stations/bycountrycodeexact/GB": 2553,
   "/json/stations/bycountrycodeexact/IE": 305,
   "/json/stations/bycountrycodeexact/DE": 6563,
+  "/json/stations/bycountrycodeexact/FR": 3966,
   "/json/stations/bycountrycodeexact/NL": 1592,
   "/json/stations/bycountrycodeexact/BE": 619,
   "/json/stations/bycountrycodeexact/LU": 39,
   "/json/stations/bycountrycodeexact/IT": 1892,
-  "/json/stations/bycountrycodeexact/ES": 1538,
+  "/json/stations/bycountrycodeexact/ES": 1539,
   "/json/stations/bycountrycodeexact/PT": 408,
   "/json/stations/bycountrycodeexact/CH": 690,
   "/json/stations/bycountrycodeexact/AT": 385,
@@ -2029,10 +2042,10 @@
   "/json/stations/bycountrycodeexact/DK": 271,
   "/json/stations/bycountrycodeexact/FI": 189,
   "/json/stations/bycountrycodeexact/IS": 31,
-  "/json/stations/bycountrycodeexact/PL": 1231,
+  "/json/stations/bycountrycodeexact/PL": 1232,
   "/json/stations/bycountrycodeexact/GR": 2341,
-  "/json/stations/bycountrycodeexact/RO": 1165,
-  "/json/stations/bycountrycodeexact/CZ": 328,
+  "/json/stations/bycountrycodeexact/RO": 1166,
+  "/json/stations/bycountrycodeexact/CZ": 329,
   "/json/stations/bycountrycodeexact/SK": 184,
   "/json/stations/bycountrycodeexact/HU": 417,
   "/json/stations/bycountrycodeexact/SI": 151,
@@ -2049,11 +2062,11 @@
   "/json/stations/bycountrycodeexact/RU": 3319,
   "/json/stations/bycountrycodeexact/TR": 875,
   "/json/stations/bycountrycodeexact/MT": 13,
-  "/json/stations/bycountrycodeexact/US": 8720,
+  "/json/stations/bycountrycodeexact/US": 8722,
   "/json/stations/bycountrycodeexact/CA": 1652,
   "/json/stations/bycountrycodeexact/MX": 3062,
-  "/json/stations/bycountrycodeexact/BR": 1848,
-  "/json/stations/bycountrycodeexact/AR": 1271,
+  "/json/stations/bycountrycodeexact/BR": 1849,
+  "/json/stations/bycountrycodeexact/AR": 1272,
   "/json/stations/bycountrycodeexact/CO": 812,
   "/json/stations/bycountrycodeexact/CL": 646,
   "/json/stations/bycountrycodeexact/PE": 401,
@@ -2065,7 +2078,7 @@
   "/json/stations/bycountrycodeexact/CR": 65,
   "/json/stations/bycountrycodeexact/PA": 34,
   "/json/stations/bycountrycodeexact/GT": 79,
-  "/json/stations/bycountrycodeexact/DO": 130,
+  "/json/stations/bycountrycodeexact/DO": 132,
   "/json/stations/bycountrycodeexact/PR": 64,
   "/json/stations/bycountrycodeexact/JM": 55,
   "/json/stations/bycountrycodeexact/HN": 59,
@@ -2077,6 +2090,7 @@
   "/json/stations/bycountrycodeexact/KR": 120,
   "/json/stations/bycountrycodeexact/ID": 708,
   "/json/stations/bycountrycodeexact/MY": 100,
+  "/json/stations/bycountrycodeexact/SG": 68,
   "/json/stations/bycountrycodeexact/PH": 1111,
   "/json/stations/bycountrycodeexact/TH": 137,
   "/json/stations/bycountrycodeexact/VN": 49,
@@ -2084,6 +2098,7 @@
   "/json/stations/bycountrycodeexact/KH": 12,
   "/json/stations/bycountrycodeexact/MN": 9,
   "/json/stations/bycountrycodeexact/AU": 2211,
+  "/json/stations/bycountrycodeexact/NZ": 256,
   "/json/stations/bycountrycodeexact/NG": 110,
   "/json/stations/bycountrycodeexact/KE": 82,
   "/json/stations/bycountrycodeexact/ZA": 256,
@@ -2095,7 +2110,7 @@
   "/json/stations/bycountrycodeexact/SN": 35,
   "/json/stations/bycountrycodeexact/CI": 64,
   "/json/stations/bycountrycodeexact/CM": 51,
-  "/json/stations/bycountrycodeexact/UG": 378,
+  "/json/stations/bycountrycodeexact/UG": 379,
   "/json/stations/bycountrycodeexact/TZ": 27,
   "/json/stations/bycountrycodeexact/ZW": 27,
   "/json/stations/bycountrycodeexact/ZM": 86,
@@ -2154,7 +2169,7 @@
   "/json/stations/bycountrycodeexact/MC": 12,
   "/json/stations/bycountrycodeexact/MD": 88,
   "/json/stations/bycountrycodeexact/ME": 53,
-  "/json/stations/bycountrycodeexact/MG": 27,
+  "/json/stations/bycountrycodeexact/MG": 28,
   "/json/stations/bycountrycodeexact/MH": 3,
   "/json/stations/bycountrycodeexact/ML": 14,
   "/json/stations/bycountrycodeexact/MO": 35,
@@ -2192,17 +2207,13 @@
   "/json/stations/bycountrycodeexact/VU": 6,
   "/json/stations/bycountrycodeexact/XK": 18,
   "/json/stations/bycountrycodeexact/YT": 4,
-  "/json/stations/bycountrycodeexact/TJ": 2,
-  "/json/stations/bycountrycodeexact/BD": 35,
-  "/json/stations/bycountrycodeexact/FR": 3966,
-  "/json/stations/bycountrycodeexact/SG": 68,
-  "/json/stations/bycountrycodeexact/NZ": 256
+  "/json/stations/bycountrycodeexact/TJ": 2
  },
  "dropped": {
   "junk": 218,
   "codec": 128,
   "blocked": 2,
-  "duplicate": 11638
+  "duplicate": 11643
  },
  "codecs_dropped": {
   "AAC,H.264": 88,
@@ -2212,7 +2223,7 @@
   "UNKNOWN,H.264": 1
  },
  "directory_sizes": {
-  "US": 7698,
+  "US": 7697,
   "DE": 5072,
   "MX": 2842,
   "FR": 2699,
@@ -2221,13 +2232,13 @@
   "CN": 2016,
   "AU": 1940,
   "GR": 1899,
-  "BR": 1627,
-  "IT": 1540,
+  "BR": 1628,
+  "IT": 1541,
   "CA": 1514,
-  "ES": 1269,
+  "ES": 1270,
   "NL": 1204,
   "AR": 1172,
-  "RO": 1020,
+  "RO": 1021,
   "IN": 982,
   "PL": 979,
   "PH": 844,
@@ -2236,7 +2247,7 @@
   "TR": 690,
   "ID": 599,
   "CL": 586,
-  "CH": 500,
+  "CH": 501,
   "BE": 480,
   "RS": 372,
   "PT": 352,
@@ -2245,7 +2256,7 @@
   "PE": 331,
   "AT": 324,
   "UA": 295,
-  "CZ": 270,
+  "CZ": 271,
   "SE": 265,
   "HR": 264,
   "UG": 259,
@@ -2327,8 +2338,8 @@
   "IQ": 26,
   "ZW": 26,
   "TZ": 25,
+  "MG": 23,
   "CW": 23,
-  "MG": 22,
   "QA": 21,
   "BH": 21,
   "CV": 20,
@@ -2417,21 +2428,20 @@
   "MH": 3,
   "PW": 3,
   "TJ": 2,
-  "de": 2,
+  "pl": 2,
   "MS": 2,
   "it": 2,
   "CX": 2,
-  "lu": 1,
-  "br": 1,
+  "us": 2,
+  "gr": 2,
   "es": 1,
-  "tr": 1,
-  "ST": 1,
-  "ar": 1,
-  "ch": 1,
-  "bg": 1
+  "br": 1,
+  "cz": 1,
+  "fr": 1,
+  "ST": 1
  },
- "tail_tested": 34885,
- "tail_kept": 29624,
- "tail_seconds": 551,
- "total_all_pages": 43794
+ "tail_tested": 34889,
+ "tail_kept": 29828,
+ "tail_seconds": 711,
+ "total_all_pages": 43990
 }
