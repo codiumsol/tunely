@@ -12,5 +12,5 @@ The app's code is kept private; this repo only holds what has to be public:
 - `docs/s/` – the page behind shared station links: opens the station in the app, or
   Google Play if the app isn't installed.
 
-**Station owners:** to have a station removed or corrected, email raabtify@gmail.com.
+**Station owners:** to have a station removed or corrected, email tunelyradiofm@gmail.com.
 Removals are listed in `data/blocked.txt`.
